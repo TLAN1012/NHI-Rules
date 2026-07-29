@@ -8,7 +8,7 @@
     return resp.json();
   }
 
-  let announcements = [], chapters = { items: [] }, history = { items: [] }, meta = {};
+  let announcements = [], chapters = { items: [] }, history = { items: [] }, meta = {}, fulldoc = {};
   try {
     [announcements, chapters, history, meta] = await Promise.all([
       loadJSON("announcements.json"),
@@ -16,6 +16,7 @@
       loadJSON("history.json"),
       loadJSON("meta.json"),
     ]);
+    fulldoc = await loadJSON("fulldoc.json").catch(() => ({}));
   } catch (e) {
     $("#annList").innerHTML = `<li>資料載入失敗（${e.message}）。若以 file:// 開啟，請改用本機伺服器：python3 -m http.server</li>`;
     return;
@@ -127,6 +128,17 @@
       )
       .join("");
   }
+  /* ---------- 整份帶走 ---------- */
+  if (fulldoc.title && fulldoc.downloads?.length) {
+    $("#fulldocCard").hidden = false;
+    $("#fulldocTitle").textContent = fulldoc.title;
+    const links = fulldoc.downloads.flatMap((d) => d.files.map(
+      (f) => `<a href="${esc(f.url)}" target="_blank" rel="noopener" title="${esc(f.title)}">${esc(f.file_type)}</a><span class="file-size">${esc(f.size)}</span>`
+    ));
+    links.push(`<a href="files/nhi-drug-rules-full-1140918.pdf" title="站內備份（114.9.18 更新，取自 Internet Archive 存檔）">站內備份 PDF</a>`);
+    $("#fulldocLinks").innerHTML = links.join("");
+  }
+
   const chSrc = (chapters.source || "").replace("wayback:", "");
   $("#chaptersMeta").textContent = chapters.source?.startsWith("wayback")
     ? `注意：章節清單取自 ${chSrc.slice(0, 4)}-${chSrc.slice(4, 6)} 月的網頁存檔，最新版請以健保署官網為準。`

@@ -111,6 +111,13 @@ main { max-width: 60rem; margin: 0 auto; padding: 1rem; }
 }
 .file-size { color: var(--muted); font-size: 0.78rem; margin-left: 0.25rem; }
 
+.fulldoc-card {
+  display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+  flex-wrap: wrap; background: var(--accent-weak); border: 1px solid var(--accent);
+  border-radius: 0.6rem; padding: 0.8rem 1rem; margin: 0.75rem 0;
+}
+.fulldoc-card .hint { margin: 0.15rem 0 0; }
+
 .site-footer {
   max-width: 60rem; margin: 2rem auto 0; padding: 1rem;
   border-top: 1px solid var(--border); color: var(--muted); font-size: 0.82rem;

@@ -46,6 +46,8 @@ def classify_page(html: str) -> str:
         return "list"
     if "最新版藥品給付規定內容(分章節)" in html and "fileDownload" in html:
         return "chapters"
+    if "整份帶走" in html and "fileDownload" in html:
+        return "fulldoc"
     if "藥品給付規定歷史檔" in html and "fileDownload" in html:
         return "history"
     return "other"
@@ -86,6 +88,8 @@ def main() -> int:
     chapters_source = ""
     history: list[dict] = []
     history_source = ""
+    fulldoc: dict = {}
+    fulldoc_source = ""
     stats = {"files": 0, "list_pages": 0}
 
     for cache_dir in args.cache_dirs:
@@ -104,6 +108,12 @@ def main() -> int:
                     page = parse_content_page(html)
                     chapters = page["downloads"]
                     chapters_source = source
+            elif kind == "fulldoc":
+                items = parse_download_sections(html)
+                if items and (not fulldoc or source >= fulldoc_source):
+                    page = parse_content_page(html)
+                    fulldoc = {"title": page["title"], "downloads": page["downloads"]}
+                    fulldoc_source = source
             elif kind == "history":
                 items = parse_download_sections(html)
                 if items and (not history or source >= history_source):
@@ -124,6 +134,10 @@ def main() -> int:
         json.dumps({"source": chapters_source, "items": chapters}, ensure_ascii=False, indent=1),
         encoding="utf-8",
     )
+    (out / "fulldoc.json").write_text(
+        json.dumps({"source": fulldoc_source, **fulldoc}, ensure_ascii=False, indent=1),
+        encoding="utf-8",
+    )
     (out / "history.json").write_text(
         json.dumps({"source": history_source, "items": history}, ensure_ascii=False, indent=1),
         encoding="utf-8",
@@ -139,6 +153,8 @@ def main() -> int:
         "chapters_source": chapters_source,
         "history_count": len(history),
         "history_source": history_source,
+        "fulldoc_title": fulldoc.get("title", ""),
+        "fulldoc_source": fulldoc_source,
         "stats": stats,
         "source_site": "https://www.nhi.gov.tw/ch/np-2505-1.html",
     }
