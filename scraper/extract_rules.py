@@ -1,16 +1,17 @@
 #!/usr/bin/env python3
-"""把藥品給付規定章節檔（pdf/odt/doc）拆解成逐條規定，輸出 rules.json。
+"""把藥品給付規定拆解成逐條規定，輸出 rules.json。
 
-輸入：一個目錄，內含檔名帶「通則」或「第X節」的章節檔案（fetch 自官網或 Wayback）。
-支援三種格式：
-- .pdf：PyMuPDF 抽取（每章單檔，避免整份大 PDF 被存檔截斷的問題）
-- .odt：直接解 content.xml
-- .doc：antiword -m UTF-8（需安裝 antiword）
+兩種輸入模式（可並用，完整 PDF 優先）：
+1. --full-pdf：一份完整的藥品給付規定 PDF（官網「整份帶走」檔），
+   自動切出通則與第 1~15 節。這是首選來源。
+2. chapters_dir：目錄內含檔名帶「通則」或「第X節」的章節檔案，
+   支援 .pdf（PyMuPDF）/.odt（解 content.xml）/.doc（antiword）。
+   用於完整 PDF 缺漏時補章。
 
 用法：
-    python3 scraper/extract_rules.py cache/chapters \
-        --fallback-pdf docs/files/nhi-drug-rules-full-1140918.pdf \
+    python3 scraper/extract_rules.py --full-pdf docs/files/完整給付規定.pdf \
         --out docs/data/rules.json
+    python3 scraper/extract_rules.py cache/chapters --out docs/data/rules.json
 """
 
 from __future__ import annotations
@@ -145,9 +146,68 @@ def fallback_chapter_text(pdf_path: pathlib.Path, chapter: int) -> list[str]:
     return clean_lines(seg)
 
 
+VERSION_RE = re.compile(r"\((\d{2,3}\.\d{1,2}\.\d{1,2})\s*更新\)")
+APPENDIX_RE = re.compile(r"^\s*(附表[一二三四五六七八九十]|藥品事前審查申請表)", re.M)
+
+
+def build_from_full_pdf(pdf_path: pathlib.Path) -> dict[int, dict]:
+    """從一份完整的藥品給付規定 PDF 切出通則與各章節，拆成逐條規定。"""
+    import fitz
+
+    doc = fitz.open(pdf_path)
+    text = "\n".join(p.get_text() for p in doc)
+
+    # 章節起點：內文中的「第N節」標題（避免誤中目錄，取條文密集區前的最後標記即可）
+    marks: dict[int, int] = {}
+    for m in re.finditer(r"第\s*(\d{1,2})\s*節", text):
+        num = int(m.group(1))
+        if num in CHAPTER_NAMES and num not in marks:
+            marks[num] = m.start()
+
+    chapters_meta: dict[int, dict] = {}
+
+    def segment(start: int, end: int) -> str:
+        return text[start:end if end > 0 else len(text)]
+
+    # 通則：文件開頭到第 1 節
+    if 1 in marks:
+        seg = segment(0, marks[1])
+        rules = split_general(clean_lines(seg))
+        ver = VERSION_RE.search(seg)
+        if rules:
+            chapters_meta[0] = {
+                "chapter": 0, "name": "通則",
+                "version_label": ver.group(1) if ver else "",
+                "file": pdf_path.name, "count": len(rules), "rules": rules,
+            }
+
+    nums = sorted(marks)
+    for i, num in enumerate(nums):
+        end = marks[nums[i + 1]] if i + 1 < len(nums) else -1
+        seg = segment(marks[num], end)
+        if end < 0:
+            # 最後一章：在附表/申請表區之前截斷
+            cut = None
+            for m in APPENDIX_RE.finditer(seg):
+                cut = m.start()
+                break
+            if cut:
+                seg = seg[:cut]
+        rules = split_rules(clean_lines(seg), num)
+        ver = VERSION_RE.search(seg)
+        if rules:
+            chapters_meta[num] = {
+                "chapter": num, "name": CHAPTER_NAMES[num],
+                "version_label": ver.group(1) if ver else "",
+                "file": pdf_path.name, "count": len(rules), "rules": rules,
+            }
+    return chapters_meta
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("chapters_dir", help="章節檔案目錄")
+    ap.add_argument("chapters_dir", nargs="?", help="章節檔案目錄（可省略，若已提供 --full-pdf）")
+    ap.add_argument("--full-pdf", help="完整的藥品給付規定 PDF（首選來源）")
     ap.add_argument("--fallback-pdf", help="整份 PDF（缺章時備援）")
     ap.add_argument("--out", default="docs/data/rules.json")
     args = ap.parse_args()
@@ -155,7 +215,10 @@ def main() -> int:
     chapters_meta: dict[int, dict] = {}
     all_rules: list[dict] = []
 
-    for path in sorted(pathlib.Path(args.chapters_dir).iterdir()):
+    if args.full_pdf:
+        chapters_meta = build_from_full_pdf(pathlib.Path(args.full_pdf))
+
+    for path in sorted(pathlib.Path(args.chapters_dir).iterdir()) if args.chapters_dir else []:
         num, name = chapter_of(path.name)
         if num is None:
             continue
@@ -171,6 +234,8 @@ def main() -> int:
         lines = clean_lines(text)
         rules = split_general(lines) if num == 0 else split_rules(lines, num)
         label = re.search(r"\((\d{2,3}\.\d{1,2}\.\d{1,2})[^)]*\)", path.name)
+        if args.full_pdf and num in chapters_meta:
+            continue  # 完整 PDF 為首選來源，章節檔僅補缺
         if num not in chapters_meta or len(rules) > chapters_meta[num]["count"]:
             chapters_meta[num] = {
                 "chapter": num,

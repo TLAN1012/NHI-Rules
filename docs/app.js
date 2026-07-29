@@ -183,7 +183,7 @@
     const links = fulldoc.downloads.flatMap((d) => d.files.map(
       (f) => `<a href="${esc(f.url)}" target="_blank" rel="noopener" title="${esc(f.title)}">${esc(f.file_type)}</a><span class="file-size">${esc(f.size)}</span>`
     ));
-    links.push(`<a href="files/nhi-drug-rules-full-1140918.pdf" title="站內備份（114.9.18 更新，取自 Internet Archive 存檔）">站內備份 PDF</a>`);
+    links.push(`<a href="files/nhi-drug-rules-full-1150723.pdf" title="站內備份（115.7.23 更新完整版）">站內備份 PDF（115.7.23）</a>`);
     $("#fulldocLinks").innerHTML = links.join("");
   }
 

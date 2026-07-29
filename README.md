@@ -49,16 +49,18 @@ python3 scraper/build_dataset.py cache/live cache/wayback --out docs/data
 ## 給付規定全文查詢（藥名／成分名）
 
 「給付規定查詢」頁籤可用**成分名**（如 `osimertinib`）、**商品名**（如 `Xospata`）或**中文關鍵字**（如 `乾癬`）
-搜尋逐條給付規定（目前 584 條，涵蓋通則＋第 1～15 節）。
+搜尋逐條給付規定（**115.7.23 完整版，共 604 條**，涵蓋通則＋第 1～15 節）。
 
-資料建置方式：各章節的 pdf/odt/doc 檔（取自官網或 Wayback 存檔）經 `extract_rules.py`
-拆解為逐條規定。整份 PDF/ODT 因超過 8MB 遭 Wayback 爬蟲截斷於 5MB（含字型損壞、部分文字遺失），
-故改以「分章節」單檔為主要來源，僅缺存檔的章節（目前第十三節）以整份 PDF 文字備援。
+資料建置方式：以官網「整份帶走」的完整 PDF 為首選來源，經 `extract_rules.py`
+自動切章並拆解為逐條規定；亦支援以分章節單檔（pdf/odt/doc）建置或補缺章。
 
 ```bash
-python3 scraper/extract_rules.py cache/chapters \
-    --fallback-pdf docs/files/nhi-drug-rules-full-1140918.pdf \
-    --out docs/data/rules.json   # 需要 antiword 解析 .doc（apt install antiword）
+# 首選：完整版 PDF（docs/files/ 內附 115.7.23 版）
+python3 scraper/extract_rules.py --full-pdf docs/files/nhi-drug-rules-full-1150723.pdf \
+    --out docs/data/rules.json
+
+# 備援：分章節檔案目錄（.doc 需要 antiword：apt install antiword）
+python3 scraper/extract_rules.py cache/chapters --out docs/data/rules.json
 ```
 
 ## 資料來源與範圍
