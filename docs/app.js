@@ -8,7 +8,7 @@
     return resp.json();
   }
 
-  let announcements = [], chapters = { items: [] }, history = { items: [] }, meta = {}, fulldoc = {};
+  let announcements = [], chapters = { items: [] }, history = { items: [] }, meta = {}, fulldoc = {}, rulesData = { chapters: [], rules: [] };
   try {
     [announcements, chapters, history, meta] = await Promise.all([
       loadJSON("announcements.json"),
@@ -17,6 +17,7 @@
       loadJSON("meta.json"),
     ]);
     fulldoc = await loadJSON("fulldoc.json").catch(() => ({}));
+    rulesData = await loadJSON("rules.json").catch(() => ({ chapters: [], rules: [] }));
   } catch (e) {
     $("#annList").innerHTML = `<li>資料載入失敗（${e.message}）。若以 file:// 開啟，請改用本機伺服器：python3 -m http.server</li>`;
     return;
@@ -40,6 +41,53 @@
       $(`#panel-${btn.dataset.tab}`).classList.add("active");
     });
   });
+
+  /* ---------- 給付規定全文查詢 ---------- */
+  const ruleChapterSel = $("#ruleChapter");
+  rulesData.chapters.forEach((c) => {
+    const opt = document.createElement("option");
+    opt.value = c.chapter;
+    opt.textContent = c.chapter === 0 ? "通則" : `第${c.chapter}節 ${c.name}`;
+    ruleChapterSel.appendChild(opt);
+  });
+
+  const highlight = (s, q) => {
+    const escaped = esc(s);
+    if (!q) return escaped;
+    const safe = q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    return escaped.replace(new RegExp(`(${esc(safe)})`, "gi"), "<mark>$1</mark>");
+  };
+
+  function renderRules() {
+    const q = $("#ruleSearch").value.trim();
+    const ch = ruleChapterSel.value;
+    const lq = q.toLowerCase();
+    const filtered = rulesData.rules.filter((r) => {
+      if (ch !== "" && String(r.chapter) !== ch) return false;
+      if (lq && !(r.id + r.heading + r.text).toLowerCase().includes(lq)) return false;
+      return true;
+    });
+    $("#ruleCount").textContent =
+      `共 ${filtered.length} 條（資料庫共 ${rulesData.rules.length} 條給付規定）` +
+      (q ? "" : "｜輸入關鍵字開始搜尋，或選擇章節瀏覽");
+    const openAttr = q && filtered.length <= 10 ? " open" : "";
+    $("#ruleList").innerHTML = filtered
+      .slice(0, 100)
+      .map(
+        (r) => `<details${openAttr}>
+          <summary><span class="rule-id">${esc(r.id)}</span>${highlight(r.heading || "（無標題）", q)}
+            <span class="rule-chapter">${r.chapter === 0 ? "通則" : `第${r.chapter}節 ${esc(r.chapter_name)}`}</span>
+          </summary>
+          <div class="rule-text">${highlight(r.text, q)}</div>
+        </details>`
+      )
+      .join("");
+    if (filtered.length > 100)
+      $("#ruleList").insertAdjacentHTML("beforeend", "<p class='hint'>…僅顯示前 100 條，請縮小搜尋範圍。</p>");
+  }
+  $("#ruleSearch").addEventListener("input", renderRules);
+  ruleChapterSel.addEventListener("input", renderRules);
+  renderRules();
 
   /* ---------- 最新公告 ---------- */
   const yearSel = $("#yearFilter");
@@ -141,7 +189,7 @@
 
   const chSrc = (chapters.source || "").replace("wayback:", "");
   $("#chaptersMeta").textContent = chapters.source?.startsWith("wayback")
-    ? `注意：章節清單取自 ${chSrc.slice(0, 4)}-${chSrc.slice(4, 6)} 月的網頁存檔，最新版請以健保署官網為準。`
+    ? `注意：章節清單取自 ${chSrc.slice(0, 4)}-${chSrc.slice(4, 6)} 的網頁存檔，最新版請以健保署官網為準。`
     : "";
   $("#chapterSearch").addEventListener("input", renderChapters);
   renderChapters();

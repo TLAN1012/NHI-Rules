@@ -19,6 +19,7 @@
 │   ├── fetch_live.py     # 直接抓官網（含 Cloudflare 挑戰頁偵測）
 │   ├── fetch_wayback.py  # 從 Internet Archive 抓歷史存檔（官網被擋時的備援）
 │   ├── build_dataset.py  # 解析 HTML 快取 → 產生 docs/data/*.json
+│   ├── extract_rules.py  # 章節檔（pdf/odt/doc）→ 逐條給付規定 rules.json
 │   └── requirements.txt
 └── cache/wayback/        # 已抓取的網頁存檔（本次資料集的來源，可重現建置）
 ```
@@ -43,6 +44,21 @@ python3 scraper/fetch_wayback.py --out cache/wayback
 
 # 重建資料集
 python3 scraper/build_dataset.py cache/live cache/wayback --out docs/data
+```
+
+## 給付規定全文查詢（藥名／成分名）
+
+「給付規定查詢」頁籤可用**成分名**（如 `osimertinib`）、**商品名**（如 `Xospata`）或**中文關鍵字**（如 `乾癬`）
+搜尋逐條給付規定（目前 584 條，涵蓋通則＋第 1～15 節）。
+
+資料建置方式：各章節的 pdf/odt/doc 檔（取自官網或 Wayback 存檔）經 `extract_rules.py`
+拆解為逐條規定。整份 PDF/ODT 因超過 8MB 遭 Wayback 爬蟲截斷於 5MB（含字型損壞、部分文字遺失），
+故改以「分章節」單檔為主要來源，僅缺存檔的章節（目前第十三節）以整份 PDF 文字備援。
+
+```bash
+python3 scraper/extract_rules.py cache/chapters \
+    --fallback-pdf docs/files/nhi-drug-rules-full-1140918.pdf \
+    --out docs/data/rules.json   # 需要 antiword 解析 .doc（apt install antiword）
 ```
 
 ## 資料來源與範圍
