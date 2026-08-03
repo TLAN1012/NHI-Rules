@@ -142,3 +142,26 @@ mark { background: #ffe28a; color: inherit; border-radius: 0.15rem; padding: 0 0
   border-top: 1px solid var(--border); color: var(--muted); font-size: 0.82rem;
 }
 .disclaimer { font-weight: 600; }
+
+.breadcrumb { margin: 0 0 0.3rem; font-size: 0.85rem; }
+.breadcrumb a { text-decoration: none; color: var(--muted); }
+.breadcrumb a:hover { color: var(--accent); }
+
+.feature-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 1rem; margin: 1.5rem 0;
+}
+.feature-card {
+  display: block; background: var(--card); border: 1px solid var(--border);
+  border-radius: 0.8rem; padding: 1.2rem 1.3rem; text-decoration: none;
+  color: var(--text); transition: border-color 0.15s, transform 0.15s;
+}
+.feature-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.feature-card h2 { margin: 0.4rem 0 0.4rem; font-size: 1.15rem; color: var(--accent); }
+.feature-card p { margin: 0.2rem 0; font-size: 0.9rem; color: var(--muted); }
+.feature-icon { font-size: 1.8rem; }
+.feature-meta { font-size: 0.8rem; }
+
+.revisions { margin: 1rem 0; color: var(--muted); font-size: 0.85rem; }
+.revisions summary { cursor: pointer; }
+.revisions ul { margin: 0.5rem 0 0 1rem; padding: 0 0 0 1rem; }

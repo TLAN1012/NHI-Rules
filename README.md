@@ -1,14 +1,22 @@
-# 健保規定查詢站（NHI-Rules）
+# 健保政策查詢站（NHI-Rules）
 
-台灣全民健保規定查詢站。第一階段聚焦於健保署「[藥品給付規定](https://www.nhi.gov.tw/ch/np-2505-1.html)」專區：
-**最新公告與修正規定**、**規定變化時間軸**、**最新版分章節下載**、**歷史年版**。
+台灣全民健保各項政策公告的整理與查詢站（公告查詢性質，不涉及治療建議）。目前收錄：
+
+1. **藥品給付規定**（`drug.html`）：逐條給付規定全文查詢（藥名／成分名）、
+   最新公告與修正、規定變化時間軸、分章節與歷史年版下載。定期追蹤更新。
+2. **家庭醫師照護計畫（家醫計畫）**（`fm.html`）：計畫問答集（QA）查詢、
+   計畫本文章節瀏覽、檔案下載。不定期更新——有新版文件時彙入重建即可。
+
+首頁 `index.html` 為各政策入口。
 
 ## 專案結構
 
 ```
 ├── docs/                 # 靜態查詢站（可直接用 GitHub Pages 發布 /docs）
-│   ├── index.html        # 前端頁面（四個分頁：公告、變化時間軸、分章節、歷史檔）
-│   ├── app.js / style.css
+│   ├── index.html        # 首頁（政策入口）
+│   ├── drug.html/.js     # 藥品給付規定（給付規定查詢、公告、時間軸、章節、歷史）
+│   ├── fm.html/.js       # 家醫計畫（問答集查詢、計畫全文、檔案下載）
+│   ├── style.css
 │   └── data/             # 前端讀取的 JSON 資料集
 │       ├── announcements.json  # 法規公告（主旨、發文字號、發文日期、原文連結）
 │       ├── chapters.json       # 最新版藥品給付規定（分章節）附件清單
@@ -19,7 +27,8 @@
 │   ├── fetch_live.py     # 直接抓官網（含 Cloudflare 挑戰頁偵測）
 │   ├── fetch_wayback.py  # 從 Internet Archive 抓歷史存檔（官網被擋時的備援）
 │   ├── build_dataset.py  # 解析 HTML 快取 → 產生 docs/data/*.json
-│   ├── extract_rules.py  # 章節檔（pdf/odt/doc）→ 逐條給付規定 rules.json
+│   ├── extract_rules.py  # 完整版 PDF／章節檔 → 逐條給付規定 rules.json
+│   ├── extract_fm.py     # 家醫計畫問答集＋計畫本文 PDF → fm_qa.json / fm_plan.json
 │   └── requirements.txt
 └── cache/wayback/        # 已抓取的網頁存檔（本次資料集的來源，可重現建置）
 ```
@@ -77,3 +86,12 @@ python3 scraper/extract_rules.py cache/chapters --out docs/data/rules.json
   在可直連官網的環境執行 `fetch_live.py` 後重建即可補齊。
 - 章節清單目前取自 2024-02 存檔（前端已標示），同樣可用 `fetch_live.py` 更新。
 - 本站僅供參考，實際給付規定以健保署公告為準。
+
+## 家醫計畫資料更新
+
+家醫計畫不需定期追蹤。取得新版問答集或計畫本文 PDF 後：
+
+```bash
+python3 scraper/extract_fm.py --qa-pdf 問答集.pdf --plan-pdf 計畫本文.pdf \
+    --qa-file <docs/files 下的問答集檔名> --plan-file <計畫本文檔名> --out docs/data
+```
