@@ -24,6 +24,26 @@
     $("#qaList").innerHTML = `<p>資料載入失敗（${esc(e.message)}）。若以 file:// 開啟，請改用本機伺服器。</p>`;
   }
 
+  // 重排抽取文字：合併硬換行、保留條列結構
+  const LIST_MARK = /^(\d{1,2}\.|\(\d{1,2}\)|（[一二三四五六七八九十]{1,3}）|\([一二三四五六七八九十]{1,3}\)|[一二三四五六七八九十]{1,3}、|[IVXⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩ]{1,4}\.|附表|備註)/;
+  const reflow = (text) => {
+    const out = [];
+    for (const raw of String(text).split("\n")) {
+      const line = raw.trim();
+      if (!line) continue;
+      const prev = out[out.length - 1];
+      if (prev === undefined || LIST_MARK.test(line) || /[。！？]$/.test(prev)) {
+        out.push(line);
+      } else {
+        const sep = /[A-Za-z0-9)%,;]$/.test(prev) && /^[A-Za-z0-9(]/.test(line) ? " " : "";
+        out[out.length - 1] = prev + sep + line;
+      }
+    }
+    return out.join("\n");
+  };
+  qa.entries.forEach((e) => { e.answer = reflow(e.answer); });
+  plan.sections.forEach((s) => { s.text = reflow(s.text); });
+
   /* 分頁切換 */
   document.querySelectorAll(".tab").forEach((btn) => {
     btn.addEventListener("click", () => {
