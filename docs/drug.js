@@ -43,6 +43,25 @@
   });
 
   /* ---------- 給付規定全文查詢 ---------- */
+  // 重排 PDF 抽取文字：合併硬換行、保留條列結構、修復被切斷的英文字
+  const LIST_MARK = /^(\d{1,2}\.|\(\d{1,2}\)|（[一二三四五六七八九十]{1,3}）|\([一二三四五六七八九十]{1,3}\)|[一二三四五六七八九十]{1,3}、|[IVXⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩ]{1,4}\.|附表|備註)/;
+  function reflow(text) {
+    const out = [];
+    for (const raw of String(text).split("\n")) {
+      const line = raw.trim();
+      if (!line) continue;
+      const prev = out[out.length - 1];
+      if (prev === undefined || LIST_MARK.test(line) || /[。！？]$/.test(prev)) {
+        out.push(line);
+      } else {
+        const sep = /[A-Za-z0-9)%,;]$/.test(prev) && /^[A-Za-z0-9(]/.test(line) ? " " : "";
+        out[out.length - 1] = prev + sep + line;
+      }
+    }
+    return out.join("\n");
+  }
+  rulesData.rules.forEach((r) => { r.rtext = reflow(r.text); });
+
   const ruleChapterSel = $("#ruleChapter");
   rulesData.chapters.forEach((c) => {
     const opt = document.createElement("option");
@@ -64,7 +83,7 @@
     const lq = q.toLowerCase();
     const filtered = rulesData.rules.filter((r) => {
       if (ch !== "" && String(r.chapter) !== ch) return false;
-      if (lq && !(r.id + r.heading + r.text).toLowerCase().includes(lq)) return false;
+      if (lq && !(r.id + r.heading + r.rtext).toLowerCase().includes(lq)) return false;
       return true;
     });
     $("#ruleCount").textContent =
@@ -78,7 +97,7 @@
           <summary><span class="rule-id">${esc(r.id)}</span>${highlight(r.heading || "（無標題）", q)}
             <span class="rule-chapter">${r.chapter === 0 ? "通則" : `第${r.chapter}節 ${esc(r.chapter_name)}`}</span>
           </summary>
-          <div class="rule-text">${highlight(r.text, q)}</div>
+          <div class="rule-text">${highlight(r.rtext, q)}</div>
         </details>`
       )
       .join("");
@@ -112,19 +131,31 @@
       return true;
     });
     $("#annCount").textContent = `共 ${filtered.length} 筆（資料庫共 ${announcements.length} 筆公告）`;
-    $("#annList").innerHTML = filtered
-      .slice(0, 300)
-      .map(
-        (a) => `<li>
-          <span class="ann-date" title="${esc(a.issued_date || "")}">${toROC(a.issued_date)}</span>
-          <a class="ann-title" href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}</a>
-          ${a.is_drug_rule ? '<span class="badge">藥品給付</span>' : ""}
-          <span class="ann-doc">${esc(a.doc_no)}</span>
-        </li>`
-      )
+
+    // 依年份分組顯示
+    const shown = filtered.slice(0, 300);
+    const byYear = new Map();
+    shown.forEach((a) => {
+      const y = (a.issued_date || "").slice(0, 4) || "其他";
+      if (!byYear.has(y)) byYear.set(y, []);
+      byYear.get(y).push(a);
+    });
+    const renderItem = (a) => `<li>
+        <span class="ann-date" title="${esc(a.issued_date || "")}">${toROC(a.issued_date)}</span>
+        <a class="ann-title" href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}</a>
+        ${a.is_drug_rule ? '<span class="badge">藥品給付</span>' : ""}
+        <span class="ann-doc">${esc(a.doc_no)}</span>
+      </li>`;
+    $("#annList").innerHTML = [...byYear.entries()]
+      .map(([y, items]) => {
+        const label = y === "其他" ? "其他" : `民國 ${y - 1911} 年（${y}）`;
+        const total = filtered.filter((a) => ((a.issued_date || "").slice(0, 4) || "其他") === y).length;
+        return `<li class="ann-year"><h3>${label}<span class="count"> ${total} 筆</span></h3></li>` +
+          items.map(renderItem).join("");
+      })
       .join("");
     if (filtered.length > 300)
-      $("#annList").insertAdjacentHTML("beforeend", `<li>…僅顯示前 300 筆，請縮小搜尋範圍。</li>`);
+      $("#annList").insertAdjacentHTML("beforeend", `<li class="hint">…僅顯示前 300 筆，請縮小搜尋範圍或選擇年份。</li>`);
   }
   ["#search", "#drugOnly", "#yearFilter"].forEach((sel) =>
     $(sel).addEventListener("input", renderAnnouncements)

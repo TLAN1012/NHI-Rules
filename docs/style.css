@@ -69,6 +69,14 @@ main { max-width: 60rem; margin: 0 auto; padding: 1rem; }
 .hint { color: var(--muted); font-size: 0.9rem; }
 
 .ann-list { list-style: none; margin: 0; padding: 0; }
+.ann-list .ann-year {
+  background: none; border: none; padding: 0; margin: 1.4rem 0 0.6rem;
+}
+.ann-list .ann-year h3 {
+  margin: 0; font-size: 1.05rem; color: var(--accent);
+  border-bottom: 2px solid var(--border); padding-bottom: 0.3rem;
+}
+.ann-list .ann-year .count { color: var(--muted); font-weight: normal; font-size: 0.85rem; margin-left: 0.4rem; }
 .ann-list li {
   background: var(--card); border: 1px solid var(--border);
   border-radius: 0.6rem; padding: 0.7rem 0.9rem; margin-bottom: 0.6rem;
@@ -125,7 +133,8 @@ main { max-width: 60rem; margin: 0 auto; padding: 1rem; }
 .rule-chapter { color: var(--muted); font-size: 0.78rem; margin-left: 0.4rem; }
 .rule-text {
   margin: 0.6rem 0 0.2rem; padding-top: 0.6rem; border-top: 1px dashed var(--border);
-  font-size: 0.9rem; white-space: pre-wrap; overflow-wrap: anywhere;
+  font-size: 0.92rem; line-height: 1.85; white-space: pre-wrap; overflow-wrap: anywhere;
+  max-width: 46rem;
 }
 mark { background: #ffe28a; color: inherit; border-radius: 0.15rem; padding: 0 0.1rem; }
 @media (prefers-color-scheme: dark) { mark { background: #8a6d00; } }
