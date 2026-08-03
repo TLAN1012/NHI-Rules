@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>風險計算機｜健保政策查詢站</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <p class="breadcrumb"><a href="index.html">← 健保政策查詢站</a></p>
+  <h1>風險計算機</h1>
+  <p class="subtitle">依健保給付規定之風險分級工具（非官方網站，結果僅供病歷記載與給付條件對照參考）</p>
+</header>
+
+<nav class="tabs" role="tablist">
+  <button class="tab active" data-tab="ascvd" role="tab">ASCVD 風險等級（降膽固醇藥物給付）</button>
+</nav>
+
+<main>
+  <section id="panel-ascvd" class="panel active">
+    <p class="hint">依「全民健康保險降膽固醇藥物給付規定表一」（<a href="files/drug-rule-update-2-6-lipid-1150901.pdf" target="_blank" rel="noopener">健保審字第1150671962號</a>，自 115.9.1 生效）。勾選符合的臨床條件，自動判定 ASCVD 風險等級與對應的起始藥物治療門檻及血脂目標值。</p>
+
+    <div class="calc-grid">
+      <div class="calc-form">
+        <fieldset>
+          <legend>㇐、極高風險條件（冠狀動脈疾病／周邊動脈疾病之合併狀況）</legend>
+          <label class="chk-line"><input type="checkbox" id="cad" data-name="冠狀動脈疾病"> 冠狀動脈疾病</label>
+          <div class="sub-list" data-requires="cad">
+            <label class="chk-line"><input type="checkbox" class="cad-combo" data-name="一年內曾經歷心肌梗塞"> 一年內曾經歷心肌梗塞</label>
+            <label class="chk-line"><input type="checkbox" class="cad-combo" data-name="≧兩次心肌梗塞病史"> ≧兩次心肌梗塞病史</label>
+            <label class="chk-line"><input type="checkbox" class="cad-combo" data-name="多支冠狀動脈阻塞"> 多支冠狀動脈阻塞</label>
+            <label class="chk-line"><input type="checkbox" class="cad-combo" data-name="急性冠心症合併糖尿病"> 急性冠心症合併糖尿病</label>
+          </div>
+          <label class="chk-line"><input type="checkbox" id="pad" data-name="周邊動脈疾病"> 周邊動脈疾病</label>
+          <label class="chk-line"><input type="checkbox" id="carotid" data-name="頸動脈狹窄"> 頸動脈狹窄</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>二、非常高風險條件（確診 ASCVD 或顯著斑塊負擔）</legend>
+          <label class="chk-line"><input type="checkbox" class="vh" data-name="急性冠心症病史"> 急性冠心症病史</label>
+          <label class="chk-line"><input type="checkbox" class="vh" data-name="接受血管再通術(心導管介入或冠狀動脈繞道手術)"> 接受血管再通術（心導管介入治療或外科冠狀動脈繞道手術）</label>
+          <label class="chk-line"><input type="checkbox" class="vh" data-name="缺血性中風/TIA合併動脈硬化相關疾病或病史"> 缺血性中風／短暫性腦缺血發作合併動脈硬化相關疾病或病史</label>
+          <label class="chk-line"><input type="checkbox" class="vh" data-name="周邊動脈疾病(曾接受血管再通術、肢體缺血症狀或截肢)"> 周邊動脈疾病（曾接受血管再通術、有肢體缺血相關症狀或截肢）</label>
+          <label class="chk-line"><input type="checkbox" class="vh" data-name="影像檢查確認顯著斑塊負擔(≧50%直徑狹窄)"> 影像檢查確認顯著斑塊負擔（≧50% 直徑狹窄率；冠狀動脈攝影／電腦斷層／超音波）</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>三、高風險條件</legend>
+          <label class="chk-line"><input type="checkbox" class="hr" data-name="糖尿病"> 糖尿病</label>
+          <label class="chk-line"><input type="checkbox" class="hr" data-name="慢性腎臟病(UACR≧30mg/g或eGFR<60，持續≧3個月，未透析)"> 慢性腎臟病（UACR≧30mg/g 或 eGFR<60mL/min/1.73m²，至少持續 3 個月，透析前）</label>
+          <label class="chk-line"><input type="checkbox" class="hr" data-name="LDL-C≧190mg/dL"> LDL-C≧190mg/dL</label>
+          <label class="chk-line"><input type="checkbox" class="hr" data-name="冠狀動脈鈣化分數(CAC)≧400"> 冠狀動脈鈣化分數（CAC）≧400</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>四、心血管風險因子（用於中／低風險分級）</legend>
+          <label class="chk-line"><input type="checkbox" class="rf" data-name="高血壓"> 高血壓</label>
+          <label class="chk-line"><input type="checkbox" class="rf" data-name="年齡(男≧45歲/女≧55歲)"> 年齡：男性≧45 歲、女性≧55 歲</label>
+          <label class="chk-line"><input type="checkbox" class="rf" data-name="早發性冠心病家族史(男≦55歲/女≦65歲)"> 早發性冠心病家族史（男性≦55 歲，女性≦65 歲）</label>
+          <label class="chk-line"><input type="checkbox" class="rf" data-name="HDL-C偏低(男<40/女<50mg/dL)"> HDL-C：男性<40mg/dL、女性<50mg/dL</label>
+          <label class="chk-line"><input type="checkbox" class="rf" data-name="抽菸"> 抽菸</label>
+          <details class="mets-box">
+            <summary><span id="metsState">代謝性症候群（勾選以下至少 3 項才成立）</span></summary>
+            <label class="chk-line"><input type="checkbox" class="mets" data-name="腹部肥胖(男≧90cm/女≧80cm)"> 腹部肥胖（男性≧90cm，女性≧80cm）</label>
+            <label class="chk-line"><input type="checkbox" class="mets" data-name="血壓偏高(≧130/85mmHg或使用高血壓藥物)"> 血壓偏高（≧130/85mmHg 或使用高血壓藥物）</label>
+            <label class="chk-line"><input type="checkbox" class="mets" data-name="空腹血糖偏高(≧100mg/dL或使用糖尿病藥物)"> 空腹血糖偏高（≧100mg/dL 或使用糖尿病藥物）</label>
+            <label class="chk-line"><input type="checkbox" class="mets" data-name="空腹TG偏高(≧150mg/dL或使用治療TG藥物)"> 空腹 TG 偏高（≧150mg/dL 或使用治療 TG 血脂藥物）</label>
+            <label class="chk-line"><input type="checkbox" class="mets" data-name="HDL-C偏低(男<40/女<50mg/dL)"> HDL-C 偏低（男性<40mg/dL，女性<50mg/dL）</label>
+          </details>
+        </fieldset>
+
+        <fieldset>
+          <legend>血脂數值（選填，mg/dL）</legend>
+          <div class="num-row">
+            <label>LDL-C <input type="number" id="ldl" min="0" max="1000" inputmode="decimal"></label>
+            <label>總膽固醇 <input type="number" id="tc" min="0" max="1000" inputmode="decimal"></label>
+            <label>HDL-C <input type="number" id="hdl" min="0" max="300" inputmode="decimal"></label>
+          </div>
+          <p class="hint">填入總膽固醇與 HDL-C 可自動計算 non-HDL-C（次要血脂目標）。</p>
+        </fieldset>
+      </div>
+
+      <div class="calc-result" id="resultBox">
+        <h2>評估結果</h2>
+        <p class="risk-level">風險等級：<span class="risk-pill" id="riskLevel">—</span></p>
+        <dl class="risk-detail">
+          <dt>起始藥物治療血脂值</dt><dd id="threshold">—</dd>
+          <dt>主要／（次要）血脂目標</dt><dd id="target">—</dd>
+          <dt>LDL-C 判定</dt><dd id="ldlJudge">未輸入</dd>
+          <dt>符合條件</dt><dd id="metList">尚未勾選任何條件</dd>
+        </dl>
+        <button type="button" id="copyBtn" class="copy-btn">📋 複製風險值與符合條件（貼病歷）</button>
+        <textarea id="copyPreview" class="copy-preview" rows="8" readonly aria-label="將複製的內容"></textarea>
+        <p class="hint">依全民健康保險降膽固醇藥物給付規定表一（115.9.1 生效）。本工具僅供給付條件對照與病歷記載參考，不構成臨床決策建議。</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>資料來源：衛生福利部中央健康保險署 健保審字第1150671962號公告修訂對照表（自 115.9.1 生效）。</p>
+  <p class="disclaimer">本站僅供參考，實際給付規定以健保署公告為準。</p>
+</footer>
+
+<script src="risk.js"></script>
+</body>
+</html>

@@ -8,7 +8,7 @@
     return resp.json();
   }
 
-  let announcements = [], chapters = { items: [] }, history = { items: [] }, meta = {}, fulldoc = {}, rulesData = { chapters: [], rules: [] };
+  let announcements = [], chapters = { items: [] }, history = { items: [] }, meta = {}, fulldoc = {}, rulesData = { chapters: [], rules: [] }, ruleUpdates = { updates: [] };
   try {
     [announcements, chapters, history, meta] = await Promise.all([
       loadJSON("announcements.json"),
@@ -18,6 +18,7 @@
     ]);
     fulldoc = await loadJSON("fulldoc.json").catch(() => ({}));
     rulesData = await loadJSON("rules.json").catch(() => ({ chapters: [], rules: [] }));
+    ruleUpdates = await loadJSON("rule_updates.json").catch(() => ({ updates: [] }));
   } catch (e) {
     $("#annList").innerHTML = `<li>資料載入失敗（${e.message}）。若以 file:// 開啟，請改用本機伺服器：python3 -m http.server</li>`;
     return;
@@ -62,6 +63,17 @@
   }
   rulesData.rules.forEach((r) => { r.rtext = reflow(r.text); });
 
+  // 條文修訂標示（rule_updates.json）
+  const updateByRule = new Map();
+  (ruleUpdates.updates || []).forEach((u) =>
+    (u.rule_ids || []).forEach((id) => updateByRule.set(id, u)));
+  const updateBadge = (id) => {
+    const u = updateByRule.get(id);
+    return u
+      ? ` <a class="badge-update" href="${esc(u.file)}" target="_blank" rel="noopener" title="${esc(u.title)}（${esc(u.doc_no)}）">${esc(u.effective_roc)} 修訂</a>`
+      : "";
+  };
+
   const ruleChapterSel = $("#ruleChapter");
   rulesData.chapters.forEach((c) => {
     const opt = document.createElement("option");
@@ -94,7 +106,7 @@
       .slice(0, 100)
       .map(
         (r) => `<details${openAttr}>
-          <summary><span class="rule-id">${esc(r.id)}</span>${highlight(r.heading || "（無標題）", q)}
+          <summary><span class="rule-id">${esc(r.id)}</span>${highlight(r.heading || "（無標題）", q)}${updateBadge(r.id)}
             <span class="rule-chapter">${r.chapter === 0 ? "通則" : `第${r.chapter}節 ${esc(r.chapter_name)}`}</span>
           </summary>
           <div class="rule-text">${highlight(r.rtext, q)}</div>

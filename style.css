@@ -146,6 +146,66 @@ mark { background: #ffe28a; color: inherit; border-radius: 0.15rem; padding: 0 0
 }
 .fulldoc-card .hint { margin: 0.15rem 0 0; }
 
+/* 風險計算機 */
+.calc-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(16rem, 1fr); gap: 1.2rem; align-items: start; }
+@media (max-width: 52rem) { .calc-grid { grid-template-columns: 1fr; } }
+.calc-form fieldset {
+  border: 1px solid var(--border); border-radius: 0.6rem; background: var(--card);
+  padding: 0.7rem 1rem 0.8rem; margin: 0 0 0.9rem;
+}
+.calc-form legend { font-weight: 600; font-size: 0.92rem; color: var(--accent); padding: 0 0.4rem; }
+.chk-line { display: block; margin: 0.35rem 0; font-size: 0.92rem; line-height: 1.55; cursor: pointer; }
+.chk-line input { margin-right: 0.4rem; }
+.sub-list { margin: 0.1rem 0 0.4rem 1.6rem; padding-left: 0.6rem; border-left: 2px solid var(--border); }
+.mets-box { margin: 0.4rem 0 0.1rem; }
+.mets-box summary { cursor: pointer; font-size: 0.92rem; color: var(--text); }
+.mets-box .chk-line { margin-left: 1.4rem; }
+.num-row { display: flex; gap: 1rem; flex-wrap: wrap; }
+.num-row label { font-size: 0.9rem; }
+.num-row input {
+  width: 6.5rem; padding: 0.35rem 0.5rem; margin-left: 0.3rem;
+  border: 1px solid var(--border); border-radius: 0.4rem;
+  background: var(--bg); color: var(--text); font-size: 1rem;
+  font-variant-numeric: tabular-nums;
+}
+.calc-result {
+  position: sticky; top: 1rem; background: var(--card);
+  border: 1px solid var(--accent); border-radius: 0.8rem; padding: 1rem 1.2rem;
+}
+.calc-result h2 { margin: 0 0 0.5rem; font-size: 1.1rem; }
+.risk-level { margin: 0.3rem 0 0.7rem; }
+.risk-pill {
+  display: inline-block; padding: 0.15rem 0.7rem; border-radius: 2rem;
+  background: var(--accent-weak); color: var(--accent); font-weight: 700;
+}
+.risk-pill[data-level="extreme"], .risk-pill[data-level="veryhigh"] { background: #fde8e8; color: #b91c1c; }
+.risk-pill[data-level="high"] { background: #fef3d9; color: #b45309; }
+@media (prefers-color-scheme: dark) {
+  .risk-pill[data-level="extreme"], .risk-pill[data-level="veryhigh"] { background: #4a1516; color: #fca5a5; }
+  .risk-pill[data-level="high"] { background: #453110; color: #fcd34d; }
+}
+.risk-detail { margin: 0.4rem 0 0.8rem; font-size: 0.9rem; }
+.risk-detail dt { color: var(--muted); font-size: 0.8rem; margin-top: 0.55rem; }
+.risk-detail dd { margin: 0.1rem 0 0; line-height: 1.6; }
+.copy-btn {
+  width: 100%; padding: 0.6rem 0.8rem; border: none; border-radius: 0.5rem;
+  background: var(--accent); color: var(--badge-text, #fff); font-size: 0.95rem;
+  font-weight: 600; cursor: pointer;
+}
+.copy-btn:hover { opacity: 0.9; }
+.copy-preview {
+  width: 100%; margin-top: 0.7rem; padding: 0.55rem 0.7rem;
+  border: 1px dashed var(--border); border-radius: 0.5rem;
+  background: var(--bg); color: var(--text); font-size: 0.83rem; line-height: 1.6;
+  resize: vertical; box-sizing: border-box;
+}
+.badge-update {
+  display: inline-block; background: #fde8e8; color: #b91c1c;
+  font-size: 0.72rem; border-radius: 0.4rem; padding: 0.05rem 0.4rem;
+  vertical-align: middle; margin-left: 0.4rem; text-decoration: none;
+}
+@media (prefers-color-scheme: dark) { .badge-update { background: #4a1516; color: #fca5a5; } }
+
 .site-footer {
   max-width: 60rem; margin: 2rem auto 0; padding: 1rem;
   border-top: 1px solid var(--border); color: var(--muted); font-size: 0.82rem;

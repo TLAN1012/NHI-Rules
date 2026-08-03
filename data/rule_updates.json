@@ -1,0 +1,12 @@
+{
+ "updates": [
+  {
+   "rule_ids": ["2.6.1", "2.6.2", "2.6.3"],
+   "effective": "2026-09-01",
+   "effective_roc": "115/9/1",
+   "doc_no": "健保審字第1150671962號",
+   "title": "降血脂藥物給付規定修訂：新增 ASCVD 風險分級（降膽固醇藥物給付規定表一）",
+   "file": "files/drug-rule-update-2-6-lipid-1150901.pdf"
+  }
+ ]
+}
