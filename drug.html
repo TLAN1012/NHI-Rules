@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>藥品給付規定查詢｜健保政策查詢站</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💊</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <p class="breadcrumb"><a href="index.html">← 健保政策查詢站</a></p>
+  <h1>藥品給付規定查詢</h1>
+  <p class="subtitle">整理自 <a href="https://www.nhi.gov.tw/ch/np-2505-1.html" target="_blank" rel="noopener">衛生福利部中央健康保險署「藥品給付規定」</a>（非官方網站）</p>
+</header>
+
+<nav class="tabs" role="tablist">
+  <button class="tab active" data-tab="rules" role="tab">給付規定查詢</button>
+  <button class="tab" data-tab="announcements" role="tab">最新公告與修正</button>
+  <button class="tab" data-tab="changes" role="tab">規定變化時間軸</button>
+  <button class="tab" data-tab="chapters" role="tab">分章節下載</button>
+  <button class="tab" data-tab="history" role="tab">歷史年版</button>
+</nav>
+
+<main>
+  <!-- 給付規定全文查詢 -->
+  <section id="panel-rules" class="panel active">
+    <div class="toolbar">
+      <input id="ruleSearch" type="search" placeholder="輸入藥品成分名、商品名或關鍵字…（例：osimertinib、Xospata、乾癬）" autocomplete="off">
+      <select id="ruleChapter"><option value="">全部章節</option></select>
+    </div>
+    <p class="result-count" id="ruleCount"></p>
+    <p class="hint">條文取自《全民健康保險藥品給付規定》完整版（115.7.23 更新，共 604 條），最新內容請以健保署官網公告為準。</p>
+    <div id="ruleList" class="rule-list"></div>
+  </section>
+
+  <!-- 最新公告 -->
+  <section id="panel-announcements" class="panel">
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="搜尋主旨、成分、發文字號…（例：pembrolizumab、乾癬）" autocomplete="off">
+      <label class="chk"><input type="checkbox" id="drugOnly" checked> 僅顯示藥品給付相關</label>
+      <select id="yearFilter"><option value="">全部年份</option></select>
+    </div>
+    <p class="result-count" id="annCount"></p>
+    <ol id="annList" class="ann-list"></ol>
+  </section>
+
+  <!-- 變化時間軸 -->
+  <section id="panel-changes" class="panel">
+    <p class="hint">依月份彙整藥品給付規定之公告修訂，快速掌握規定的變化。</p>
+    <div id="timeline" class="timeline"></div>
+  </section>
+
+  <!-- 分章節 -->
+  <section id="panel-chapters" class="panel">
+    <div id="fulldocCard" class="fulldoc-card" hidden>
+      <div>
+        <strong id="fulldocTitle"></strong>
+        <p class="hint" id="fulldocHint">整份下載（官網連結需以瀏覽器開啟）。</p>
+      </div>
+      <span class="file-links" id="fulldocLinks"></span>
+    </div>
+    <div class="toolbar">
+      <input id="chapterSearch" type="search" placeholder="搜尋章節名稱…（例：抗微生物劑）" autocomplete="off">
+    </div>
+    <p class="hint" id="chaptersMeta"></p>
+    <ul id="chapterList" class="file-list"></ul>
+  </section>
+
+  <!-- 歷史檔 -->
+  <section id="panel-history" class="panel">
+    <p class="hint" id="historyMeta">全民健康保險藥品給付規定歷史檔（整份），可比對歷年規定差異。</p>
+    <ul id="historyList" class="file-list"></ul>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p id="metaInfo"></p>
+  <p>資料來源：健保署官網「藥品給付規定」專區（<a href="https://www.nhi.gov.tw/ch/lp-3258-1.html" target="_blank" rel="noopener">法規公告</a>、<a href="https://www.nhi.gov.tw/ch/np-3397-1.html" target="_blank" rel="noopener">最新版分章節</a>、<a href="https://www.nhi.gov.tw/ch/np-2509-1.html" target="_blank" rel="noopener">歷史檔</a>），部分歷史資料取自 Internet Archive 存檔。</p>
+  <p class="disclaimer">本站僅供參考，實際給付規定以健保署公告為準。</p>
+</footer>
+
+<script src="drug.js"></script>
+</body>
+</html>

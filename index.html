@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>健保政策查詢站</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏥</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <h1>健保政策查詢站</h1>
+  <p class="subtitle">全民健康保險各項政策公告的整理與查詢（非官方網站，僅供參考，實際規定以健保署公告為準）</p>
+</header>
+
+<main>
+  <div class="feature-grid">
+    <a class="feature-card" href="drug.html">
+      <span class="feature-icon">💊</span>
+      <h2>藥品給付規定查詢</h2>
+      <p>逐條給付規定全文查詢（藥名／成分名）、最新公告與修正、規定變化時間軸、章節與歷史年版下載。</p>
+      <p class="feature-meta" id="drugMeta"></p>
+    </a>
+    <a class="feature-card" href="fm.html">
+      <span class="feature-icon">👨‍⚕️</span>
+      <h2>家庭醫師照護計畫（家醫計畫）</h2>
+      <p>家庭醫師整合性照護計畫問答集（QA）查詢、計畫全文章節瀏覽與檔案下載。</p>
+      <p class="feature-meta" id="fmMeta"></p>
+    </a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>資料來源：衛生福利部中央健康保險署公開資訊。本站為公告查詢性質，不提供醫療建議。</p>
+</footer>
+
+<script>
+(async () => {
+  const get = async (u) => { try { const r = await fetch(u); return r.ok ? r.json() : null; } catch { return null; } };
+  const meta = await get("data/meta.json");
+  const rules = await get("data/rules.json");
+  if (meta || rules) {
+    document.getElementById("drugMeta").textContent =
+      `${rules ? `給付規定 ${rules.rules.length} 條` : ""}${meta ? `｜公告 ${meta.announcement_count} 筆` : ""}`;
+  }
+  const qa = await get("data/fm_qa.json");
+  const plan = await get("data/fm_plan.json");
+  if (qa || plan) {
+    document.getElementById("fmMeta").textContent =
+      `${qa ? `問答 ${qa.entries.length} 題` : ""}${plan ? `｜計畫全文 ${plan.sections.length} 章` : ""}`;
+  }
+})();
+</script>
+</body>
+</html>
