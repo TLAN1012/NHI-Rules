@@ -1,5 +1,8 @@
 name: Deploy site to GitHub Pages
 
+# 把 docs/ 發佈到 gh-pages 分支（GitHub 會以該分支作為 Pages 站台）。
+# 內建 GITHUB_TOKEN 即可推送 gh-pages；首次建立分支時 GitHub 會自動啟用 Pages。
+
 on:
   push:
     branches: [claude/nhi-drug-coverage-rules-14nnaf]
@@ -7,9 +10,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: pages
@@ -18,16 +19,11 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
+      - name: Publish docs/ to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          enablement: true
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          commit_message: "deploy: ${{ github.event.head_commit.message || 'manual dispatch' }}"
