@@ -9,6 +9,9 @@ on:
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
+  push:
+    branches: [claude/nhi-drug-coverage-rules-14nnaf]
+    paths: [.github/workflows/update-data.yml, scraper/**]
 
 permissions:
   contents: write
