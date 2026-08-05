@@ -65,6 +65,15 @@ jobs:
             git push
           fi
 
+      # bot 以 GITHUB_TOKEN 推送不會觸發 pages workflow（GitHub 防遞迴），
+      # 因此在此直接發佈；內容無變化時 peaceiris 不會產生新 commit。
+      - name: Publish docs/ to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          commit_message: "deploy: 自動資料更新"
+
       - name: Report source status
         run: |
           if [ "${{ steps.live.outcome }}" = "failure" ]; then
