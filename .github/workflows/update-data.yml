@@ -1,0 +1,71 @@
+name: Update NHI data
+
+# 仿 CCChange 模式：定時抓上游 → 比對 → 有變化才 commit → Pages 自動重佈
+# 每日台北時間 08:00（UTC 00:00）執行；也可手動觸發。
+# 抓取策略：先試健保署官網（fetch_live），被 Cloudflare 擋住時
+# 改用 Wayback Machine 存檔（fetch_wayback）補資料。
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scraper/requirements.txt
+
+      - name: Fetch from NHI website (may be blocked by Cloudflare)
+        id: live
+        continue-on-error: true
+        run: |
+          python scraper/fetch_live.py --out cache/live --pages 3
+          echo "ok=true" >> "$GITHUB_OUTPUT"
+
+      - name: Fallback to Wayback Machine
+        if: steps.live.outcome == 'failure'
+        continue-on-error: true
+        run: python scraper/fetch_wayback.py --out cache/wayback --url-prefix lp-3258-1.html
+
+      - name: Rebuild dataset
+        run: |
+          DIRS="cache/wayback"
+          [ -d cache/live ] && DIRS="cache/live $DIRS"
+          python scraper/build_dataset.py $DIRS --out docs/data
+
+      - name: Commit if changed
+        run: |
+          git config user.name "nhi-data-bot"
+          git config user.email "actions@github.com"
+          git add docs/data cache/wayback
+          if git diff --cached --quiet; then
+            echo "資料無變化"
+          else
+            SOURCE="official site"
+            [ "${{ steps.live.outcome }}" = "failure" ] && SOURCE="wayback fallback"
+            git commit -m "chore(data): 自動更新健保公告資料（${SOURCE}）"
+            git push
+          fi
+
+      - name: Report source status
+        run: |
+          if [ "${{ steps.live.outcome }}" = "failure" ]; then
+            echo "::warning::健保署官網無法直接抓取（Cloudflare），本次使用 Wayback 備援"
+          else
+            echo "官網直接抓取成功 ✅"
+          fi
