@@ -1,0 +1,68 @@
+name: Probe NHI data sources
+
+# 從 GitHub runner 實測各官方資料源的可及性：
+# 1) 健保署官網 plain HTTP  2) RSS  3) 真實瀏覽器（Playwright）
+# 4) 衛福部法規檢索系統 mohwlaw  5) 健保開放資料 data.nhi.gov.tw
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [claude/nhi-drug-coverage-rules-14nnaf]
+    paths: [.github/workflows/probe-sources.yml, scraper/probe_browser.mjs]
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: "Probe 1: plain curl to nhi.gov.tw"
+        continue-on-error: true
+        run: |
+          code=$(curl -s -o /tmp/nhi.html -w "%{http_code}" -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36" --max-time 30 "https://www.nhi.gov.tw/ch/lp-3258-1.html")
+          echo "lp-3258 plain curl: HTTP $code ($(wc -c < /tmp/nhi.html) bytes)"
+          grep -q "Just a moment" /tmp/nhi.html && echo "→ Cloudflare 挑戰頁" || echo "→ 可能是真內容"
+
+      - name: "Probe 2: RSS feed"
+        continue-on-error: true
+        run: |
+          code=$(curl -s -o /tmp/rss.xml -w "%{http_code}" -A "Mozilla/5.0" --max-time 30 "https://www.nhi.gov.tw/ch/rss-3258-1.xml")
+          echo "rss-3258: HTTP $code ($(wc -c < /tmp/rss.xml) bytes)"
+          head -c 300 /tmp/rss.xml
+
+      - name: "Probe 3: mohwlaw 法規檢索"
+        continue-on-error: true
+        run: |
+          code=$(curl -s -o /tmp/mohwlaw.html -w "%{http_code}" -A "Mozilla/5.0" --max-time 30 "https://mohwlaw.mohw.gov.tw/FINT/FINTQRY01-1.aspx")
+          echo "mohwlaw: HTTP $code ($(wc -c < /tmp/mohwlaw.html) bytes)"
+
+      - name: "Probe 4: data.nhi.gov.tw 開放資料"
+        continue-on-error: true
+        run: |
+          code=$(curl -s -o /tmp/data.html -w "%{http_code}" -A "Mozilla/5.0" --max-time 30 "https://data.nhi.gov.tw/")
+          echo "data.nhi.gov.tw: HTTP $code ($(wc -c < /tmp/data.html) bytes)"
+
+      - name: "Probe 5: real browser (Playwright, 無偽裝)"
+        id: browser
+        continue-on-error: true
+        run: |
+          npm init -y >/dev/null
+          npm install playwright >/dev/null 2>&1
+          npx playwright install --with-deps chromium >/dev/null 2>&1
+          node scraper/probe_browser.mjs
+
+      - name: Upload fetched pages (if any)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: probe-results
+          path: cache/live/
+          if-no-files-found: ignore
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "瀏覽器抓取結果: ${{ steps.browser.outcome }}"
