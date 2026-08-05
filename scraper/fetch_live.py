@@ -9,9 +9,11 @@
 - np-2505-1.html 及其子頁（np-2506、np-2508、np-3397、np-2509、np-3420）
 - 各章節/歷史檔內容頁（cp-*）
 
-注意：www.nhi.gov.tw 前有 Cloudflare 防護。從資料中心 IP（雲端主機、CI）
-存取時常會被擋（HTTP 403 / 挑戰頁）。此腳本偵測到挑戰頁時會明確報錯；
-請改在一般網路環境執行，或改用 fetch_wayback.py 以 Wayback Machine 存檔補資料。
+注意：www.nhi.gov.tw 前有 Cloudflare 防護，且會檢測 TLS 指紋——即使住宅／機構
+IP，plain requests/curl（假 Chrome UA）也會被挑戰頁擋下（2026-08 實測）。
+因此優先使用 curl_cffi 以 Chrome TLS 指紋連線（同一線路實測可過）；
+curl_cffi 不可用時退回 requests。資料中心 IP 連 TLS 指紋正確也會被擋，
+CI 雲端環境請改用 fetch_wayback.py 以 Wayback Machine 存檔補資料。
 """
 
 from __future__ import annotations
@@ -21,16 +23,24 @@ import pathlib
 import sys
 import time
 
-import requests
+try:
+    from curl_cffi import requests
+
+    _SESSION_KWARGS = {"impersonate": "chrome"}
+    HEADERS = {"Accept-Language": "zh-TW,zh;q=0.9"}  # UA 交給 impersonate，避免指紋不一致
+except ImportError:
+    import requests
+
+    _SESSION_KWARGS = {}
+    HEADERS = {
+        "User-Agent": (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+            "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+        ),
+        "Accept-Language": "zh-TW,zh;q=0.9",
+    }
 
 BASE = "https://www.nhi.gov.tw/ch/"
-HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-        "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-    ),
-    "Accept-Language": "zh-TW,zh;q=0.9",
-}
 
 NODE_PAGES = [
     "np-2505-1.html",  # 藥品給付規定（總覽）
@@ -54,17 +64,22 @@ def is_challenge(resp: requests.Response) -> bool:
     return "<title>Just a moment...</title>" in resp.text
 
 
-def fetch(session: requests.Session, path: str) -> str:
+def fetch(session: requests.Session, path: str, retries: int = 3) -> str:
     url = BASE + path
-    resp = session.get(url, headers=HEADERS, timeout=30)
-    if is_challenge(resp):
-        raise CloudflareBlocked(
-            f"{url} 回應 Cloudflare 挑戰頁（HTTP {resp.status_code}）。"
-            "請改在一般網路環境執行，或改用 fetch_wayback.py。"
-        )
-    resp.raise_for_status()
-    resp.encoding = "utf-8"
-    return resp.text
+    status = None
+    for attempt in range(retries):
+        resp = session.get(url, headers=HEADERS, timeout=30)
+        resp.encoding = "utf-8"  # 必須在讀 .text 前設定（curl_cffi 之後設會報錯）
+        if not is_challenge(resp):
+            resp.raise_for_status()
+            return resp.text
+        # 挑戰頁偶發出現在新連線的前幾個請求；帶著 __cf_bm cookie 稍候重試常可通過
+        status = resp.status_code
+        time.sleep(5 * (attempt + 1))
+    raise CloudflareBlocked(
+        f"{url} 連續 {retries} 次回應 Cloudflare 挑戰頁（HTTP {status}）。"
+        "請改在一般網路環境執行，或改用 fetch_wayback.py。"
+    )
 
 
 def safe_name(path: str) -> str:
@@ -80,7 +95,7 @@ def main() -> int:
 
     out = pathlib.Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
-    session = requests.Session()
+    session = requests.Session(**_SESSION_KWARGS)
 
     try:
         for path in NODE_PAGES:

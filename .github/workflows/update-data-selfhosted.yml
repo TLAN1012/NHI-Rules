@@ -30,14 +30,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # 用 venv 而非 pip --user：macOS Homebrew Python 是 externally-managed，
+      # pip install --user 會直接報錯
       - name: Install dependencies
-        run: python3 -m pip install --user -r scraper/requirements.txt
+        run: |
+          python3 -m venv .venv
+          .venv/bin/python -m pip install -q -r scraper/requirements.txt
 
       - name: Fetch from NHI website (residential IP)
-        run: python3 scraper/fetch_live.py --out cache/live --pages 15
+        run: .venv/bin/python scraper/fetch_live.py --out cache/live --pages 15
 
       - name: Rebuild dataset
-        run: python3 scraper/build_dataset.py cache/live cache/wayback --out docs/data
+        run: .venv/bin/python scraper/build_dataset.py cache/live cache/wayback --out docs/data
 
       - name: Commit if changed
         run: |
