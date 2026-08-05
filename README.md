@@ -83,6 +83,16 @@ python3 scraper/extract_rules.py cache/chapters --out docs/data/rules.json
 - **最新版分章節**：`np-3397-1.html` 的章節附件（doc/odt/pdf）。
 - **歷史年版**：`np-2509-1.html` 的整份歷史檔（96年～109年版）。
 
+### 自動更新（GitHub Actions）
+
+- `update-data.yml`：每日台北 08:00 於 GitHub 雲端 runner 執行。經實測（2026-08），
+  健保署 Cloudflare 對資料中心 IP 一律出互動挑戰頁（plain curl／RSS／真實瀏覽器皆同），
+  故雲端版以 **Wayback Machine 為資料源**：自動抓新存檔、比對、有變化才 commit 並重佈網站。
+- `update-data-selfhosted.yml`：每週一台北 08:30，跑在 **self-hosted runner**（你自己
+  網路內的電腦，住宅 IP 可正常通過 Cloudflare）→ 直抓官網最新資料。
+  安裝方式見該 workflow 檔內註解；未安裝前不影響其他流程。
+- `probe-sources.yml`：資料源可及性探測（手動觸發），佐證上述結論。
+
 ### 已知限制
 
 - `www.nhi.gov.tw` 前有 Cloudflare 防護，從資料中心 IP（雲端、CI）抓取常被擋；

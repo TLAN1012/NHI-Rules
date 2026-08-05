@@ -1,0 +1,59 @@
+name: Update NHI data (self-hosted runner)
+
+# 「讓 GH 自己抓官網」的可行解：排程仍由 GitHub 管理，
+# 但執行在你自己網路裡的 self-hosted runner（住宅/機構 IP 可正常通過健保署 Cloudflare）。
+#
+# 啟用方式（一次性，約 3 分鐘）：
+# 1. 到 repo Settings → Actions → Runners → New self-hosted runner，
+#    在你的電腦（macOS/Windows/Linux 皆可）照指示執行三行安裝指令
+# 2. runner 上線後，本 workflow 的排程即自動生效；電腦關機時本 workflow 會排隊等候，
+#    每日雲端版（update-data.yml，Wayback 備援）仍照常運作互不影響
+#
+# 未安裝 runner 前，本 workflow 觸發只會排隊不會執行，可放著不管。
+
+on:
+  schedule:
+    - cron: "30 0 * * 1"   # 每週一台北 08:30（避開雲端版 08:00）
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data        # 與雲端版共用群組，避免同時寫入
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: self-hosted
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: python3 -m pip install --user -r scraper/requirements.txt
+
+      - name: Fetch from NHI website (residential IP)
+        run: python3 scraper/fetch_live.py --out cache/live --pages 15
+
+      - name: Rebuild dataset
+        run: python3 scraper/build_dataset.py cache/live cache/wayback --out docs/data
+
+      - name: Commit if changed
+        run: |
+          git config user.name "nhi-data-bot"
+          git config user.email "actions@github.com"
+          git add docs/data
+          if git diff --cached --quiet; then
+            echo "資料無變化"
+          else
+            git commit -m "chore(data): 自動更新健保公告資料（official site, self-hosted）"
+            git push
+          fi
+
+      - name: Publish docs/ to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          commit_message: "deploy: 自動資料更新（self-hosted）"
