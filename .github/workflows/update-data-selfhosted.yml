@@ -13,7 +13,7 @@ name: Update NHI data (self-hosted runner)
 
 on:
   schedule:
-    - cron: "30 0 * * 1"   # 每週一台北 08:30（避開雲端版 08:00）
+    - cron: "30 0 * * *"   # 每日台北 08:30（避開雲端版 08:00；runner 為常開主機）
   workflow_dispatch:
 
 permissions:
