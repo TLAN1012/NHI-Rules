@@ -212,6 +212,26 @@ mark { background: #ffe28a; color: inherit; border-radius: 0.15rem; padding: 0 0
 }
 .disclaimer { font-weight: 600; }
 
+/* 首頁題獻與製作者署名 */
+.dedication {
+  margin: 0 0 0.55rem; font-size: 0.88rem; letter-spacing: 0.04em;
+  color: var(--muted); display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;
+}
+.dedication::after {
+  content: ""; flex: 1 1 3rem; height: 1px; min-width: 2rem;
+  background: linear-gradient(to right, var(--border), transparent);
+}
+.anniv {
+  color: var(--accent); font-weight: 700; font-size: 1.02rem;
+  letter-spacing: 0.02em;
+}
+.credits {
+  margin: 0 0 0.8rem; padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--border);
+}
+.credits-org { margin: 0; font-size: 0.9rem; color: var(--text); font-weight: 600; }
+.credits-author { margin: 0.2rem 0 0; font-size: 0.86rem; color: var(--muted); }
+
 .breadcrumb { margin: 0 0 0.3rem; font-size: 0.85rem; }
 .breadcrumb a { text-decoration: none; color: var(--muted); }
 .breadcrumb a:hover { color: var(--accent); }
