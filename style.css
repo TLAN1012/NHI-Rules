@@ -200,6 +200,25 @@ mark { background: #ffe28a; color: inherit; border-radius: 0.15rem; padding: 0 0
 }
 .reset-btn:hover { border-color: var(--accent); color: var(--accent); }
 
+/* 血清指數推定區 */
+.serum-box { margin: 0.5rem 0 0.1rem; padding: 0.5rem 0 0; border-top: 1px dashed var(--border); }
+.serum-box summary { cursor: pointer; font-size: 0.9rem; color: var(--accent); }
+.serum-box .num-row { margin-top: 0.6rem; }
+.serum-box .num-row label { font-size: 0.86rem; }
+.inline-opts {
+  display: flex; align-items: center; gap: 0.9rem; flex-wrap: wrap;
+  margin: 0.6rem 0 0.2rem; font-size: 0.9rem; color: var(--muted);
+}
+.chk-line.inline { display: inline-block; margin: 0; }
+
+/* MASH 說明摺疊區 */
+.mash-note {
+  margin-top: 0.9rem; padding-top: 0.8rem; border-top: 1px solid var(--border);
+  font-size: 0.85rem; color: var(--muted);
+}
+.mash-note summary { cursor: pointer; color: var(--accent); font-weight: 600; }
+.mash-note p { margin: 0.6rem 0 0; line-height: 1.75; }
+
 /* MASLD／FIB-4 結果分層 */
 .risk-pill[data-level="met"] { background: #dcfce7; color: #15803d; }
 .risk-pill[data-level="warn"] { background: #fef3d9; color: #b45309; }
