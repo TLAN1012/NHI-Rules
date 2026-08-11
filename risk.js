@@ -80,13 +80,17 @@
     const nonHdl = !isNaN(tc) && !isNaN(hdl) ? tc - hdl : null;
 
     let judge = "未輸入";
+    let ldlMet = false;
     if (!isNaN(ldl)) {
-      judge = `LDL-C ${ldl} mg/dL：` + (ldl >= info.start ? `已達起始藥物治療標準（≧${info.start}）` : `未達起始藥物治療標準（<${info.start}）`);
+      ldlMet = ldl >= info.start;
+      judge = `LDL-C ${ldl} mg/dL：` + (ldlMet ? `已達起始藥物治療標準（≧${info.start}）` : `未達起始藥物治療標準（<${info.start}）`);
       if (nonHdl !== null) judge += `；non-HDL-C ${nonHdl} mg/dL`;
     } else if (nonHdl !== null) {
       judge = `non-HDL-C ${nonHdl} mg/dL`;
     }
     $("#ldlJudge").textContent = judge;
+    // 達起始藥物治療門檻＝符合給付條件，以綠色加粗標示
+    $("#ldlJudge").classList.toggle("ldl-met", ldlMet);
 
     $("#metList").textContent = conditions.length
       ? conditions.join("；")
@@ -129,7 +133,19 @@
     setTimeout(() => { btn.textContent = "📋 複製風險值與符合條件（貼病歷）"; }, 2500);
   }
 
+  function resetAll() {
+    document.querySelectorAll('#panel-ascvd input[type="checkbox"]').forEach((el) => { el.checked = false; });
+    document.querySelectorAll('#panel-ascvd input[type="number"]').forEach((el) => { el.value = ""; });
+    document.querySelectorAll("#panel-ascvd details").forEach((el) => { el.open = false; });
+    render();
+    const btn = $("#resetBtn");
+    btn.textContent = "已清空";
+    setTimeout(() => { btn.textContent = "🗑 清空所有選項"; }, 1500);
+    $("#panel-ascvd").scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
   document.querySelectorAll("input").forEach((el) => el.addEventListener("input", render));
   $("#copyBtn").addEventListener("click", copyToClipboard);
+  $("#resetBtn").addEventListener("click", resetAll);
   render();
 })();
