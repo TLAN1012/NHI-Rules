@@ -21,6 +21,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      # GitHub Pages 對 .css/.js 回 cache-control: max-age=600，剛部署後
+      # 瀏覽器可能仍用舊資源（新 HTML 配舊 JS）。發佈前依內容雜湊戳版本，
+      # 內容有變才換網址；此步驟為冪等，重跑不會產生差異。
+      - name: Stamp asset versions (cache busting)
+        run: python3 scraper/stamp_assets.py
+
       - name: Publish docs/ to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:

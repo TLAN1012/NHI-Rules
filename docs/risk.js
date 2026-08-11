@@ -359,4 +359,8 @@
   render();
   renderMasld();
   if (location.hash) showTab(location.hash.slice(1));
+  // 已在本頁時改變 hash（書籤、外部連結）不會重新載入，需另行同步分頁
+  window.addEventListener("hashchange", () => {
+    if (location.hash) showTab(location.hash.slice(1));
+  });
 })();
