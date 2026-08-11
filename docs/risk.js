@@ -152,16 +152,57 @@
     high: { label: "ALD（酒精相關肝病為主）", note: "高量飲酒" },
   };
 
+  // 脂肪變性血清指數（無影像時的篩檢推定）
+  // FLI（Bedogni 2006）：y = 0.953·ln(TG) + 0.139·BMI + 0.718·ln(GGT) + 0.053·腰圍 − 15.745
+  // HSI（Lee 2010，亞洲族群）：8·(ALT/AST) + BMI + 2(女性) + 2(糖尿病)
+  function steatosisIndices() {
+    const num = (id) => parseFloat($(id).value);
+    const bmi = num("#sBmi"), wc = num("#sWc"), tg = num("#sTg"), ggt = num("#sGgt");
+    const alt = num("#fAlt"), ast = num("#fAst");
+    const female = document.querySelector('input[name="sex"]:checked')?.value === "F";
+    const dm = $("#sDm").checked;
+    const out = { fli: null, hsi: null, texts: [], suggests: false };
+
+    if ([tg, bmi, ggt, wc].every((v) => !isNaN(v) && v > 0)) {
+      const y = 0.953 * Math.log(tg) + 0.139 * bmi + 0.718 * Math.log(ggt) + 0.053 * wc - 15.745;
+      const fli = (Math.exp(y) / (1 + Math.exp(y))) * 100;
+      out.fli = fli;
+      const band = fli < 30 ? "可排除脂肪肝（<30）" : fli >= 60 ? "推定脂肪肝（≧60）" : "不確定區間（30–60）";
+      out.texts.push(`FLI ${fli.toFixed(1)}：${band}`);
+      if (fli >= 60) out.suggests = true;
+    }
+    if ([alt, ast, bmi].every((v) => !isNaN(v) && v > 0)) {
+      const hsi = 8 * (alt / ast) + bmi + (female ? 2 : 0) + (dm ? 2 : 0);
+      out.hsi = hsi;
+      const band = hsi < 30 ? "可排除脂肪肝（<30）" : hsi > 36 ? "推定脂肪肝（>36）" : "不確定區間（30–36）";
+      out.texts.push(`HSI ${hsi.toFixed(1)}：${band}`);
+      if (hsi > 36) out.suggests = true;
+    }
+    return out;
+  }
+
   function renderMasld() {
-    const steatosis = $("#steatosis").checked;
+    const imaging = $("#steatosis").checked;
     const cmrf = $$(".cmrf:checked").map(named);
     const alcoholEl = document.querySelector('input[name="alcohol"]:checked');
     const alcohol = alcoholEl ? alcoholEl.value : "none";
 
+    const idx = steatosisIndices();
+    const hasIdx = idx.texts.length > 0;
+    $("#steatosisIdxLabel").hidden = !hasIdx;
+    $("#steatosisIdx").hidden = !hasIdx;
+    if (hasIdx) {
+      $("#steatosisIdx").textContent = idx.texts.join("；");
+      $("#steatosisIdx").classList.toggle("ldl-met", idx.suggests);
+    }
+    // 影像確診優先；無影像時以指數推定（標示為推定）
+    const steatosis = imaging || idx.suggests;
+    const byIndex = !imaging && idx.suggests;
+
     // MASLD 分類
     let cls, clsLevel;
     if (!steatosis) {
-      cls = "尚未確認脂肪變性";
+      cls = hasIdx ? "未達脂肪變性推定門檻" : "尚未確認脂肪變性";
       clsLevel = "none";
     } else if (!cmrf.length) {
       cls = alcohol === "high" ? "ALD（酒精相關肝病）" : "脂肪肝，但無代謝風險因子（非 MASLD）";
@@ -176,12 +217,17 @@
       cls = "MASLD";
       clsLevel = "met";
     }
-    $("#masldClass").textContent = cls;
+    $("#masldClass").textContent = cls + (byIndex && clsLevel !== "none" ? "（指數推定）" : "");
     $("#masldClass").dataset.level = clsLevel;
 
+    const src = imaging ? "影像／組織學證實" : byIndex ? "血清指數推定（建議影像確認）" : "";
     $("#masldCriteria").textContent = steatosis
-      ? (cmrf.length ? `✓ 脂肪變性證據 ＋ ${cmrf.length} 項心臟代謝風險因子（${ALCOHOL[alcohol].note}）` : "✓ 脂肪變性證據，但未勾選任何心臟代謝風險因子")
-      : "尚未勾選脂肪變性證據（MASLD 診斷之必要條件）";
+      ? (cmrf.length
+        ? `✓ 脂肪變性：${src} ＋ ${cmrf.length} 項心臟代謝風險因子（${ALCOHOL[alcohol].note}）`
+        : `✓ 脂肪變性：${src}，但未勾選任何心臟代謝風險因子`)
+      : hasIdx
+      ? "血清指數未達推定門檻；如臨床仍懷疑，建議影像檢查確認"
+      : "尚未確認脂肪變性（MASLD 診斷之必要條件）——可勾選影像證實，或展開下方血清指數推定";
     $("#cmrfList").textContent = cmrf.length ? `${cmrf.length} 項：${cmrf.join("；")}` : "0 項";
 
     // FIB-4 =（年齡 × AST）÷（血小板 × √ALT）
@@ -239,8 +285,9 @@
     // 病歷用文字
     const today = new Date();
     const roc = `${today.getFullYear() - 1911}.${String(today.getMonth() + 1).padStart(2, "0")}.${String(today.getDate()).padStart(2, "0")}`;
-    const lines = [`[脂肪肝評估 ${roc}] 分類：${cls}`];
-    if (steatosis) lines.push("脂肪變性：影像／組織學證實");
+    const lines = [`[脂肪肝評估 ${roc}] 分類：${cls}${byIndex && clsLevel !== "none" ? "（指數推定）" : ""}`];
+    if (steatosis) lines.push(`脂肪變性：${src}`);
+    if (idx.texts.length) lines.push(`脂肪變性指數：${idx.texts.join("；")}`);
     if (cmrf.length) lines.push(`心臟代謝風險因子（${cmrf.length}項）：${cmrf.join("、")}`);
     lines.push(`飲酒量：${ALCOHOL[alcohol].note}`);
     if (ready) {
@@ -275,6 +322,9 @@
     document.querySelectorAll('#panel-masld input[type="number"]').forEach((el) => { el.value = ""; });
     const first = document.querySelector('#panel-masld input[name="alcohol"][value="none"]');
     if (first) first.checked = true;
+    const male = document.querySelector('#panel-masld input[name="sex"][value="M"]');
+    if (male) male.checked = true;
+    document.querySelectorAll("#panel-masld details").forEach((el) => { el.open = false; });
     renderMasld();
     const btn = $("#masldResetBtn");
     btn.textContent = "已清空";
