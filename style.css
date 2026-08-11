@@ -200,6 +200,32 @@ mark { background: #ffe28a; color: inherit; border-radius: 0.15rem; padding: 0 0
 }
 .reset-btn:hover { border-color: var(--accent); color: var(--accent); }
 
+/* MASLD／FIB-4 結果分層 */
+.risk-pill[data-level="met"] { background: #dcfce7; color: #15803d; }
+.risk-pill[data-level="warn"] { background: #fef3d9; color: #b45309; }
+.risk-pill[data-level="none"] { background: var(--accent-weak); color: var(--muted); }
+.fib-line { margin-top: 1rem; padding-top: 0.8rem; border-top: 1px solid var(--border); }
+.fib-value {
+  font-size: 1.35rem; font-weight: 700; font-variant-numeric: tabular-nums;
+  color: var(--accent);
+}
+.fib-value[data-level="met"] { color: #15803d; }
+.fib-value[data-level="warn"] { color: #b45309; }
+.fib-value[data-level="high"] { color: #b91c1c; }
+.fib-value[data-level="none"] { color: var(--muted); }
+@media (prefers-color-scheme: dark) {
+  .risk-pill[data-level="met"] { background: #14361f; color: #4ade80; }
+  .risk-pill[data-level="warn"] { background: #453110; color: #fcd34d; }
+  .fib-value[data-level="met"] { color: #4ade80; }
+  .fib-value[data-level="warn"] { color: #fcd34d; }
+  .fib-value[data-level="high"] { color: #fca5a5; }
+}
+:root[data-theme="dark"] .risk-pill[data-level="met"] { background: #14361f; color: #4ade80; }
+:root[data-theme="dark"] .risk-pill[data-level="warn"] { background: #453110; color: #fcd34d; }
+:root[data-theme="dark"] .fib-value[data-level="met"] { color: #4ade80; }
+:root[data-theme="dark"] .fib-value[data-level="warn"] { color: #fcd34d; }
+:root[data-theme="dark"] .fib-value[data-level="high"] { color: #fca5a5; }
+
 /* LDL-C 已達起始藥物治療門檻（符合給付條件） */
 .ldl-met { color: #15803d; font-weight: 700; }
 @media (prefers-color-scheme: dark) { .ldl-met { color: #4ade80; } }

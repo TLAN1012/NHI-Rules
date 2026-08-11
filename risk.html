@@ -16,6 +16,7 @@
 
 <nav class="tabs" role="tablist">
   <button class="tab active" data-tab="ascvd" role="tab">ASCVD 風險等級（降膽固醇藥物給付）</button>
+  <button class="tab" data-tab="masld" role="tab">MASLD／FIB-4（脂肪肝評估）</button>
 </nav>
 
 <main>
@@ -95,6 +96,71 @@
         <button type="button" id="resetBtn" class="reset-btn">🗑 清空所有選項</button>
         <textarea id="copyPreview" class="copy-preview" rows="8" readonly aria-label="將複製的內容"></textarea>
         <p class="hint">依全民健康保險降膽固醇藥物給付規定表一（115.9.1 生效）。本工具僅供給付條件對照與病歷記載參考，不構成臨床決策建議。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MASLD／FIB-4 ============ -->
+  <section id="panel-masld" class="panel">
+    <p class="hint">依 2023 年 MASLD 國際命名共識（AASLD／EASL／ALEH Delphi consensus）與 FIB-4 纖維化指數。<strong>本工具為臨床評估用途，非健保給付判定</strong>——健保目前對 semaglutide 之給付規定為第二型糖尿病適應症（給付規定 5.1.3.2），尚無脂肪肝／MASH 適應症之給付條文。</p>
+
+    <div class="calc-grid">
+      <div class="calc-form">
+        <fieldset>
+          <legend>一、肝脂肪變性證據（MASLD 診斷之必要條件）</legend>
+          <label class="chk-line"><input type="checkbox" id="steatosis" data-name="影像或組織學證實肝脂肪變性"> 影像學或組織學證實肝脂肪變性（腹部超音波／CT／MRI-PDFF／FibroScan CAP／肝切片）</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>二、心臟代謝風險因子（符合 ≧1 項即成立；亞洲族群標準）</legend>
+          <label class="chk-line"><input type="checkbox" class="cmrf" data-name="BMI≧23或腰圍男≧90/女≧80cm"> BMI ≧23 kg/m² 或腰圍：男性 ≧90 cm、女性 ≧80 cm</label>
+          <label class="chk-line"><input type="checkbox" class="cmrf" data-name="血糖異常(空腹≧100/HbA1c≧5.7%/T2DM治療中)"> 空腹血糖 ≧100 mg/dL、餐後 2 小時 ≧140 mg/dL、HbA1c ≧5.7%，或已診斷第二型糖尿病／治療中</label>
+          <label class="chk-line"><input type="checkbox" class="cmrf" data-name="血壓≧130/85或使用降血壓藥"> 血壓 ≧130/85 mmHg 或使用降血壓藥物</label>
+          <label class="chk-line"><input type="checkbox" class="cmrf" data-name="TG≧150mg/dL或使用降血脂藥"> 三酸甘油酯 ≧150 mg/dL 或使用降血脂藥物</label>
+          <label class="chk-line"><input type="checkbox" class="cmrf" data-name="HDL-C偏低(男≦40/女≦50)或使用降血脂藥"> HDL-C：男性 ≦40 mg/dL、女性 ≦50 mg/dL，或使用降血脂藥物</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>三、飲酒量（決定 MASLD／MetALD／ALD 分類）</legend>
+          <label class="chk-line"><input type="radio" name="alcohol" value="none" data-name="無或極少飲酒(男<30g/日、女<20g/日)" checked> 無或極少：男性 &lt;30 g/日、女性 &lt;20 g/日</label>
+          <label class="chk-line"><input type="radio" name="alcohol" value="mod" data-name="中等飲酒(男30-60g/日、女20-50g/日)"> 中等：男性 30–60 g/日、女性 20–50 g/日</label>
+          <label class="chk-line"><input type="radio" name="alcohol" value="high" data-name="高量飲酒(男>60g/日、女>50g/日)"> 高量：男性 &gt;60 g/日、女性 &gt;50 g/日</label>
+          <p class="hint">參考換算：啤酒 350 mL（5%）≈ 14 g；紅酒 150 mL（12%）≈ 14 g；烈酒 45 mL（40%）≈ 14 g 酒精。</p>
+        </fieldset>
+
+        <fieldset>
+          <legend>四、FIB-4 纖維化指數計算</legend>
+          <div class="num-row">
+            <label>年齡（歲）<input type="number" id="fAge" min="0" max="120" inputmode="decimal"></label>
+            <label>AST（U/L）<input type="number" id="fAst" min="0" max="5000" inputmode="decimal"></label>
+            <label>ALT（U/L）<input type="number" id="fAlt" min="0" max="5000" inputmode="decimal"></label>
+            <label>血小板（10³/µL）<input type="number" id="fPlt" min="0" max="2000" inputmode="decimal"></label>
+          </div>
+          <p class="hint">FIB-4 =（年齡 × AST）÷（血小板 × √ALT）。血小板單位 10³/µL 即檢驗報告常見的 K/µL，數值等同 10⁹/L。</p>
+        </fieldset>
+      </div>
+
+      <div class="calc-result" id="masldResultBox">
+        <h2>評估結果</h2>
+        <p class="risk-level">脂肪肝分類：<span class="risk-pill" id="masldClass">—</span></p>
+        <dl class="risk-detail">
+          <dt>MASLD 診斷條件</dt><dd id="masldCriteria">尚未勾選</dd>
+          <dt>心臟代謝風險因子</dt><dd id="cmrfList">0 項</dd>
+        </dl>
+
+        <p class="risk-level fib-line">FIB-4：<span class="fib-value" id="fibValue">—</span></p>
+        <dl class="risk-detail">
+          <dt>標準閾值判讀（&lt;1.3 ／ 1.3–2.67 ／ &gt;2.67）</dt>
+          <dd id="fibStd">請填入年齡與檢驗值</dd>
+          <dt id="fibAgedLabel" hidden>高齡調整判讀（≧65 歲，低風險上限 2.0）</dt>
+          <dd id="fibAged" hidden>—</dd>
+          <dt>建議</dt><dd id="fibAdvice">—</dd>
+        </dl>
+
+        <button type="button" id="masldCopyBtn" class="copy-btn">📋 複製評估結果（貼病歷）</button>
+        <button type="button" id="masldResetBtn" class="reset-btn">🗑 清空所有選項</button>
+        <textarea id="masldCopyPreview" class="copy-preview" rows="8" readonly aria-label="將複製的內容"></textarea>
+        <p class="hint">FIB-4 於 MASLD 族群主要用於<strong>排除</strong>進階纖維化（低值陰性預測力高）；中間區間建議以彈性造影（FibroScan／MRE）或 ELF 等進一步分層。本工具僅供臨床評估參考，不構成診斷或治療建議。</p>
       </div>
     </div>
   </section>
