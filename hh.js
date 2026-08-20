@@ -27,10 +27,12 @@
   let qa = { entries: [], staleness: {} }, plan = { sections: [], revisions: [] };
   let disPlan = { sections: [], attachments: [], form_revisions: [] };
   let disQa = { entries: [] }, cmp = { rows: [], links: [], notes: [], plans: {} };
+  let flows = { flows: [] };
   try {
-    [plan, qa, disPlan, disQa, cmp] = await Promise.all([
+    [plan, qa, disPlan, disQa, cmp, flows] = await Promise.all([
       loadJSON("hh_plan.json"), loadJSON("hh_qa.json"),
       loadJSON("dis_plan.json"), loadJSON("dis_qa.json"), loadJSON("dis_vs_hh.json"),
+      loadJSON("flows.json"),
     ]);
   } catch (e) {
     $("#cmpTable").innerHTML = `<tr><td>資料載入失敗（${esc(e.message)}）。若以 file:// 開啟，請改用本機伺服器。</td></tr>`;
@@ -328,6 +330,31 @@
   $("#cmpNotes").innerHTML = (cmp.notes || [])
     .map((n) => `<div class="note-card"><p class="note-title">⚠ ${esc(n.title)}</p><p>${esc(n.text)}</p></div>`)
     .join("");
+
+  /* ============ 流程圖 ============ */
+  // SVG 由 scraper/build_flows.py 依 scraper/flows.json 產生，內嵌不依賴外部程式庫
+  const flowSel = $("#flowPick");
+  flowSel.innerHTML =
+    `<option value="">全部流程（${flows.flows.length} 張）</option>` +
+    flows.flows.map((f) => `<option value="${esc(f.id)}">${esc(f.title)}</option>`).join("");
+  function renderFlows() {
+    const pick = flowSel.value;
+    const list = flows.flows.filter((f) => !pick || f.id === pick);
+    $("#flowList").innerHTML = list
+      .map(
+        (f) => `<figure class="flow-fig" data-plan="${esc(f.plan)}">
+          <figcaption>
+            <h2>${esc(f.title)}</h2>
+            <p class="flow-sub">${esc(f.subtitle)}</p>
+            ${f.legend ? `<p class="flow-legend">${esc(f.legend)}</p>` : ""}
+          </figcaption>
+          <div class="flow-scroll">${f.svg}</div>
+        </figure>`
+      )
+      .join("") || "<p class='hint'>沒有流程圖。</p>";
+  }
+  flowSel.addEventListener("input", renderFlows);
+  renderFlows();
 
   /* 條號連結：切到對應計畫全文並展開該點 */
   document.addEventListener("click", (ev) => {
