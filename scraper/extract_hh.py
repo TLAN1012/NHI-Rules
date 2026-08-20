@@ -6,12 +6,15 @@
 
 1. 解析計畫本文章節與完整修訂沿革
 2. 解析問答集（五欄表格：題號／提問單位／問題／說明／修訂說明）
-3. 版本落差標示：
+3. 版本落差處理：
    - 列出問答集定版後的所有計畫修訂公告
-   - 抽取每題引用的「計畫第X點」，對照現行計畫該點標題
-     （計畫改版常使條號位移，對照後由使用者判斷是否仍相符）
+   - 依 hh_qa_revisions.json 之 section_map 換算舊條號為現行條號，
+     並以現行章節標題驗證對照表（不符即中止，避免誤改）
+   - 併入人工比對之扞格修訂（revised_answer／explain），
+     原文一律保留於 answer 欄位，前端並陳對照
 
-不代為判斷問答內容正確與否——僅提供對照資訊。
+修訂內容一律來自 hh_qa_revisions.json 這份可覆核的人工比對表，
+本腳本只負責套用與驗證，不自行判讀法規。
 
 用法：
     python3 scraper/extract_hh.py --plan-pdf 計畫.pdf --qa-pdf 問答集.pdf \
@@ -229,6 +232,81 @@ def parse_qa(path: pathlib.Path) -> dict:
             "version_date": version_date, "revisions": qa_revs, "entries": entries}
 
 
+REV_FILE = pathlib.Path(__file__).parent / "hh_qa_revisions.json"
+CITE_POINT_RE = re.compile(r"計畫第([一二三四五六七八九十]{1,3})點")
+
+
+def apply_revisions(plan: dict, qa: dict) -> dict:
+    """套用 hh_qa_revisions.json：條號換算 + 人工比對之扞格修訂。"""
+    spec = json.loads(REV_FILE.read_text(encoding="utf-8"))
+    titles = {s["no"]: s["title"] for s in plan["sections"]}
+
+    # 驗證條號對照表：現行該點標題須與 expect 相符，否則中止（計畫再改版時會擋下）
+    smap: dict[int, int] = {}
+    for old, ent in spec["section_map"].items():
+        if old.startswith("_"):
+            continue
+        new = ent["to"]
+        if titles.get(new) != ent["expect"]:
+            raise SystemExit(
+                f"條號對照失效：現行第{m_cn(new)}點為「{titles.get(new)}」，"
+                f"對照表預期「{ent['expect']}」。請重新比對 hh_qa_revisions.json。")
+        smap[int(old)] = new
+
+    revs = {r["no"]: r for r in spec["revisions"]}
+    counts = {"renumber": 0, "substantive": 0, "premise": 0, "supplement": 0}
+
+    for e in qa["entries"]:
+        rev = revs.get(e["no"], {})
+        moved: list[dict] = []
+
+        if rev.get("revised_answer"):
+            # 人工改寫者已使用現行條號，不再自動換算
+            e["revised_answer"] = rev["revised_answer"]
+        else:
+            def sub(m: re.Match) -> str:
+                old = CN_NUM.get(m.group(1))
+                new = smap.get(old)
+                if new is None:
+                    return m.group(0)
+                moved.append({"from": m_cn(old), "to": m_cn(new)})
+                return f"計畫第{m_cn(new)}點"
+
+            new_ans = CITE_POINT_RE.sub(sub, e["answer"])
+            e["revised_answer"] = new_ans if new_ans != e["answer"] else ""
+
+        # 去重後保留位移紀錄（同一題可能重複引用同一點）
+        seen, uniq = set(), []
+        for mv in moved:
+            k = (mv["from"], mv["to"])
+            if k not in seen:
+                seen.add(k)
+                uniq.append(mv)
+        e["renumbered"] = uniq
+
+        kind = rev.get("type") or ("renumber" if uniq else "")
+        e["revision"] = {
+            "type": kind,
+            "explain": rev.get("explain", ""),
+            "basis": [{"no": int(n), "cn": m_cn(int(n)), "title": titles.get(int(n), "")}
+                      for n in rev.get("basis", [])],
+        } if kind else None
+        if kind:
+            counts[kind] = counts.get(kind, 0) + 1
+
+        # cite_map 改列現行條號（含舊條號供對照）
+        e["cite_map"] = [{"old_no": n, "old_cn": m_cn(n), "no": smap.get(n, n),
+                          "cn": m_cn(smap.get(n, n)), "current_title": titles.get(smap.get(n, n), "（現行計畫無此點）"),
+                          "moved": n in smap}
+                         for n in e["cites"]]
+
+    qa["revision_summary"] = counts
+    qa["revision_note"] = (
+        "本頁問答之答覆已依現行計畫（%s）校訂：條號位移逕行換算，實質規定變更者另行改寫並註明理由。"
+        "原始答覆（%s）一律保留，可於各題內展開對照。" % (plan["version"], qa["version"]))
+    return qa
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--plan-pdf", required=True)
@@ -248,10 +326,7 @@ def main() -> int:
     qa_date = qa.get("version_date", "")
     later = [r for r in plan["revisions"] if qa_date and r["date"] > qa_date]
 
-    sec_titles = {s["no"]: s["title"] for s in plan["sections"]}
-    for e in qa["entries"]:
-        e["cite_map"] = [{"no": n, "cn": m_cn(n), "current_title": sec_titles.get(n, "（現行計畫無此點）")}
-                         for n in e["cites"]]
+    qa = apply_revisions(plan, qa)
 
     now = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
     plan["generated_at"], plan["file"] = now, args.plan_file
@@ -277,7 +352,15 @@ def main() -> int:
     for r in later:
         print(f"  {r['date_roc']} {r['doc_no']} {r['kind']}")
     cited = sum(1 for e in qa["entries"] if e["cites"])
-    print(f"\n引用計畫條號之題目：{cited} 題（將顯示現行該點標題供對照）")
+    print(f"\n引用計畫條號之題目：{cited} 題（已換算為現行條號）")
+    cs = qa["revision_summary"]
+    print(f"校訂結果：條號位移 {cs.get('renumber', 0)} 題、實質變更 {cs.get('substantive', 0)} 題、"
+          f"前提已變更 {cs.get('premise', 0)} 題、補充現行增訂 {cs.get('supplement', 0)} 題")
+    for e in qa["entries"]:
+        r = e.get("revision")
+        if r and r["type"] in ("substantive", "premise"):
+            print(f"  [{r['type']}] 第{e['no']}題　依據：" +
+                  "、".join(f"第{b['cn']}點 {b['title']}" for b in r["basis"]))
     return 0
 
 
