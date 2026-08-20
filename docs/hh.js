@@ -1,11 +1,11 @@
-/* 居家醫療照護整合計畫查詢
+/* 居家醫療照護整合計畫（健保署）＋ 居家失能個案家庭醫師照護方案（長照司）
  *
- * 問答集為 109.09.28 第五版，計畫本文已更新至 115.03.18，其間計畫多次修訂。
- * 與現行計畫扞格者，答覆已依現行條文校訂（校訂表：scraper/hh_qa_revisions.json）：
- *   - 條號位移：逕行換算為現行條號
- *   - 實質規定變更：改寫答覆並註明理由與依據條號
- *   - 前提已變更：保留原答覆，加註前提說明
- * 原始答覆一律保留，於各題內可展開對照，使用者得自行覆核每一處更動。
+ * 兩案相關但不同：主管機關、財源、申報系統、給付標準均異，但自 115.06.30
+ * 失能方案修正後，照管專員僅得就居整計畫收案且同一團隊照顧之個案派案。
+ * 首頁分頁為「兩案對照」，逐項標明差異與銜接規定（scraper/dis_vs_hh.json）。
+ *
+ * 居整問答集（109.09.28 第五版）與現行計畫（115.03.18）扞格者，答覆已依現行
+ * 條文校訂（校訂表：scraper/hh_qa_revisions.json），原文保留於題內可展開對照。
  */
 (async function () {
   const $ = (sel) => document.querySelector(sel);
@@ -17,10 +17,6 @@
     const safe = q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     return escaped.replace(new RegExp(`(${esc(safe)})`, "gi"), "<mark>$1</mark>");
   };
-  const rocOf = (iso) => {
-    const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || "");
-    return m ? `${+m[1] - 1911}.${m[2]}.${m[3]}` : iso || "";
-  };
 
   async function loadJSON(name) {
     const resp = await fetch(`data/${name}`);
@@ -29,11 +25,15 @@
   }
 
   let qa = { entries: [], staleness: {} }, plan = { sections: [], revisions: [] };
+  let disPlan = { sections: [], attachments: [], form_revisions: [] };
+  let disQa = { entries: [] }, cmp = { rows: [], links: [], notes: [], plans: {} };
   try {
-    plan = await loadJSON("hh_plan.json");
-    qa = await loadJSON("hh_qa.json");
+    [plan, qa, disPlan, disQa, cmp] = await Promise.all([
+      loadJSON("hh_plan.json"), loadJSON("hh_qa.json"),
+      loadJSON("dis_plan.json"), loadJSON("dis_qa.json"), loadJSON("dis_vs_hh.json"),
+    ]);
   } catch (e) {
-    $("#planList").innerHTML = `<p>資料載入失敗（${esc(e.message)}）。若以 file:// 開啟，請改用本機伺服器。</p>`;
+    $("#cmpTable").innerHTML = `<tr><td>資料載入失敗（${esc(e.message)}）。若以 file:// 開啟，請改用本機伺服器。</td></tr>`;
   }
 
   /* 分頁切換（含 hash 直達，供書籤與分享連結使用） */
@@ -55,7 +55,7 @@
   window.addEventListener("hashchange", fromHash);
   if (location.hash) fromHash();
 
-  /* 計畫全文 */
+  /* ============ 居整計畫全文 ============ */
   $("#planMeta").textContent = plan.title
     ? `${plan.title}（現行版本 ${plan.version}　${plan.revisions?.length ? plan.revisions[plan.revisions.length - 1].doc_no : ""}），共 ${plan.sections.length} 點`
     : "";
@@ -93,13 +93,12 @@
   if (plan.revisions?.length) {
     $("#revBox").hidden = false;
     $("#revList").innerHTML = plan.revisions
-      .slice()
-      .reverse()
+      .slice().reverse()
       .map((r) => `<li>${esc(r.date_roc)}　${esc(r.doc_no)}　${esc(r.kind)}</li>`)
       .join("");
   }
 
-  /* 版本落差提示 */
+  /* ============ 居整問答集（答覆已依現行計畫校訂） ============ */
   const st = qa.staleness || {};
   if (st.later_revisions?.length) {
     $("#staleBanner").hidden = false;
@@ -112,13 +111,11 @@
       `僅條號換算 ${c.renumber || 0} 題、現行另有增訂 ${c.supplement || 0} 題。` +
       `各題顯示的是校訂後答覆，原始答覆保留於題內可展開對照；仍請以計畫全文為最終依據。`;
     $("#staleRevList").innerHTML = st.later_revisions
-      .slice()
-      .reverse()
+      .slice().reverse()
       .map((r) => `<li>${esc(r.date_roc)}　${esc(r.doc_no)}　${esc(r.kind)}</li>`)
       .join("");
   }
 
-  /* 問答集 */
   const catSel = $("#qaCategory");
   [...new Set(qa.entries.map((e) => e.category).filter(Boolean))].forEach((c) => {
     const opt = document.createElement("option");
@@ -136,7 +133,6 @@
     supplement: "現行另有增訂",
   };
 
-  // 校訂說明：更動理由、依據之現行條號、條號位移對照
   function revisionBlock(e) {
     const r = e.revision;
     if (!r) return "";
@@ -204,28 +200,168 @@
   revSel.addEventListener("input", renderQA);
   renderQA();
 
-  // 依據條號連結：切到計畫全文並展開該點
-  $("#qaList").addEventListener("click", (ev) => {
+  /* ============ 失能方案全文（含附件） ============ */
+  const disAll = [...disPlan.sections, ...(disPlan.attachments || [])];
+  $("#disMeta").textContent = disPlan.title
+    ? `${disPlan.title}（${disPlan.agency}）　現行版本 ${disPlan.version}　${disPlan.doc_no}` +
+      `｜期程：${disPlan.period}｜共 ${disPlan.sections.length} 章、附件 ${(disPlan.attachments || []).length} 份`
+    : "";
+  const disSel = $("#disSection");
+  disAll.forEach((s) => {
+    const opt = document.createElement("option");
+    opt.value = String(s.no);
+    opt.textContent = s.no >= 100 ? s.title : `${s.id}、${s.title}`;
+    disSel.appendChild(opt);
+  });
+
+  function renderDis() {
+    const q = $("#disSearch").value.trim();
+    const lq = q.toLowerCase();
+    const only = disSel.value;
+    const filtered = disAll.filter((s) => {
+      if (only && String(s.no) !== only) return false;
+      return !lq || (s.id + s.title + s.text).toLowerCase().includes(lq);
+    });
+    const openAttr = q || only ? " open" : "";
+    $("#disList").innerHTML =
+      filtered
+        .map(
+          (s) => `<details id="dsec-${s.no}"${openAttr}>
+          <summary><span class="rule-id">${esc(s.id)}</span>${highlight(s.title, q)}</summary>
+          <div class="rule-text">${highlight(s.text, q)}</div>
+        </details>`
+        )
+        .join("") || "<p class='hint'>沒有符合的章節。</p>";
+  }
+  $("#disSearch").addEventListener("input", renderDis);
+  disSel.addEventListener("input", renderDis);
+  renderDis();
+
+  if (disPlan.form_revisions?.length) {
+    $("#disFormRevBox").hidden = false;
+    $("#disFormRevList").innerHTML = disPlan.form_revisions
+      .slice().reverse()
+      .map((r) => `<li>${esc(r.date_roc)}　${esc(r.doc_no)}　${esc(r.kind)}</li>`)
+      .join("");
+  }
+
+  /* ============ 失能方案問答 ============ */
+  $("#disQaMeta").textContent = disQa.title
+    ? `${disQa.title}（更新時間 ${disQa.version}），共 ${disQa.entries.length} 題`
+    : "";
+  function renderDisQa() {
+    const q = $("#disQaSearch").value.trim();
+    const lq = q.toLowerCase();
+    const filtered = disQa.entries.filter(
+      (e) => !lq || (e.question + e.answer + e.category).toLowerCase().includes(lq)
+    );
+    $("#disQaCount").textContent = `共 ${filtered.length} 題（資料庫共 ${disQa.entries.length} 題）`;
+    // 題數少，預設全部展開
+    $("#disQaList").innerHTML =
+      filtered
+        .map(
+          (e) => `<details open>
+          <summary><span class="rule-id">${e.no}</span><strong>Q：</strong>${highlight(e.question, q)}
+            <span class="rule-chapter">${esc(e.category)}</span></summary>
+          <div class="rule-text">${highlight(e.answer, q)}</div>
+          ${(e.images || []).map((n) => `<img class="qa-img" src="img/${esc(n)}" alt="${esc(e.question)}附圖" loading="lazy">`).join("")}
+        </details>`
+        )
+        .join("") || "<p class='hint'>沒有符合的問答。</p>";
+  }
+  $("#disQaSearch").addEventListener("input", renderDisQa);
+  renderDisQa();
+
+  /* ============ 兩案對照 ============ */
+  const P = cmp.plans || {};
+  $("#planCards").innerHTML = ["hh", "dis"]
+    .filter((k) => P[k])
+    .map(
+      (k) => `<div class="plan-card" data-plan="${k}">
+        <p class="plan-card-agency">${esc(P[k].agency)}</p>
+        <h2>${esc(P[k].name)}</h2>
+        <p class="plan-card-short">簡稱：${esc(P[k].short)}</p>
+        <p class="plan-card-ver">${k === "hh"
+          ? `現行版本 ${esc(plan.version || "")}`
+          : `現行版本 ${esc(disPlan.version || "")}`}</p>
+        <button class="plan-card-go" data-goto="${k === "hh" ? "plan" : "dis"}">看全文 →</button>
+      </div>`
+    )
+    .join("");
+  $("#cmpHint").textContent =
+    "兩案為不同計畫，主管機關、財源、申報系統與給付標準均不同；" +
+    "但自 115.06.30 失能方案修正後，照管專員僅得就居整計畫收案且同一團隊照顧之個案派案。" +
+    "下表每列右側可點條號跳至該計畫全文覆核。";
+
+  const secLink = (kind, no, label) =>
+    no ? ` <a class="cmp-src" href="#" data-plan="${kind}" data-sec="${no}">${esc(label)}</a>` : "";
+  const hhCn = (n) => (plan.sections.find((s) => s.no === n) || {}).id || n;
+  const disCn = (n) => (disPlan.sections.find((s) => s.no === n) || {}).id || n;
+
+  $("#cmpTable").innerHTML =
+    `<thead><tr><th class="cmp-item">項目</th>
+      <th data-plan="hh">居整計畫<span class="cmp-agency">健保署</span></th>
+      <th data-plan="dis">失能方案<span class="cmp-agency">長照司</span></th></tr></thead><tbody>` +
+    cmp.rows
+      .map(
+        (r) => `<tr>
+        <th scope="row">${esc(r.item)}</th>
+        <td>${esc(r.hh)}${secLink("hh", r.hh_sec, `第${hhCn(r.hh_sec)}點`)}</td>
+        <td>${esc(r.dis)}${secLink("dis", r.dis_sec, `${disCn(r.dis_sec)}、`)}</td>
+      </tr>`
+      )
+      .join("") +
+    "</tbody>";
+
+  $("#cmpLinks").innerHTML = (cmp.links || [])
+    .map(
+      (l) => `<div class="link-card">
+        <p class="link-title">${esc(l.title)}</p>
+        <p class="link-text">${esc(l.text)}</p>
+        <p class="link-src">${l.hh_sec ? secLink("hh", l.hh_sec, `居整計畫第${hhCn(l.hh_sec)}點`) : ""}${
+        l.dis_sec ? secLink("dis", l.dis_sec, `失能方案${disCn(l.dis_sec)}、`) : ""
+      }</p>
+      </div>`
+    )
+    .join("");
+
+  $("#cmpNotes").innerHTML = (cmp.notes || [])
+    .map((n) => `<div class="note-card"><p class="note-title">⚠ ${esc(n.title)}</p><p>${esc(n.text)}</p></div>`)
+    .join("");
+
+  /* 條號連結：切到對應計畫全文並展開該點 */
+  document.addEventListener("click", (ev) => {
+    const go = ev.target.closest("[data-goto]");
+    if (go) {
+      ev.preventDefault();
+      activate(go.dataset.goto);
+      history.replaceState(null, "", `#${go.dataset.goto}`);
+      return;
+    }
     const a = ev.target.closest("a[data-sec]");
     if (!a) return;
     ev.preventDefault();
-    secSel.value = a.dataset.sec;
-    renderPlan();
-    activate("plan");
-    $(`#sec-${a.dataset.sec}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    const isDis = a.dataset.plan === "dis";
+    const sel = isDis ? disSel : secSel;
+    sel.value = a.dataset.sec;
+    (isDis ? renderDis : renderPlan)();
+    activate(isDis ? "dis" : "plan");
+    document.getElementById(`${isDis ? "dsec" : "sec"}-${a.dataset.sec}`)
+      ?.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 
-  /* 檔案下載 */
+  /* ============ 檔案下載 ============ */
   const files = [
-    plan.file && { name: `${plan.title}（${plan.version} 公告修訂版）`, href: `files/${plan.file}` },
-    qa.file && { name: `${qa.title}（${qa.version}）`, href: `files/${qa.file}` },
+    plan.file && { name: `${plan.title}（${plan.version} 公告修訂版）`, href: `files/${plan.file}`, tag: "hh" },
+    qa.file && { name: `${qa.title}（${qa.version}）`, href: `files/${qa.file}`, tag: "hh" },
+    disPlan.file && { name: `${disPlan.title}（${disPlan.version} 公告修正版）`, href: `files/${disPlan.file}`, tag: "dis" },
+    disQa.file && { name: `${disQa.title}（更新時間 ${disQa.version}）`, href: `files/${disQa.file}`, tag: "dis" },
   ].filter(Boolean);
   $("#hhFiles").innerHTML = files
     .map(
       (f) =>
-        `<li><span class="file-name">${esc(f.name)}</span><span class="file-links"><a href="${esc(
-          f.href
-        )}" target="_blank" rel="noopener">pdf</a></span></li>`
+        `<li><span class="file-name"><span class="plan-dot" data-plan="${f.tag}"></span>${esc(f.name)}</span>` +
+        `<span class="file-links"><a href="${esc(f.href)}" target="_blank" rel="noopener">pdf</a></span></li>`
     )
     .join("");
 
