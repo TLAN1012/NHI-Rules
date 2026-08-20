@@ -46,10 +46,12 @@ def classify_page(html: str) -> str:
         return "list"
     if "最新版藥品給付規定內容(分章節)" in html and "fileDownload" in html:
         return "chapters"
-    if "整份帶走" in html and "fileDownload" in html:
-        return "fulldoc"
+    # 歷史檔頁標題為「藥品給付規定歷史檔(整份帶走)」，同樣含「整份帶走」，
+    # 故須先判 history，否則會被 fulldoc 規則攔截（此順序錯誤曾使歷史年版清空）
     if "藥品給付規定歷史檔" in html and "fileDownload" in html:
         return "history"
+    if "整份帶走" in html and "fileDownload" in html:
+        return "fulldoc"
     return "other"
 
 
@@ -151,16 +153,35 @@ def main() -> int:
     (out / "announcements.json").write_text(
         json.dumps(ann_list, ensure_ascii=False, indent=1), encoding="utf-8"
     )
+    # 與公告同理：本次未取得該來源時，保留既有內容而非寫入空集合
+    def keep_if_empty(fname: str, new_obj: dict, count_key: str):
+        path = out / fname
+        if new_obj.get(count_key) or not path.exists():
+            return new_obj
+        try:
+            old_obj = json.loads(path.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            return new_obj
+        if old_obj.get(count_key):
+            print(f"{fname}：本次來源未取得，沿用既有 {len(old_obj[count_key])} 項")
+            return old_obj
+        return new_obj
+
+    chapters_obj = keep_if_empty("chapters.json", {"source": chapters_source, "items": chapters}, "items")
+    history_obj = keep_if_empty("history.json", {"source": history_source, "items": history}, "items")
+    fulldoc_obj = keep_if_empty("fulldoc.json", {"source": fulldoc_source, **fulldoc}, "downloads")
+    chapters, history = chapters_obj["items"], history_obj["items"]
+
     (out / "chapters.json").write_text(
-        json.dumps({"source": chapters_source, "items": chapters}, ensure_ascii=False, indent=1),
+        json.dumps(chapters_obj, ensure_ascii=False, indent=1),
         encoding="utf-8",
     )
     (out / "fulldoc.json").write_text(
-        json.dumps({"source": fulldoc_source, **fulldoc}, ensure_ascii=False, indent=1),
+        json.dumps(fulldoc_obj, ensure_ascii=False, indent=1),
         encoding="utf-8",
     )
     (out / "history.json").write_text(
-        json.dumps({"source": history_source, "items": history}, ensure_ascii=False, indent=1),
+        json.dumps(history_obj, ensure_ascii=False, indent=1),
         encoding="utf-8",
     )
 
