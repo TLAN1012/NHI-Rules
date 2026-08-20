@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import argparse
 import pathlib
+import random
 import sys
 import time
 
@@ -64,22 +65,42 @@ def is_challenge(resp: requests.Response) -> bool:
     return "<title>Just a moment...</title>" in resp.text
 
 
-def fetch(session: requests.Session, path: str, retries: int = 3) -> str:
+def fetch(session: requests.Session, path: str, retries: int = 5) -> str:
+    """抓單一頁面。遇 Cloudflare 挑戰頁以指數退避加抖動重試。
+
+    2026-08-20 實測：同一台機器前一日可正常抓取，隔日整批 403——挑戰強度
+    會隨時間浮動，原本 3 次（5/10/15 秒）不足以等到放行，故加長為
+    5 次（約 8/16/32/64 秒，含抖動），總等待上限約 2 分鐘。
+    """
     url = BASE + path
     status = None
     for attempt in range(retries):
-        resp = session.get(url, headers=HEADERS, timeout=30)
-        resp.encoding = "utf-8"  # 必須在讀 .text 前設定（curl_cffi 之後設會報錯）
-        if not is_challenge(resp):
-            resp.raise_for_status()
-            return resp.text
-        # 挑戰頁偶發出現在新連線的前幾個請求；帶著 __cf_bm cookie 稍候重試常可通過
-        status = resp.status_code
-        time.sleep(5 * (attempt + 1))
+        try:
+            resp = session.get(url, headers=HEADERS, timeout=30)
+            resp.encoding = "utf-8"  # 必須在讀 .text 前設定（curl_cffi 之後設會報錯）
+            if not is_challenge(resp):
+                resp.raise_for_status()
+                return resp.text
+            status = resp.status_code
+        except Exception as e:  # 連線層錯誤同樣重試
+            status = type(e).__name__
+        if attempt < retries - 1:
+            time.sleep(min(8 * (2 ** attempt), 60) + random.uniform(0, 3))
     raise CloudflareBlocked(
-        f"{url} 連續 {retries} 次回應 Cloudflare 挑戰頁（HTTP {status}）。"
-        "請改在一般網路環境執行，或改用 fetch_wayback.py。"
+        f"{url} 連續 {retries} 次未通過（{status}）。"
+        "可能為 Cloudflare 挑戰強度提高；稍後重試或改用 fetch_wayback.py。"
     )
+
+
+def warm_up(session: requests.Session) -> None:
+    """先訪問首頁取得 __cf_bm cookie，降低後續請求觸發挑戰的機率。"""
+    try:
+        resp = session.get("https://www.nhi.gov.tw/ch/index.html", headers=HEADERS, timeout=30)
+        resp.encoding = "utf-8"
+        print(f"warm-up: HTTP {resp.status_code}" + ("（挑戰頁）" if is_challenge(resp) else "（正常）"))
+        time.sleep(2)
+    except Exception as e:
+        print(f"warm-up 失敗（不影響後續）：{type(e).__name__}")
 
 
 def safe_name(path: str) -> str:
@@ -91,32 +112,41 @@ def main() -> int:
     ap.add_argument("--out", default="cache/live", help="HTML 快取輸出目錄")
     ap.add_argument("--pages", type=int, default=15, help="法規公告列表最多抓幾頁（每頁60筆）")
     ap.add_argument("--delay", type=float, default=1.0, help="每次請求間隔秒數")
+    ap.add_argument("--max-failures", type=int, default=3,
+                    help="累計失敗幾頁後中止（避免整體被擋時空轉）")
     args = ap.parse_args()
 
     out = pathlib.Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
     session = requests.Session(**_SESSION_KWARGS)
+    warm_up(session)
 
-    try:
-        for path in NODE_PAGES:
-            html = fetch(session, path)
-            (out / safe_name(path)).write_text(html, encoding="utf-8")
-            print(f"ok  {path} ({len(html)} bytes)")
-            time.sleep(args.delay)
+    targets = list(NODE_PAGES) + [f"{LIST_PAGE}?pi={p}&ps=60" for p in range(1, args.pages + 1)]
+    ok, failed = [], []
 
-        for page in range(1, args.pages + 1):
-            path = f"{LIST_PAGE}?pi={page}&ps=60"
+    # 單頁失敗不中止整批：公告列表分頁彼此獨立，抓到幾頁就能建置幾頁的資料
+    for path in targets:
+        try:
             html = fetch(session, path)
-            (out / safe_name(path)).write_text(html, encoding="utf-8")
-            print(f"ok  {path} ({len(html)} bytes)")
-            if "共<em>" in html and f"第<em>{page}/" not in html.replace(" ", ""):
-                pass  # 頁碼資訊由 build_dataset 統一解析
-            time.sleep(args.delay)
-    except CloudflareBlocked as e:
-        print(f"錯誤：{e}", file=sys.stderr)
+        except CloudflareBlocked as e:
+            failed.append(path)
+            print(f"fail {path}：{e}", file=sys.stderr)
+            # 連續失敗代表整體被擋，再試下去只是拖時間
+            if len(failed) >= args.max_failures:
+                print(f"連續失敗達 {args.max_failures} 頁，中止本次抓取。", file=sys.stderr)
+                break
+            continue
+        (out / safe_name(path)).write_text(html, encoding="utf-8")
+        ok.append(path)
+        print(f"ok  {path} ({len(html)} bytes)")
+        time.sleep(args.delay)
+
+    print(f"完成：成功 {len(ok)} 頁、失敗 {len(failed)} 頁，HTML 存於 {out}/")
+    if not ok:
+        print("全部頁面皆未取得，請改用 fetch_wayback.py。", file=sys.stderr)
         return 2
-
-    print(f"完成，HTML 存於 {out}/")
+    if failed:
+        print(f"部分頁面未取得（{len(failed)} 頁），仍以已取得資料建置。", file=sys.stderr)
     return 0
 
 

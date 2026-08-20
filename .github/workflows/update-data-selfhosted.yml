@@ -37,11 +37,23 @@ jobs:
           python3 -m venv .venv
           .venv/bin/python -m pip install -q -r scraper/requirements.txt
 
+      # Cloudflare 挑戰強度會隨時間浮動（2026-08-20 曾整批 403，前一日同機正常），
+      # 故此步驟容錯：抓不到就退回 Wayback，不讓整個 run 失敗而完全沒更新。
       - name: Fetch from NHI website (residential IP)
+        id: live
+        continue-on-error: true
         run: .venv/bin/python scraper/fetch_live.py --out cache/live --pages 15
 
+      - name: Fallback to Wayback Machine
+        if: steps.live.outcome == 'failure'
+        continue-on-error: true
+        run: .venv/bin/python scraper/fetch_wayback.py --out cache/wayback --url-prefix lp-3258-1.html
+
       - name: Rebuild dataset
-        run: .venv/bin/python scraper/build_dataset.py cache/live cache/wayback --out docs/data
+        run: |
+          DIRS="cache/wayback"
+          [ -d cache/live ] && DIRS="cache/live $DIRS"
+          .venv/bin/python scraper/build_dataset.py $DIRS --out docs/data
 
       - name: Commit if changed
         run: |
@@ -51,7 +63,9 @@ jobs:
           if git diff --cached --quiet; then
             echo "資料無變化"
           else
-            git commit -m "chore(data): 自動更新健保公告資料（official site, self-hosted）"
+            SOURCE="official site"
+            [ "${{ steps.live.outcome }}" = "failure" ] && SOURCE="wayback fallback"
+            git commit -m "chore(data): 自動更新健保公告資料（${SOURCE}, self-hosted）"
             git push
           fi
 
@@ -61,3 +75,12 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
           commit_message: "deploy: 自動資料更新（self-hosted）"
+
+      - name: Report source status
+        if: always()
+        run: |
+          if [ "${{ steps.live.outcome }}" = "failure" ]; then
+            echo "::warning::官網抓取未通過（Cloudflare 挑戰），本次改用 Wayback 備援"
+          else
+            echo "官網直接抓取成功 ✅"
+          fi
