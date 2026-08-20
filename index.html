@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>高雄縣醫師公會 健保規定查詢站</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏥</text></svg>">
-<link rel="stylesheet" href="style.css?v=7ceb8c36">
+<link rel="stylesheet" href="style.css?v=f99030d8">
 </head>
 <body>
 <header class="site-header">
@@ -30,8 +30,8 @@
     </a>
     <a class="feature-card" href="hh.html">
       <span class="feature-icon">🏠</span>
-      <h2>居家醫療照護整合計畫</h2>
-      <p>計畫本文逐點查詢（收案／結案條件、照護內容、費用申報）與問答集查詢；問答集答覆已依現行計畫校訂，並保留原文對照。</p>
+      <h2>居家醫療 ＋ 居家失能家醫方案</h2>
+      <p>健保署「居家醫療照護整合計畫」與長照司「居家失能個案家庭醫師照護方案」（醫師意見書）之全文與問答查詢，並附兩案逐項對照，釐清收案、派案、給付與申報之差異。</p>
       <p class="feature-meta" id="hhMeta"></p>
     </a>
     <a class="feature-card" href="risk.html">
@@ -74,13 +74,12 @@
   }
   const hhQa = await get("data/hh_qa.json");
   const hhPlan = await get("data/hh_plan.json");
+  const disPlan = await get("data/dis_plan.json");
+  const disQa = await get("data/dis_qa.json");
   if (hhQa || hhPlan) {
-    const c = hhQa?.revision_summary || {};
-    const changed = (c.substantive || 0) + (c.premise || 0);
     document.getElementById("hhMeta").textContent =
-      `${hhPlan ? `計畫本文 ${hhPlan.version}　${hhPlan.sections.length} 點` : ""}` +
-      `${hhQa ? `｜問答 ${hhQa.entries.length} 題（${hhQa.version}）` : ""}` +
-      `${changed ? `　⚠ ${changed} 題規定或前提已變更，答覆已校訂` : ""}`;
+      `${hhPlan ? `居整計畫 ${hhPlan.version}　${hhPlan.sections.length} 點｜問答 ${hhQa ? hhQa.entries.length : 0} 題` : ""}` +
+      `${disPlan ? `　·　失能方案 ${disPlan.version}　${disPlan.sections.length} 章｜問答 ${disQa ? disQa.entries.length : 0} 題` : ""}`;
   }
 })();
 </script>
