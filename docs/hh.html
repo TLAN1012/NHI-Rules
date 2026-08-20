@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>居家醫療與居家失能家醫方案查詢｜高雄縣醫師公會 健保規定查詢站</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏠</text></svg>">
-<link rel="stylesheet" href="style.css?v=f99030d8">
+<link rel="stylesheet" href="style.css?v=51ac218d">
 </head>
 <body>
 <header class="site-header">
@@ -20,6 +20,7 @@
   <button class="tab" data-tab="qa" role="tab">居整問答集</button>
   <button class="tab" data-tab="dis" role="tab">失能方案全文</button>
   <button class="tab" data-tab="disqa" role="tab">失能方案問答</button>
+  <button class="tab" data-tab="flows" role="tab">流程圖</button>
   <button class="tab" data-tab="files" role="tab">檔案下載</button>
 </nav>
 
@@ -104,6 +105,15 @@
     <div id="disQaList" class="rule-list"></div>
   </section>
 
+  <!-- 流程圖 -->
+  <section id="panel-flows" class="panel">
+    <p class="hint">兩案的收案、訪視與申報流程整理如下；方框內標有依據條號者可點擊跳至該計畫全文覆核。橫向不足時圖內可左右捲動。</p>
+    <div class="toolbar">
+      <select id="flowPick"></select>
+    </div>
+    <div id="flowList"></div>
+  </section>
+
   <!-- 檔案下載 -->
   <section id="panel-files" class="panel">
     <ul class="file-list" id="hhFiles"></ul>
@@ -120,6 +130,6 @@
   <p class="disclaimer">本站僅供參考，實際規定以健保署及衛生福利部公告為準；內容為公告查詢性質，不提供醫療建議。</p>
 </footer>
 
-<script src="hh.js?v=a9f2e61f"></script>
+<script src="hh.js?v=50327cfc"></script>
 </body>
 </html>
