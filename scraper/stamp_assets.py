@@ -17,7 +17,7 @@ import pathlib
 import re
 
 DOCS = pathlib.Path(__file__).resolve().parent.parent / "docs"
-PAGES = ["index.html", "drug.html", "fm.html", "risk.html"]
+# 掃描 docs/ 下所有頁面（不寫死清單，新增頁面才不會漏戳版本）
 ASSET_RE = re.compile(r'((?:href|src)=")([\w./-]+\.(?:css|js))(?:\?v=[0-9a-f]+)?(")')
 
 
@@ -27,10 +27,8 @@ def digest(path: pathlib.Path) -> str:
 
 def main() -> int:
     changed = 0
-    for name in PAGES:
-        page = DOCS / name
-        if not page.exists():
-            continue
+    for page in sorted(DOCS.glob("*.html")):
+        name = page.name
         html = page.read_text(encoding="utf-8")
 
         def stamp(m: re.Match) -> str:

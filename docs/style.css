@@ -311,3 +311,29 @@ mark { background: #ffe28a; color: inherit; border-radius: 0.15rem; padding: 0 0
 .revisions { margin: 1rem 0; color: var(--muted); font-size: 0.85rem; }
 .revisions summary { cursor: pointer; }
 .revisions ul { margin: 0.5rem 0 0 1rem; padding: 0 0 0 1rem; }
+
+/* 居家醫療：問答集版本落差提示與條號對照 */
+.stale-banner {
+  margin: 1rem 0; padding: 0.85rem 1rem;
+  border: 1px solid #f0c36d; border-left: 4px solid #d97706;
+  border-radius: 0.6rem; background: #fffaf0;
+}
+.stale-head { margin: 0 0 0.35rem; font-weight: 700; color: #b45309; font-size: 0.95rem; }
+.stale-body { margin: 0; font-size: 0.88rem; line-height: 1.75; color: var(--text); }
+.stale-banner details { margin-top: 0.5rem; font-size: 0.85rem; }
+.stale-banner summary { cursor: pointer; color: #b45309; font-weight: 600; }
+.stale-banner ul { margin: 0.4rem 0 0; padding-left: 1.2rem; color: var(--muted); }
+@media (prefers-color-scheme: dark) {
+  .stale-banner { background: #2a2010; border-color: #7c5a17; border-left-color: #f59e0b; }
+  .stale-head, .stale-banner summary { color: #fcd34d; }
+}
+.cite-map {
+  margin: 0.6rem 0 0; padding: 0.55rem 0.75rem;
+  border: 1px dashed var(--border); border-radius: 0.5rem; background: var(--bg);
+}
+.cite-head { margin: 0 0 0.3rem; font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+.cite-map ul { margin: 0; padding-left: 1.2rem; font-size: 0.86rem; line-height: 1.8; }
+.qa-note { margin: 0.5rem 0 0; font-size: 0.8rem; color: var(--muted); }
+.revisions { margin-top: 1.2rem; font-size: 0.86rem; }
+.revisions summary { cursor: pointer; color: var(--accent); }
+.revisions ul { margin: 0.5rem 0 0; padding-left: 1.2rem; color: var(--muted); line-height: 1.8; }
