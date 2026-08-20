@@ -67,7 +67,13 @@ def merge_announcements(collected: dict[str, dict], anns: list[Announcement]) ->
             continue
         # 以較新的來源為準（live 優先，其次 wayback 時間戳較大者）
         def rank(source: str) -> tuple[int, str]:
-            return (1, "") if source == "live" else (0, source.split(":", 1)[-1])
+            # live > wayback > existing（既有資料集）；同 key 由較優來源覆蓋，
+            # 但任何來源都不會使既有公告消失
+            if source == "live":
+                return (2, "")
+            if source == "existing":
+                return (0, "")
+            return (1, source.split(":", 1)[-1])
 
         if rank(rec["source"]) > rank(old["source"]):
             rec["is_drug_rule"] = rec["is_drug_rule"] or old["is_drug_rule"]
@@ -78,12 +84,27 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("cache_dirs", nargs="+", help="HTML 快取目錄")
     ap.add_argument("--out", default="docs/data", help="JSON 輸出目錄")
+    ap.add_argument("--no-merge-existing", action="store_true",
+                    help="忽略既有資料集、完全重建（預設為累加合併）")
     args = ap.parse_args()
 
     out = pathlib.Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
 
     announcements: dict[str, dict] = {}
+
+    # 先納入既有資料集當基底：公告是歷史事實，只應累加不應因來源缺漏而消失。
+    # （雲端 runner 無 cache/live，若全量重建會把 self-hosted 抓到的新公告洗掉）
+    existing_path = out / "announcements.json"
+    if existing_path.exists() and not args.no_merge_existing:
+        try:
+            for rec in json.loads(existing_path.read_text(encoding="utf-8")):
+                key = rec.get("key")
+                if key:
+                    announcements[key] = {**rec, "source": "existing"}
+            print(f"載入既有公告 {len(announcements)} 筆作為合併基底")
+        except (json.JSONDecodeError, OSError) as e:
+            print(f"既有資料集無法讀取（{e}），改為全量重建")
     chapters: list[dict] = []
     chapters_source = ""
     history: list[dict] = []
