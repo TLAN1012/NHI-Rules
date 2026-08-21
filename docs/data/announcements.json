@@ -1,5 +1,17 @@
 [
  {
+  "title": "修訂「全民健康保險肝炎醫療給付改善方案」(附件)，並自公告日起生效。",
+  "url": "https://www.nhi.gov.tw/ch/cp-20367-b89ff-3258-1.html",
+  "doc_no": "健保醫字第1150663643號",
+  "issued_date": "2026-08-19",
+  "published_date": "2026-08-19",
+  "expiry_date": "2029-08-19",
+  "issued_date_roc": "115-08-19",
+  "source": "live",
+  "key": "cp-20367-b89ff-3258-1",
+  "is_drug_rule": false
+ },
+ {
   "title": "公告新增含dextrose 1.5%、2.5%、4.25%及含calcium 3.5mEq/L、2.5mEq/L成分腹膜透析液2L為特殊藥品及異動Dianeal PD-2 Peritoneal Dialysis Solution with 1.5% Dextrose \"Vantive\"等6項目之支付價格。",
   "url": "https://www.nhi.gov.tw/ch/cp-20365-4399b-3258-1.html",
   "doc_no": "健保審字第1150055432號",
@@ -7,7 +19,7 @@
   "published_date": "2026-08-18",
   "expiry_date": "2029-08-18",
   "issued_date_roc": "115-08-18",
-  "source": "existing",
+  "source": "live",
   "key": "cp-20365-4399b-3258-1",
   "is_drug_rule": false
  },
@@ -19,7 +31,7 @@
   "published_date": "2026-08-01",
   "expiry_date": "2036-08-18",
   "issued_date_roc": "115-08-18",
-  "source": "existing",
+  "source": "live",
   "key": "cp-20363-46db9-3258-1",
   "is_drug_rule": false
  },
@@ -31,7 +43,7 @@
   "published_date": "2026-08-14",
   "expiry_date": "2029-08-13",
   "issued_date_roc": "115-08-14",
-  "source": "existing",
+  "source": "live",
   "key": "cp-20362-e7f53-3258-1",
   "is_drug_rule": true
  },
@@ -43,7 +55,7 @@
   "published_date": "2026-08-14",
   "expiry_date": "2028-08-14",
   "issued_date_roc": "115-08-14",
-  "source": "existing",
+  "source": "live",
   "key": "cp-20358-df406-3258-1",
   "is_drug_rule": true
  },
@@ -55,7 +67,7 @@
   "published_date": "2026-08-14",
   "expiry_date": "2028-08-14",
   "issued_date_roc": "115-08-14",
-  "source": "existing",
+  "source": "live",
   "key": "cp-20359-bfec8-3258-1",
   "is_drug_rule": true
  },
@@ -67,7 +79,7 @@
   "published_date": "2026-08-14",
   "expiry_date": "2029-08-14",
   "issued_date_roc": "115-08-14",
-  "source": "existing",
+  "source": "live",
   "key": "cp-20354-fb8db-3258-1",
   "is_drug_rule": true
  },
@@ -79,7 +91,7 @@
   "published_date": "2026-08-13",
   "expiry_date": "2028-08-13",
   "issued_date_roc": "115-08-13",
-  "source": "existing",
+  "source": "live",
   "key": "cp-20356-83520-3258-1",
   "is_drug_rule": true
  },
@@ -91,7 +103,7 @@
   "published_date": "2026-08-12",
   "expiry_date": "2028-08-12",
   "issued_date_roc": "115-08-12",
-  "source": "existing",
+  "source": "live",
   "key": "cp-20349-825a3-3258-1",
   "is_drug_rule": false
  },
@@ -103,7 +115,7 @@
   "published_date": "2026-08-10",
   "expiry_date": "2030-08-31",
   "issued_date_roc": "115-08-10",
-  "source": "existing",
+  "source": "live",
   "key": "cp-20334-ea6cd-3258-1",
   "is_drug_rule": false
  },
@@ -115,7 +127,7 @@
   "published_date": "2026-08-10",
   "expiry_date": "2029-08-10",
   "issued_date_roc": "115-08-10",
-  "source": "existing",
+  "source": "live",
   "key": "cp-20338-ca974-3258-1",
   "is_drug_rule": false
  },
@@ -127,7 +139,7 @@
   "published_date": "2026-08-07",
   "expiry_date": "2029-08-07",
   "issued_date_roc": "115-08-07",
-  "source": "existing",
+  "source": "live",
   "key": "cp-20324-eb3fc-3258-1",
   "is_drug_rule": false
  },
@@ -139,7 +151,7 @@
   "published_date": "2026-08-04",
   "expiry_date": "2029-08-04",
   "issued_date_roc": "115-08-04",
-  "source": "existing",
+  "source": "live",
   "key": "cp-20319-390a1-3258-1",
   "is_drug_rule": false
  },
@@ -151,7 +163,7 @@
   "published_date": "2026-08-04",
   "expiry_date": "2029-08-04",
   "issued_date_roc": "115-08-04",
-  "source": "existing",
+  "source": "live",
   "key": "cp-20318-bbb35-3258-1",
   "is_drug_rule": false
  },
@@ -163,7 +175,7 @@
   "published_date": "2026-08-04",
   "expiry_date": "2029-08-31",
   "issued_date_roc": "115-08-04",
-  "source": "existing",
+  "source": "live",
   "key": "cp-20315-7dd22-3258-1",
   "is_drug_rule": true
  },
@@ -175,7 +187,7 @@
   "published_date": "2026-08-03",
   "expiry_date": "2029-08-03",
   "issued_date_roc": "115-08-03",
-  "source": "existing",
+  "source": "live",
   "key": "cp-20328-fbc7e-3258-1",
   "is_drug_rule": false
  },
@@ -187,7 +199,7 @@
   "published_date": "2026-07-31",
   "expiry_date": "2028-07-31",
   "issued_date_roc": "115-07-31",
-  "source": "existing",
+  "source": "live",
   "key": "cp-20314-89085-3258-1",
   "is_drug_rule": false
  },
@@ -199,7 +211,7 @@
   "published_date": "2026-07-31",
   "expiry_date": "2028-07-31",
   "issued_date_roc": "115-07-31",
-  "source": "existing",
+  "source": "live",
   "key": "cp-20308-7be80-3258-1",
   "is_drug_rule": false
  },
@@ -211,7 +223,7 @@
   "published_date": "2026-07-31",
   "expiry_date": "2028-07-31",
   "issued_date_roc": "115-07-31",
-  "source": "existing",
+  "source": "live",
   "key": "cp-20307-1a740-3258-1",
   "is_drug_rule": false
  },
@@ -223,7 +235,7 @@
   "published_date": "2026-07-29",
   "expiry_date": "2029-07-29",
   "issued_date_roc": "115-07-29",
-  "source": "existing",
+  "source": "live",
   "key": "cp-20303-5d291-3258-1",
   "is_drug_rule": true
  },
@@ -235,7 +247,7 @@
   "published_date": "2026-07-28",
   "expiry_date": "2029-07-28",
   "issued_date_roc": "115-07-28",
-  "source": "existing",
+  "source": "live",
   "key": "cp-20300-7968a-3258-1",
   "is_drug_rule": true
  },
@@ -247,7 +259,7 @@
   "published_date": "2026-07-28",
   "expiry_date": "2029-07-28",
   "issued_date_roc": "115-07-28",
-  "source": "existing",
+  "source": "live",
   "key": "cp-20299-637c7-3258-1",
   "is_drug_rule": false
  },
@@ -259,7 +271,7 @@
   "published_date": "2026-07-28",
   "expiry_date": "2029-07-27",
   "issued_date_roc": "115-07-28",
-  "source": "existing",
+  "source": "live",
   "key": "cp-20297-ea5b3-3258-1",
   "is_drug_rule": false
  },
@@ -271,7 +283,7 @@
   "published_date": "2026-07-27",
   "expiry_date": "2029-07-27",
   "issued_date_roc": "115-07-27",
-  "source": "existing",
+  "source": "live",
   "key": "cp-20296-6dc72-3258-1",
   "is_drug_rule": false
  },
@@ -283,7 +295,7 @@
   "published_date": "2026-07-24",
   "expiry_date": "2029-07-24",
   "issued_date_roc": "115-07-24",
-  "source": "existing",
+  "source": "live",
   "key": "cp-20295-8c343-3258-1",
   "is_drug_rule": false
  },
@@ -295,7 +307,7 @@
   "published_date": "2026-07-20",
   "expiry_date": "2032-07-20",
   "issued_date_roc": "115-07-20",
-  "source": "wayback:20260720123701",
+  "source": "live",
   "key": "cp-20288-a43ea-3258-1",
   "is_drug_rule": false
  },
@@ -307,7 +319,7 @@
   "published_date": "2026-07-17",
   "expiry_date": "2029-07-17",
   "issued_date_roc": "115-07-17",
-  "source": "existing",
+  "source": "live",
   "key": "cp-20285-a92ff-3258-1",
   "is_drug_rule": false
  },
@@ -319,7 +331,7 @@
   "published_date": "2026-07-15",
   "expiry_date": "2029-07-14",
   "issued_date_roc": "115-07-15",
-  "source": "wayback:20260720123701",
+  "source": "live",
   "key": "cp-20279-c9b9a-3258-1",
   "is_drug_rule": true
  },
@@ -331,7 +343,7 @@
   "published_date": "2026-07-15",
   "expiry_date": "2029-07-15",
   "issued_date_roc": "115-07-15",
-  "source": "wayback:20260720123701",
+  "source": "live",
   "key": "cp-20275-c2606-3258-1",
   "is_drug_rule": true
  },
@@ -343,7 +355,7 @@
   "published_date": "2026-07-15",
   "expiry_date": "2029-07-15",
   "issued_date_roc": "115-07-15",
-  "source": "wayback:20260720123701",
+  "source": "live",
   "key": "cp-20273-b2f8c-3258-1",
   "is_drug_rule": true
  },
@@ -355,7 +367,7 @@
   "published_date": "2026-07-15",
   "expiry_date": "2029-07-14",
   "issued_date_roc": "115-07-15",
-  "source": "wayback:20260720123701",
+  "source": "live",
   "key": "cp-20265-d8d60-3258-1",
   "is_drug_rule": true
  },
@@ -367,7 +379,7 @@
   "published_date": "2026-07-15",
   "expiry_date": "2029-07-15",
   "issued_date_roc": "115-07-15",
-  "source": "wayback:20260720123701",
+  "source": "live",
   "key": "cp-20276-1c176-3258-1",
   "is_drug_rule": true
  },
@@ -379,7 +391,7 @@
   "published_date": "2026-07-15",
   "expiry_date": "2029-07-14",
   "issued_date_roc": "115-07-15",
-  "source": "wayback:20260720123701",
+  "source": "live",
   "key": "cp-20277-89e4a-3258-1",
   "is_drug_rule": true
  },
@@ -391,7 +403,7 @@
   "published_date": "2026-07-15",
   "expiry_date": "2029-07-15",
   "issued_date_roc": "115-07-15",
-  "source": "wayback:20260720123701",
+  "source": "live",
   "key": "cp-20274-d1b32-3258-1",
   "is_drug_rule": true
  },
@@ -403,7 +415,7 @@
   "published_date": "2026-07-15",
   "expiry_date": "2029-07-15",
   "issued_date_roc": "115-07-15",
-  "source": "wayback:20260720123701",
+  "source": "live",
   "key": "cp-20278-ca607-3258-1",
   "is_drug_rule": true
  },
@@ -415,7 +427,7 @@
   "published_date": "2026-07-15",
   "expiry_date": "2029-07-15",
   "issued_date_roc": "115-07-15",
-  "source": "wayback:20260720123701",
+  "source": "live",
   "key": "cp-20270-cdbd9-3258-1",
   "is_drug_rule": true
  },
@@ -427,7 +439,7 @@
   "published_date": "2026-07-15",
   "expiry_date": "2029-07-15",
   "issued_date_roc": "115-07-15",
-  "source": "wayback:20260720123701",
+  "source": "live",
   "key": "cp-20269-704b4-3258-1",
   "is_drug_rule": true
  },
@@ -439,7 +451,7 @@
   "published_date": "2026-07-15",
   "expiry_date": "2029-07-15",
   "issued_date_roc": "115-07-15",
-  "source": "wayback:20260720123701",
+  "source": "live",
   "key": "cp-20268-ebde6-3258-1",
   "is_drug_rule": true
  },
@@ -451,7 +463,7 @@
   "published_date": "2026-07-15",
   "expiry_date": "2028-07-15",
   "issued_date_roc": "115-07-15",
-  "source": "wayback:20260720123701",
+  "source": "live",
   "key": "cp-20284-89ffc-3258-1",
   "is_drug_rule": true
  },
@@ -463,7 +475,7 @@
   "published_date": "2026-07-15",
   "expiry_date": "2028-07-15",
   "issued_date_roc": "115-07-15",
-  "source": "wayback:20260720123701",
+  "source": "live",
   "key": "cp-20283-d42b5-3258-1",
   "is_drug_rule": true
  },
@@ -475,7 +487,7 @@
   "published_date": "2026-07-14",
   "expiry_date": "2029-07-31",
   "issued_date_roc": "115-07-14",
-  "source": "wayback:20260720123701",
+  "source": "live",
   "key": "cp-20264-0cbbf-3258-1",
   "is_drug_rule": true
  },
@@ -487,7 +499,7 @@
   "published_date": "2026-07-14",
   "expiry_date": "2029-07-14",
   "issued_date_roc": "115-07-13",
-  "source": "wayback:20260720123701",
+  "source": "live",
   "key": "cp-20018-c9531-3258-1",
   "is_drug_rule": false
  },
@@ -499,7 +511,7 @@
   "published_date": "2026-07-13",
   "expiry_date": "2028-07-13",
   "issued_date_roc": "115-07-13",
-  "source": "wayback:20260720123701",
+  "source": "live",
   "key": "cp-20022-52c9e-3258-1",
   "is_drug_rule": true
  },
@@ -511,7 +523,7 @@
   "published_date": "2026-07-13",
   "expiry_date": "2028-07-13",
   "issued_date_roc": "115-07-13",
-  "source": "wayback:20260720123701",
+  "source": "live",
   "key": "cp-20021-96b59-3258-1",
   "is_drug_rule": true
  },
@@ -523,7 +535,7 @@
   "published_date": "2026-07-13",
   "expiry_date": "2028-07-13",
   "issued_date_roc": "115-07-13",
-  "source": "wayback:20260720123701",
+  "source": "live",
   "key": "cp-20019-ee470-3258-1",
   "is_drug_rule": false
  },
@@ -535,7 +547,7 @@
   "published_date": "2026-07-13",
   "expiry_date": "2028-07-08",
   "issued_date_roc": "115-07-13",
-  "source": "wayback:20260720123701",
+  "source": "live",
   "key": "cp-20017-2d40c-3258-1",
   "is_drug_rule": false
  },
@@ -547,7 +559,7 @@
   "published_date": "2026-07-09",
   "expiry_date": "2028-07-09",
   "issued_date_roc": "115-07-09",
-  "source": "existing",
+  "source": "live",
   "key": "cp-20016-bc879-3258-1",
   "is_drug_rule": false
  },
@@ -559,7 +571,7 @@
   "published_date": "2026-07-03",
   "expiry_date": "2029-07-03",
   "issued_date_roc": "115-07-03",
-  "source": "existing",
+  "source": "live",
   "key": "cp-20013-c83b3-3258-1",
   "is_drug_rule": false
  },
@@ -571,7 +583,7 @@
   "published_date": "2026-07-02",
   "expiry_date": "2030-07-02",
   "issued_date_roc": "115-07-02",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19999-b8ec4-3258-1",
   "is_drug_rule": false
  },
@@ -583,7 +595,7 @@
   "published_date": "2026-07-01",
   "expiry_date": "2029-06-30",
   "issued_date_roc": "115-07-01",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19995-54cce-3258-1",
   "is_drug_rule": true
  },
@@ -595,7 +607,7 @@
   "published_date": "2026-07-01",
   "expiry_date": "2027-07-01",
   "issued_date_roc": "115-07-01",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19994-652f1-3258-1",
   "is_drug_rule": false
  },
@@ -607,7 +619,7 @@
   "published_date": "2026-06-30",
   "expiry_date": "2028-07-01",
   "issued_date_roc": "115-06-30",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19993-e3b81-3258-1",
   "is_drug_rule": false
  },
@@ -619,7 +631,7 @@
   "published_date": "2026-06-26",
   "expiry_date": "2027-06-26",
   "issued_date_roc": "115-06-26",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19992-048aa-3258-1",
   "is_drug_rule": false
  },
@@ -631,7 +643,7 @@
   "published_date": "2026-06-25",
   "expiry_date": "2029-06-25",
   "issued_date_roc": "115-06-25",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19983-29f28-3258-1",
   "is_drug_rule": false
  },
@@ -643,7 +655,7 @@
   "published_date": "2026-06-24",
   "expiry_date": "2029-06-22",
   "issued_date_roc": "115-06-24",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19980-87966-3258-1",
   "is_drug_rule": true
  },
@@ -655,7 +667,7 @@
   "published_date": "2026-06-17",
   "expiry_date": "2029-06-17",
   "issued_date_roc": "115-06-17",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19967-42bb6-3258-1",
   "is_drug_rule": false
  },
@@ -667,7 +679,7 @@
   "published_date": "2026-06-17",
   "expiry_date": "2036-06-17",
   "issued_date_roc": "115-06-17",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19962-51624-3258-1",
   "is_drug_rule": false
  },
@@ -679,7 +691,7 @@
   "published_date": "2026-06-15",
   "expiry_date": "2029-06-15",
   "issued_date_roc": "115-06-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19957-694d7-3258-1",
   "is_drug_rule": true
  },
@@ -691,7 +703,7 @@
   "published_date": "2026-06-15",
   "expiry_date": "2028-06-15",
   "issued_date_roc": "115-06-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19955-c70b4-3258-1",
   "is_drug_rule": false
  },
@@ -703,7 +715,7 @@
   "published_date": "2026-06-15",
   "expiry_date": "2029-06-15",
   "issued_date_roc": "115-06-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19956-60004-3258-1",
   "is_drug_rule": true
  },
@@ -715,7 +727,7 @@
   "published_date": "2026-06-15",
   "expiry_date": "2029-06-30",
   "issued_date_roc": "115-06-12",
-  "source": "existing",
+  "source": "live",
   "key": "cp-20020-39749-3258-1",
   "is_drug_rule": true
  },
@@ -727,7 +739,7 @@
   "published_date": "2026-06-12",
   "expiry_date": "2029-06-12",
   "issued_date_roc": "115-06-12",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19954-168c4-3258-1",
   "is_drug_rule": false
  },
@@ -739,7 +751,7 @@
   "published_date": "2026-06-09",
   "expiry_date": "2029-06-08",
   "issued_date_roc": "115-06-09",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19945-af1d7-3258-1",
   "is_drug_rule": false
  },
@@ -751,7 +763,7 @@
   "published_date": "2026-06-05",
   "expiry_date": "2029-06-05",
   "issued_date_roc": "115-06-05",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19948-dff24-3258-1",
   "is_drug_rule": false
  },
@@ -763,7 +775,7 @@
   "published_date": "2026-06-02",
   "expiry_date": "2028-06-02",
   "issued_date_roc": "115-06-02",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19943-cc8fe-3258-1",
   "is_drug_rule": false
  },
@@ -775,7 +787,7 @@
   "published_date": "2026-06-02",
   "expiry_date": "2030-06-02",
   "issued_date_roc": "115-06-02",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19941-d82ce-3258-1",
   "is_drug_rule": false
  },
@@ -787,7 +799,7 @@
   "published_date": "2026-06-01",
   "expiry_date": "2029-06-01",
   "issued_date_roc": "115-06-01",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19938-5e8d4-3258-1",
   "is_drug_rule": false
  },
@@ -799,7 +811,7 @@
   "published_date": "2026-05-29",
   "expiry_date": "2029-05-28",
   "issued_date_roc": "115-05-29",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19946-50fcc-3258-1",
   "is_drug_rule": false
  },
@@ -811,7 +823,7 @@
   "published_date": "2026-05-28",
   "expiry_date": "2028-05-28",
   "issued_date_roc": "115-05-28",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19935-76fc3-3258-1",
   "is_drug_rule": true
  },
@@ -823,7 +835,7 @@
   "published_date": "2026-05-27",
   "expiry_date": "2029-05-26",
   "issued_date_roc": "115-05-27",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19929-ac97f-3258-1",
   "is_drug_rule": false
  },
@@ -835,7 +847,7 @@
   "published_date": "2026-05-25",
   "expiry_date": "2029-05-25",
   "issued_date_roc": "115-05-25",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19927-c15ca-3258-1",
   "is_drug_rule": false
  },
@@ -847,7 +859,7 @@
   "published_date": "2026-05-22",
   "expiry_date": "2028-05-22",
   "issued_date_roc": "115-05-22",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19925-9e00a-3258-1",
   "is_drug_rule": false
  },
@@ -859,7 +871,7 @@
   "published_date": "2026-05-19",
   "expiry_date": "2029-05-19",
   "issued_date_roc": "115-05-19",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19919-77032-3258-1",
   "is_drug_rule": true
  },
@@ -871,7 +883,7 @@
   "published_date": "2026-05-19",
   "expiry_date": "2030-05-19",
   "issued_date_roc": "115-05-19",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19920-a0f41-3258-1",
   "is_drug_rule": false
  },
@@ -883,7 +895,7 @@
   "published_date": "2026-05-15",
   "expiry_date": "2029-05-15",
   "issued_date_roc": "115-05-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19918-b46f0-3258-1",
   "is_drug_rule": true
  },
@@ -895,7 +907,7 @@
   "published_date": "2026-05-15",
   "expiry_date": "2029-05-15",
   "issued_date_roc": "115-05-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19913-12885-3258-1",
   "is_drug_rule": true
  },
@@ -907,7 +919,7 @@
   "published_date": "2026-05-15",
   "expiry_date": "2029-05-14",
   "issued_date_roc": "115-05-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19917-46e4d-3258-1",
   "is_drug_rule": true
  },
@@ -919,7 +931,7 @@
   "published_date": "2026-05-15",
   "expiry_date": "2029-05-15",
   "issued_date_roc": "115-05-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19908-b6111-3258-1",
   "is_drug_rule": true
  },
@@ -931,7 +943,7 @@
   "published_date": "2026-05-15",
   "expiry_date": "2029-05-15",
   "issued_date_roc": "115-05-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19914-080cc-3258-1",
   "is_drug_rule": true
  },
@@ -943,7 +955,7 @@
   "published_date": "2026-05-15",
   "expiry_date": "2029-05-14",
   "issued_date_roc": "115-05-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19911-d976c-3258-1",
   "is_drug_rule": true
  },
@@ -955,7 +967,7 @@
   "published_date": "2026-05-15",
   "expiry_date": "2029-05-15",
   "issued_date_roc": "115-05-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19910-4fdd6-3258-1",
   "is_drug_rule": true
  },
@@ -967,7 +979,7 @@
   "published_date": "2026-05-15",
   "expiry_date": "2029-05-15",
   "issued_date_roc": "115-05-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19921-65ef4-3258-1",
   "is_drug_rule": true
  },
@@ -979,7 +991,7 @@
   "published_date": "2026-05-15",
   "expiry_date": "2029-05-15",
   "issued_date_roc": "115-05-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19915-09121-3258-1",
   "is_drug_rule": false
  },
@@ -991,7 +1003,7 @@
   "published_date": "2026-05-15",
   "expiry_date": "2029-05-15",
   "issued_date_roc": "115-05-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19916-fc086-3258-1",
   "is_drug_rule": true
  },
@@ -1003,7 +1015,7 @@
   "published_date": "2026-05-15",
   "expiry_date": "2029-05-14",
   "issued_date_roc": "115-05-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19902-d0b5f-3258-1",
   "is_drug_rule": false
  },
@@ -1015,7 +1027,7 @@
   "published_date": "2026-05-15",
   "expiry_date": "2029-05-15",
   "issued_date_roc": "115-05-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19907-443c5-3258-1",
   "is_drug_rule": true
  },
@@ -1027,7 +1039,7 @@
   "published_date": "2026-05-15",
   "expiry_date": "2029-05-15",
   "issued_date_roc": "115-05-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19906-10ca4-3258-1",
   "is_drug_rule": false
  },
@@ -1039,7 +1051,7 @@
   "published_date": "2026-05-15",
   "expiry_date": "2029-05-15",
   "issued_date_roc": "115-05-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19904-52da8-3258-1",
   "is_drug_rule": false
  },
@@ -1051,7 +1063,7 @@
   "published_date": "2026-05-14",
   "expiry_date": "2029-05-14",
   "issued_date_roc": "115-05-14",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19903-0bde6-3258-1",
   "is_drug_rule": true
  },
@@ -1063,7 +1075,7 @@
   "published_date": "2026-05-14",
   "expiry_date": "2029-05-14",
   "issued_date_roc": "115-05-14",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19905-c7dc0-3258-1",
   "is_drug_rule": true
  },
@@ -1075,7 +1087,7 @@
   "published_date": "2026-05-14",
   "expiry_date": "2028-05-14",
   "issued_date_roc": "115-05-14",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19901-155d3-3258-1",
   "is_drug_rule": true
  },
@@ -1087,7 +1099,7 @@
   "published_date": "2026-05-14",
   "expiry_date": "2028-05-14",
   "issued_date_roc": "115-05-14",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19900-7db28-3258-1",
   "is_drug_rule": true
  },
@@ -1099,7 +1111,7 @@
   "published_date": "2026-05-12",
   "expiry_date": "2030-05-12",
   "issued_date_roc": "115-05-12",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19892-c500c-3258-1",
   "is_drug_rule": false
  },
@@ -1111,7 +1123,7 @@
   "published_date": "2026-05-11",
   "expiry_date": "2029-05-10",
   "issued_date_roc": "115-05-11",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19887-c1d4c-3258-1",
   "is_drug_rule": false
  },
@@ -1123,7 +1135,7 @@
   "published_date": "2026-05-06",
   "expiry_date": "2036-05-06",
   "issued_date_roc": "115-05-06",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19869-61ecd-3258-1",
   "is_drug_rule": false
  },
@@ -1135,7 +1147,7 @@
   "published_date": "2026-04-29",
   "expiry_date": "2036-04-29",
   "issued_date_roc": "115-04-29",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19861-0ac2b-3258-1",
   "is_drug_rule": false
  },
@@ -1147,7 +1159,7 @@
   "published_date": "2026-04-29",
   "expiry_date": "2030-04-29",
   "issued_date_roc": "115-04-29",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19860-2be73-3258-1",
   "is_drug_rule": false
  },
@@ -1159,7 +1171,7 @@
   "published_date": "2026-04-28",
   "expiry_date": "2029-04-28",
   "issued_date_roc": "115-04-28",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19858-a056a-3258-1",
   "is_drug_rule": false
  },
@@ -1171,7 +1183,7 @@
   "published_date": "2026-04-28",
   "expiry_date": "2029-04-28",
   "issued_date_roc": "115-04-27",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19853-6ec1a-3258-1",
   "is_drug_rule": true
  },
@@ -1183,7 +1195,7 @@
   "published_date": "2026-04-24",
   "expiry_date": "2027-04-24",
   "issued_date_roc": "115-04-24",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19851-c22e5-3258-1",
   "is_drug_rule": false
  },
@@ -1195,7 +1207,7 @@
   "published_date": "2026-04-21",
   "expiry_date": "2029-04-21",
   "issued_date_roc": "115-04-21",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19846-6dcda-3258-1",
   "is_drug_rule": false
  },
@@ -1207,7 +1219,7 @@
   "published_date": "2026-04-16",
   "expiry_date": "2027-12-31",
   "issued_date_roc": "115-04-16",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19834-33ca5-3258-1",
   "is_drug_rule": false
  },
@@ -1219,7 +1231,7 @@
   "published_date": "2026-04-15",
   "expiry_date": "2029-04-15",
   "issued_date_roc": "115-04-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19841-cfa14-3258-1",
   "is_drug_rule": true
  },
@@ -1231,7 +1243,7 @@
   "published_date": "2026-04-15",
   "expiry_date": "2029-04-15",
   "issued_date_roc": "115-04-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19830-11b34-3258-1",
   "is_drug_rule": false
  },
@@ -1243,7 +1255,7 @@
   "published_date": "2026-04-15",
   "expiry_date": "2029-04-15",
   "issued_date_roc": "115-04-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19820-a0c2d-3258-1",
   "is_drug_rule": true
  },
@@ -1255,7 +1267,7 @@
   "published_date": "2026-04-15",
   "expiry_date": "2029-04-15",
   "issued_date_roc": "115-04-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19828-c77bf-3258-1",
   "is_drug_rule": true
  },
@@ -1267,7 +1279,7 @@
   "published_date": "2026-04-15",
   "expiry_date": "2029-04-15",
   "issued_date_roc": "115-04-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19827-bbc16-3258-1",
   "is_drug_rule": true
  },
@@ -1279,7 +1291,7 @@
   "published_date": "2026-04-15",
   "expiry_date": "2029-04-15",
   "issued_date_roc": "115-04-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19826-93dfa-3258-1",
   "is_drug_rule": true
  },
@@ -1291,7 +1303,7 @@
   "published_date": "2026-04-15",
   "expiry_date": "2030-04-15",
   "issued_date_roc": "115-04-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19825-257e5-3258-1",
   "is_drug_rule": false
  },
@@ -1303,7 +1315,7 @@
   "published_date": "2026-04-15",
   "expiry_date": "2029-04-14",
   "issued_date_roc": "115-04-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19823-e1a02-3258-1",
   "is_drug_rule": false
  },
@@ -1315,7 +1327,7 @@
   "published_date": "2026-04-15",
   "expiry_date": "2029-04-30",
   "issued_date_roc": "115-04-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19821-4bcbf-3258-1",
   "is_drug_rule": true
  },
@@ -1327,7 +1339,7 @@
   "published_date": "2026-04-15",
   "expiry_date": "2029-04-30",
   "issued_date_roc": "115-04-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19819-576f5-3258-1",
   "is_drug_rule": true
  },
@@ -1339,7 +1351,7 @@
   "published_date": "2026-04-15",
   "expiry_date": "2028-04-15",
   "issued_date_roc": "115-04-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19817-1efdc-3258-1",
   "is_drug_rule": true
  },
@@ -1351,7 +1363,7 @@
   "published_date": "2026-04-15",
   "expiry_date": "2028-04-15",
   "issued_date_roc": "115-04-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19838-93ec8-3258-1",
   "is_drug_rule": true
  },
@@ -1363,7 +1375,7 @@
   "published_date": "2026-04-14",
   "expiry_date": "2030-04-14",
   "issued_date_roc": "115-04-14",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19816-b3bda-3258-1",
   "is_drug_rule": false
  },
@@ -1375,7 +1387,7 @@
   "published_date": "2026-04-10",
   "expiry_date": "2030-04-10",
   "issued_date_roc": "115-04-10",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19811-9e150-3258-1",
   "is_drug_rule": false
  },
@@ -1387,7 +1399,7 @@
   "published_date": "2026-04-10",
   "expiry_date": "2030-04-10",
   "issued_date_roc": "115-04-10",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19810-56d64-3258-1",
   "is_drug_rule": false
  },
@@ -1399,7 +1411,7 @@
   "published_date": "2026-04-09",
   "expiry_date": "2029-04-08",
   "issued_date_roc": "115-04-09",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19808-099c0-3258-1",
   "is_drug_rule": false
  },
@@ -1411,7 +1423,7 @@
   "published_date": "2026-04-09",
   "expiry_date": "2028-04-08",
   "issued_date_roc": "115-04-08",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19806-74163-3258-1",
   "is_drug_rule": true
  },
@@ -1423,7 +1435,7 @@
   "published_date": "2026-04-07",
   "expiry_date": "2029-04-07",
   "issued_date_roc": "115-04-07",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19799-7dc2a-3258-1",
   "is_drug_rule": false
  },
@@ -1435,7 +1447,7 @@
   "published_date": "2026-04-01",
   "expiry_date": "2029-04-01",
   "issued_date_roc": "115-04-01",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19788-7a7b2-3258-1",
   "is_drug_rule": false
  },
@@ -1447,7 +1459,7 @@
   "published_date": "2026-03-31",
   "expiry_date": "2028-03-31",
   "issued_date_roc": "115-03-31",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19787-3c4a8-3258-1",
   "is_drug_rule": true
  },
@@ -1459,7 +1471,7 @@
   "published_date": "2026-03-31",
   "expiry_date": "2028-03-31",
   "issued_date_roc": "115-03-31",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19786-d04d0-3258-1",
   "is_drug_rule": false
  },
@@ -1471,7 +1483,7 @@
   "published_date": "2026-03-31",
   "expiry_date": "2029-03-31",
   "issued_date_roc": "115-03-31",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19776-7e1b3-3258-1",
   "is_drug_rule": false
  },
@@ -1483,7 +1495,7 @@
   "published_date": "2026-03-20",
   "expiry_date": "2029-03-19",
   "issued_date_roc": "115-03-20",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19763-e1db8-3258-1",
   "is_drug_rule": false
  },
@@ -1495,7 +1507,7 @@
   "published_date": "2026-03-20",
   "expiry_date": "2029-03-20",
   "issued_date_roc": "115-03-20",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19756-1954a-3258-1",
   "is_drug_rule": false
  },
@@ -1507,7 +1519,7 @@
   "published_date": "2026-03-13",
   "expiry_date": "2029-03-12",
   "issued_date_roc": "115-03-13",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19737-7a70c-3258-1",
   "is_drug_rule": true
  },
@@ -1519,7 +1531,7 @@
   "published_date": "2026-03-13",
   "expiry_date": "2029-03-12",
   "issued_date_roc": "115-03-13",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19736-10f0e-3258-1",
   "is_drug_rule": true
  },
@@ -1531,7 +1543,7 @@
   "published_date": "2026-03-13",
   "expiry_date": "2029-03-13",
   "issued_date_roc": "115-03-13",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19734-0c914-3258-1",
   "is_drug_rule": false
  },
@@ -1543,7 +1555,7 @@
   "published_date": "2026-03-13",
   "expiry_date": "2029-03-13",
   "issued_date_roc": "115-03-13",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19735-1d6c7-3258-1",
   "is_drug_rule": false
  },
@@ -1555,7 +1567,7 @@
   "published_date": "2026-03-13",
   "expiry_date": "2028-03-13",
   "issued_date_roc": "115-03-13",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19732-5118f-3258-1",
   "is_drug_rule": false
  },
@@ -1567,7 +1579,7 @@
   "published_date": "2026-03-13",
   "expiry_date": "2028-03-13",
   "issued_date_roc": "115-03-13",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19733-c5338-3258-1",
   "is_drug_rule": true
  },
@@ -1579,7 +1591,7 @@
   "published_date": "2026-03-13",
   "expiry_date": "2029-03-13",
   "issued_date_roc": "115-03-13",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19739-51fcf-3258-1",
   "is_drug_rule": true
  },
@@ -1591,7 +1603,7 @@
   "published_date": "2026-03-13",
   "expiry_date": "2029-03-13",
   "issued_date_roc": "115-03-13",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19738-71e43-3258-1",
   "is_drug_rule": true
  },
@@ -1603,7 +1615,7 @@
   "published_date": "2026-03-13",
   "expiry_date": "2029-03-13",
   "issued_date_roc": "115-03-13",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19740-b603d-3258-1",
   "is_drug_rule": true
  },
@@ -1615,7 +1627,7 @@
   "published_date": "2026-03-13",
   "expiry_date": "2029-03-13",
   "issued_date_roc": "115-03-13",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19727-45de1-3258-1",
   "is_drug_rule": false
  },
@@ -1627,7 +1639,7 @@
   "published_date": "2026-03-13",
   "expiry_date": "2029-03-13",
   "issued_date_roc": "115-03-13",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19712-6f4ed-3258-1",
   "is_drug_rule": true
  },
@@ -1639,7 +1651,7 @@
   "published_date": "2026-03-13",
   "expiry_date": "2028-03-13",
   "issued_date_roc": "115-03-13",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19731-6b7fe-3258-1",
   "is_drug_rule": true
  },
@@ -1651,7 +1663,7 @@
   "published_date": "2026-03-12",
   "expiry_date": "2029-03-11",
   "issued_date_roc": "115-03-12",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19720-26ee4-3258-1",
   "is_drug_rule": false
  },
@@ -1663,7 +1675,7 @@
   "published_date": "2026-03-05",
   "expiry_date": "2029-03-05",
   "issued_date_roc": "115-03-05",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19703-48830-3258-1",
   "is_drug_rule": false
  },
@@ -1675,7 +1687,7 @@
   "published_date": "2026-03-02",
   "expiry_date": "2036-03-02",
   "issued_date_roc": "115-03-02",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19696-58859-3258-1",
   "is_drug_rule": false
  },
@@ -1687,7 +1699,7 @@
   "published_date": "2026-02-25",
   "expiry_date": "2029-02-25",
   "issued_date_roc": "115-02-25",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19672-fbbe8-3258-1",
   "is_drug_rule": false
  },
@@ -1699,7 +1711,7 @@
   "published_date": "2026-02-13",
   "expiry_date": "2029-02-12",
   "issued_date_roc": "115-02-13",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19661-6c350-3258-1",
   "is_drug_rule": true
  },
@@ -1711,7 +1723,7 @@
   "published_date": "2026-02-13",
   "expiry_date": "2028-02-13",
   "issued_date_roc": "115-02-13",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19667-f6107-3258-1",
   "is_drug_rule": true
  },
@@ -1723,7 +1735,7 @@
   "published_date": "2026-02-13",
   "expiry_date": "2029-02-12",
   "issued_date_roc": "115-02-13",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19659-df117-3258-1",
   "is_drug_rule": true
  },
@@ -1735,7 +1747,7 @@
   "published_date": "2026-02-13",
   "expiry_date": "2029-02-13",
   "issued_date_roc": "115-02-13",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19664-1d014-3258-1",
   "is_drug_rule": true
  },
@@ -1747,7 +1759,7 @@
   "published_date": "2026-02-13",
   "expiry_date": "2028-02-13",
   "issued_date_roc": "115-02-13",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19671-370c9-3258-1",
   "is_drug_rule": true
  },
@@ -1759,7 +1771,7 @@
   "published_date": "2026-02-12",
   "expiry_date": "2029-02-11",
   "issued_date_roc": "115-02-13",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19663-6f1a0-3258-1",
   "is_drug_rule": false
  },
@@ -1771,7 +1783,7 @@
   "published_date": "2026-02-09",
   "expiry_date": "2028-02-09",
   "issued_date_roc": "115-02-09",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19649-1159c-3258-1",
   "is_drug_rule": true
  },
@@ -1783,7 +1795,7 @@
   "published_date": "2026-02-09",
   "expiry_date": "2028-02-09",
   "issued_date_roc": "115-02-09",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19648-f5705-3258-1",
   "is_drug_rule": false
  },
@@ -1795,7 +1807,7 @@
   "published_date": "2026-02-09",
   "expiry_date": "2029-02-08",
   "issued_date_roc": "115-02-09",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19647-a94ce-3258-1",
   "is_drug_rule": false
  },
@@ -1807,7 +1819,7 @@
   "published_date": "2026-02-06",
   "expiry_date": "2029-02-05",
   "issued_date_roc": "115-02-06",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19638-68bc9-3258-1",
   "is_drug_rule": false
  },
@@ -1819,7 +1831,7 @@
   "published_date": "2026-02-04",
   "expiry_date": "2027-02-04",
   "issued_date_roc": "115-02-04",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19633-f2eb3-3258-1",
   "is_drug_rule": false
  },
@@ -1831,7 +1843,7 @@
   "published_date": "2026-02-03",
   "expiry_date": "2029-02-02",
   "issued_date_roc": "115-02-03",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19632-1542d-3258-1",
   "is_drug_rule": false
  },
@@ -1843,7 +1855,7 @@
   "published_date": "2026-01-30",
   "expiry_date": "2036-01-30",
   "issued_date_roc": "115-01-30",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19625-ddb4b-3258-1",
   "is_drug_rule": false
  },
@@ -1855,7 +1867,7 @@
   "published_date": "2026-01-29",
   "expiry_date": "2029-01-29",
   "issued_date_roc": "115-01-29",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19624-25893-3258-1",
   "is_drug_rule": true
  },
@@ -1867,7 +1879,7 @@
   "published_date": "2026-01-27",
   "expiry_date": "2028-01-27",
   "issued_date_roc": "115-01-27",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19620-46d0a-3258-1",
   "is_drug_rule": false
  },
@@ -1879,7 +1891,7 @@
   "published_date": "2026-01-22",
   "expiry_date": "2029-01-22",
   "issued_date_roc": "115-01-23",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19612-849af-3258-1",
   "is_drug_rule": false
  },
@@ -1891,7 +1903,7 @@
   "published_date": "2026-01-22",
   "expiry_date": "2029-01-21",
   "issued_date_roc": "115-01-22",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19605-55e3e-3258-1",
   "is_drug_rule": false
  },
@@ -1903,7 +1915,7 @@
   "published_date": "2026-01-21",
   "expiry_date": "2030-01-21",
   "issued_date_roc": "115-01-21",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19606-2d067-3258-1",
   "is_drug_rule": false
  },
@@ -1915,7 +1927,7 @@
   "published_date": "2026-01-21",
   "expiry_date": "2028-01-21",
   "issued_date_roc": "115-01-21",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19610-19f86-3258-1",
   "is_drug_rule": false
  },
@@ -1927,7 +1939,7 @@
   "published_date": "2026-01-21",
   "expiry_date": "2027-01-30",
   "issued_date_roc": "115-01-21",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19604-becc0-3258-1",
   "is_drug_rule": false
  },
@@ -1939,7 +1951,7 @@
   "published_date": "2026-01-20",
   "expiry_date": "2030-01-20",
   "issued_date_roc": "115-01-20",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19602-55fd3-3258-1",
   "is_drug_rule": false
  },
@@ -1951,7 +1963,7 @@
   "published_date": "2026-01-20",
   "expiry_date": "2028-01-20",
   "issued_date_roc": "115-01-20",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19601-7ea30-3258-1",
   "is_drug_rule": false
  },
@@ -1963,7 +1975,7 @@
   "published_date": "2026-01-20",
   "expiry_date": "2029-01-20",
   "issued_date_roc": "115-01-20",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19600-c87e0-3258-1",
   "is_drug_rule": false
  },
@@ -1975,7 +1987,7 @@
   "published_date": "2026-01-20",
   "expiry_date": "2036-01-20",
   "issued_date_roc": "115-01-20",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19599-b7fa4-3258-1",
   "is_drug_rule": false
  },
@@ -1987,7 +1999,7 @@
   "published_date": "2026-01-19",
   "expiry_date": "2036-01-19",
   "issued_date_roc": "115-01-19",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19591-2b91e-3258-1",
   "is_drug_rule": false
  },
@@ -1999,7 +2011,7 @@
   "published_date": "2026-01-16",
   "expiry_date": "2027-01-16",
   "issued_date_roc": "115-01-16",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19586-80eb0-3258-1",
   "is_drug_rule": false
  },
@@ -2011,7 +2023,7 @@
   "published_date": "2026-01-15",
   "expiry_date": "2029-01-15",
   "issued_date_roc": "115-01-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19588-37fa7-3258-1",
   "is_drug_rule": true
  },
@@ -2023,7 +2035,7 @@
   "published_date": "2026-01-15",
   "expiry_date": "2029-01-15",
   "issued_date_roc": "115-01-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19585-64205-3258-1",
   "is_drug_rule": false
  },
@@ -2035,7 +2047,7 @@
   "published_date": "2026-01-15",
   "expiry_date": "2029-01-14",
   "issued_date_roc": "115-01-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19583-f87c4-3258-1",
   "is_drug_rule": true
  },
@@ -2047,7 +2059,7 @@
   "published_date": "2026-01-15",
   "expiry_date": "2028-01-14",
   "issued_date_roc": "115-01-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19580-f4be2-3258-1",
   "is_drug_rule": true
  },
@@ -2059,7 +2071,7 @@
   "published_date": "2026-01-15",
   "expiry_date": "2029-01-15",
   "issued_date_roc": "115-01-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19589-62e15-3258-1",
   "is_drug_rule": true
  },
@@ -2071,7 +2083,7 @@
   "published_date": "2026-01-15",
   "expiry_date": "2029-01-15",
   "issued_date_roc": "115-01-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19590-ec53a-3258-1",
   "is_drug_rule": true
  },
@@ -2083,7 +2095,7 @@
   "published_date": "2026-01-15",
   "expiry_date": "2029-01-15",
   "issued_date_roc": "115-01-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19582-4839d-3258-1",
   "is_drug_rule": true
  },
@@ -2095,7 +2107,7 @@
   "published_date": "2026-01-15",
   "expiry_date": "2029-01-15",
   "issued_date_roc": "115-01-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19587-e241b-3258-1",
   "is_drug_rule": true
  },
@@ -2107,7 +2119,7 @@
   "published_date": "2026-01-15",
   "expiry_date": "2029-01-15",
   "issued_date_roc": "115-01-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19581-c676a-3258-1",
   "is_drug_rule": true
  },
@@ -2119,7 +2131,7 @@
   "published_date": "2026-01-15",
   "expiry_date": "2029-01-15",
   "issued_date_roc": "115-01-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19578-882d1-3258-1",
   "is_drug_rule": true
  },
@@ -2131,7 +2143,7 @@
   "published_date": "2026-01-15",
   "expiry_date": "2028-01-15",
   "issued_date_roc": "115-01-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19593-8eb28-3258-1",
   "is_drug_rule": false
  },
@@ -2143,7 +2155,7 @@
   "published_date": "2026-01-15",
   "expiry_date": "2036-01-15",
   "issued_date_roc": "115-01-15",
-  "source": "existing",
+  "source": "live",
   "key": "cp-19575-871ee-3258-1",
   "is_drug_rule": false
  },
