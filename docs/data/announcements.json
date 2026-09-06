@@ -1,5 +1,17 @@
 [
  {
+  "title": "公告異動含抗蛇毒血清藥品共4項目之支付價格。",
+  "url": "https://www.nhi.gov.tw/ch/cp-20403-214ca-3258-1.html",
+  "doc_no": "健保審字第1150116320號",
+  "issued_date": "2026-09-04",
+  "published_date": "2026-09-04",
+  "expiry_date": "2028-09-04",
+  "issued_date_roc": "115-09-04",
+  "source": "live",
+  "key": "cp-20403-214ca-3258-1",
+  "is_drug_rule": false
+ },
+ {
   "title": "修正「115年適用牙醫相對合理門診點數給付原則之鄉鎮名單」",
   "url": "https://www.nhi.gov.tw/ch/cp-20394-04b28-3258-1.html",
   "doc_no": "健保醫字第1150663902號",
@@ -57,6 +69,18 @@
   "issued_date_roc": "115-08-28",
   "source": "live",
   "key": "cp-20389-d31bc-3258-1",
+  "is_drug_rule": false
+ },
+ {
+  "title": "修正「115年全民健康保險醫院醫療給付費用總額『健全區域級(含)以上醫院門住診結構，優化重症照護量能』及『持續推動分級醫療，優化社區醫院醫療服務品質及量能』計畫」，並自中華民國115年1月1日生效。",
+  "url": "https://www.nhi.gov.tw/ch/cp-20402-f5dc5-3258-1.html",
+  "doc_no": "健保醫字第1150117210號",
+  "issued_date": "2026-08-28",
+  "published_date": "2026-08-28",
+  "expiry_date": "2036-08-28",
+  "issued_date_roc": "115-08-28",
+  "source": "live",
+  "key": "cp-20402-f5dc5-3258-1",
   "is_drug_rule": false
  },
  {
@@ -2143,7 +2167,7 @@
   "published_date": "2026-01-15",
   "expiry_date": "2029-01-14",
   "issued_date_roc": "115-01-15",
-  "source": "live",
+  "source": "existing",
   "key": "cp-19583-f87c4-3258-1",
   "is_drug_rule": true
  },
@@ -2155,7 +2179,7 @@
   "published_date": "2026-01-15",
   "expiry_date": "2028-01-14",
   "issued_date_roc": "115-01-15",
-  "source": "live",
+  "source": "existing",
   "key": "cp-19580-f4be2-3258-1",
   "is_drug_rule": true
  },
