@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>高雄縣醫師公會 健保規定查詢站</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏥</text></svg>">
-<link rel="stylesheet" href="style.css?v=51ac218d">
+<link rel="stylesheet" href="style.css?v=56edd631">
 </head>
 <body>
 <header class="site-header">
@@ -34,12 +34,6 @@
       <p>健保署「居家醫療照護整合計畫」與長照司「居家失能個案家庭醫師照護方案」（醫師意見書）之全文與問答查詢，附兩案逐項對照與 5 張流程圖（收案、訪視申報、緊急訪視加成判定、派案開立意見書、兩案銜接）。</p>
       <p class="feature-meta" id="hhMeta"></p>
     </a>
-    <a class="feature-card" href="topics.html">
-      <span class="feature-icon">📋</span>
-      <h2>共擬會議與給付改善方案異動</h2>
-      <p>醫療服務給付項目及支付標準共同擬訂會議、醫療給付改善方案專區的異動追蹤：新上架項目、換新版計畫書、補上會議紀錄都會列出。</p>
-      <p class="feature-meta" id="topicsMeta"></p>
-    </a>
     <a class="feature-card" href="risk.html">
       <span class="feature-icon">🧮</span>
       <h2>ASCVD 風險計算機</h2>
@@ -61,6 +55,7 @@
     <p class="credits-author">製作者：高雄縣醫師公會　藍聖星秘書長</p>
   </div>
   <p>資料來源：衛生福利部中央健康保險署公開資訊。本站為公告查詢性質，不提供醫療建議。</p>
+  <p class="quiet-link"><a href="topics.html">共擬會議與給付改善方案異動追蹤</a><span id="topicsMeta"></span></p>
 </footer>
 
 <script>
@@ -81,10 +76,13 @@
   const topics = await get("data/topics.json");
   const topicChanges = await get("data/topic_changes.json");
   if (topics) {
-    const total = topics.topics.reduce((n, t) => n + t.items.length, 0);
-    const recent = (topicChanges?.changes || []).length;
-    document.getElementById("topicsMeta").textContent =
-      `追蹤 ${total} 筆項目${recent ? `｜近期變動 ${recent} 筆` : ""}`;
+    // 這裡刻意只在近 30 天真的有異動時才顯示筆數：頁尾連結要低調，
+    // 平時不該掛著一串統計數字把注意力引過去。
+    const cutoff = Date.now() - 30 * 86400 * 1000;
+    const recent = (topicChanges?.changes || []).filter(
+      (c) => Date.parse(c.detected_at || "") >= cutoff
+    ).length;
+    document.getElementById("topicsMeta").textContent = recent ? `（近期 ${recent} 筆異動）` : "";
   }
   const hhQa = await get("data/hh_qa.json");
   const hhPlan = await get("data/hh_plan.json");

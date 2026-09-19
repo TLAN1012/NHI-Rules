@@ -289,6 +289,12 @@ mark { background: #ffe28a; color: inherit; border-radius: 0.15rem; padding: 0 0
 .credits-org { margin: 0; font-size: 0.9rem; color: var(--text); font-weight: 600; }
 .credits-author { margin: 0.2rem 0 0; font-size: 0.86rem; color: var(--muted); }
 
+/* 頁尾的低調入口：不放首頁卡片區，字級與顏色都收到與頁尾說明文字同級 */
+.quiet-link { margin-top: 0.6rem; font-size: 0.8rem; }
+.quiet-link a { color: var(--muted); text-decoration: none; border-bottom: 1px dotted var(--border); }
+.quiet-link a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.quiet-link span { margin-left: 0.4rem; }
+
 .breadcrumb { margin: 0 0 0.3rem; font-size: 0.85rem; }
 .breadcrumb a { text-decoration: none; color: var(--muted); }
 .breadcrumb a:hover { color: var(--accent); }
