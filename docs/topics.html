@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>共擬會議與給付改善方案異動｜高雄縣醫師公會 健保規定查詢站</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📋</text></svg>">
+<link rel="stylesheet" href="style.css?v=51ac218d">
+</head>
+<body>
+<header class="site-header">
+  <p class="breadcrumb"><a href="index.html">← 高雄縣醫師公會 健保規定查詢站</a></p>
+  <h1>共擬會議與給付改善方案異動</h1>
+  <p class="subtitle">追蹤 <a href="https://www.nhi.gov.tw/ch/lp-2771-1.html" target="_blank" rel="noopener">醫療服務給付項目及支付標準共同擬訂會議</a> 與 <a href="https://www.nhi.gov.tw/ch/np-2823-1.html" target="_blank" rel="noopener">醫療給付改善方案</a> 的新增與檔案更新（非官方網站）</p>
+</header>
+
+<nav class="tabs" role="tablist">
+  <button class="tab active" data-tab="changes" role="tab">最近變動</button>
+  <button class="tab" data-tab="meetings" role="tab">共擬會議</button>
+  <button class="tab" data-tab="programs" role="tab">改善方案</button>
+</nav>
+
+<main>
+  <!-- 變動紀錄 -->
+  <section id="panel-changes" class="panel active">
+    <p class="hint">每次抓取後比對，除了新上架的項目，同一項目「換了新版檔案」或「補上會議紀錄」也會列出——這類更新不會改標題，只看清單是看不出來的。</p>
+    <div class="toolbar">
+      <select id="changeTopic"><option value="">全部專區</option></select>
+      <select id="changeType">
+        <option value="">全部類型</option>
+        <option value="added">新增項目</option>
+        <option value="files_changed">附件更新</option>
+        <option value="removed">已下架</option>
+      </select>
+    </div>
+    <p class="result-count" id="changeCount"></p>
+    <div id="changeList" class="timeline"></div>
+  </section>
+
+  <!-- 共擬會議 -->
+  <section id="panel-meetings" class="panel">
+    <p class="hint" id="meetingsHint"></p>
+    <div class="toolbar">
+      <input id="meetingsSearch" type="search" placeholder="搜尋會議名稱…（例：115年第9次）" autocomplete="off">
+    </div>
+    <p class="result-count" id="meetingsCount"></p>
+    <ul id="meetingsList" class="file-list"></ul>
+  </section>
+
+  <!-- 改善方案 -->
+  <section id="panel-programs" class="panel">
+    <p class="hint" id="programsHint"></p>
+    <div class="toolbar">
+      <input id="programsSearch" type="search" placeholder="搜尋方案名稱…（例：糖尿病、乳癌、早期療育）" autocomplete="off">
+    </div>
+    <p class="result-count" id="programsCount"></p>
+    <ul id="programsList" class="file-list"></ul>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="credits">
+    <p class="credits-org">社團法人高雄縣醫師公會 80 週年隆重呈獻</p>
+    <p class="credits-author">製作者：高雄縣醫師公會　藍聖星秘書長</p>
+  </div>
+  <p id="metaInfo"></p>
+  <p>資料來源：健保署官網「醫療服務給付項目及支付標準共同擬訂會議」與「醫療給付改善方案」專區。附件連結指向官網原始檔案。</p>
+  <p class="disclaimer">本站僅供參考，實際規定以健保署公告為準。</p>
+</footer>
+
+<script src="topics.js?v=acd70693"></script>
+</body>
+</html>

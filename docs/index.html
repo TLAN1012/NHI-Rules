@@ -34,6 +34,12 @@
       <p>健保署「居家醫療照護整合計畫」與長照司「居家失能個案家庭醫師照護方案」（醫師意見書）之全文與問答查詢，附兩案逐項對照與 5 張流程圖（收案、訪視申報、緊急訪視加成判定、派案開立意見書、兩案銜接）。</p>
       <p class="feature-meta" id="hhMeta"></p>
     </a>
+    <a class="feature-card" href="topics.html">
+      <span class="feature-icon">📋</span>
+      <h2>共擬會議與給付改善方案異動</h2>
+      <p>醫療服務給付項目及支付標準共同擬訂會議、醫療給付改善方案專區的異動追蹤：新上架項目、換新版計畫書、補上會議紀錄都會列出。</p>
+      <p class="feature-meta" id="topicsMeta"></p>
+    </a>
     <a class="feature-card" href="risk.html">
       <span class="feature-icon">🧮</span>
       <h2>ASCVD 風險計算機</h2>
@@ -71,6 +77,14 @@
   if (qa || plan) {
     document.getElementById("fmMeta").textContent =
       `${qa ? `問答 ${qa.entries.length} 題` : ""}${plan ? `｜計畫全文 ${plan.sections.length} 章` : ""}`;
+  }
+  const topics = await get("data/topics.json");
+  const topicChanges = await get("data/topic_changes.json");
+  if (topics) {
+    const total = topics.topics.reduce((n, t) => n + t.items.length, 0);
+    const recent = (topicChanges?.changes || []).length;
+    document.getElementById("topicsMeta").textContent =
+      `追蹤 ${total} 筆項目${recent ? `｜近期變動 ${recent} 筆` : ""}`;
   }
   const hhQa = await get("data/hh_qa.json");
   const hhPlan = await get("data/hh_plan.json");

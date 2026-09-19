@@ -56,6 +56,20 @@ jobs:
           [ -d cache/live ] && DIRS="cache/live $DIRS"
           .venv/bin/python scraper/build_dataset.py $DIRS --out docs/data
 
+      # 共擬會議與改善方案只在週六那班（與手動觸發）抓：這兩個專區要逐頁走訪
+      # 子頁才拿得到附件，每日抓對官網是不必要的負擔，而其更新本來就是週為單位。
+      - name: Fetch topic sections (共擬會議／改善方案)
+        id: topics
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '0 8 * * 6'
+        continue-on-error: true
+        run: .venv/bin/python scraper/fetch_topics.py --out cache/topics
+
+      # 即使上一步部分失敗也要建置：build_topics 會依 _fetch_report.json 判斷
+      # 抓取是否完整，不完整時只補不刪，不會把既有項目誤報成下架。
+      - name: Rebuild topic dataset
+        if: steps.topics.outcome != 'skipped'
+        run: .venv/bin/python scraper/build_topics.py cache/topics --out docs/data
+
       - name: Commit if changed
         run: |
           git config user.name "nhi-data-bot"
