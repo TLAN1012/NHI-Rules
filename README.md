@@ -51,9 +51,11 @@
 │   ├── build_dataset.py  # 解析 HTML 快取 → 產生 docs/data/*.json
 │   ├── topics_config.py  # 共擬會議／改善方案的專區設定（不相依網路套件）
 │   ├── fetch_topics.py   # 抓上述兩專區的 hub 頁與子頁
+│   ├── ingest_topics.py  # 把別處抓好的原始 HTML 匯入成快取（繞過 Cloudflare）
 │   ├── build_topics.py   # 解析兩專區 → topics.json ＋ 附件層級的變動比對
 │   ├── test_build_dataset.py  # 來源優先序測試
 │   ├── test_build_topics.py   # 變動偵測測試
+│   ├── test_ingest_topics.py  # 外部 HTML 匯入測試
 │   ├── extract_rules.py  # 完整版 PDF／章節檔 → 逐條給付規定 rules.json
 │   ├── extract_fm.py     # 家醫計畫問答集＋計畫本文 PDF → fm_qa.json / fm_plan.json
 │   └── requirements.txt
@@ -85,13 +87,43 @@ python3 scraper/build_dataset.py cache/live cache/wayback --out docs/data
 # 不要餵給 build_dataset.py，其列表頁會被誤判成法規公告）
 python3 scraper/fetch_topics.py --out cache/topics
 python3 scraper/build_topics.py cache/topics --out docs/data
+
+# 或者：頁面已由別處（會開瀏覽器的 bot、人工另存）取得時，改用匯入
+python3 scraper/ingest_topics.py <存放原始 HTML 的目錄> --out cache/topics
+python3 scraper/build_topics.py cache/topics --out docs/data
 ```
+
+### 由外部來源匯入頁面
+
+健保署官網對資料中心 IP 一律出 Cloudflare 挑戰頁，雲端／CI 環境抓不到。若已有人
+（或會開瀏覽器的 bot）把頁面存下來，用 `ingest_topics.py` 匯入即可，不必在受限
+環境裡跟 Cloudflare 周旋。
+
+需要的是**原始 HTML（頁面原始碼）**，不是轉好的 Markdown 或 PDF——解析器讀的是
+`section.fileDownload`、`span.fileType`、表格的 `<thead>` 這些結構，轉成 Markdown
+後這些資訊已經被壓掉了。
+
+要存哪些頁：
+
+| 專區 | hub | 還要存 |
+|---|---|---|
+| 共擬會議 | `lp-2771-1.html`（含分頁 `?pi=N&ps=60`） | 表格裡每一列連到的 `cp-` 頁 |
+| 改善方案 | `np-2823-1.html` | 其下子分類 `np-` 頁，以及子分類底下的 `cp-` 方案頁 |
+
+附件（會議紀錄、計畫書、問答集）**不必下載**——資料集只記錄檔名、類型、大小與
+官網連結，前端也是直接連到官網原始檔。
+
+檔名不拘：匯入時會從 `<link rel=canonical>`／`og:url`／檔名裡的頁面代號自行判斷
+是哪一頁。專區歸屬則是從 hub 沿連結走出來的——改善方案的方案頁帶的是子分類代號
+而非 hub 代號，用網址規則比對會整批歸錯。沒被任何 hub 連到的檔案會列在
+`_fetch_report.json` 的 `unassigned`，不會靜靜吞掉。
 
 ## 測試
 
 ```bash
 python3 scraper/test_build_dataset.py   # 來源優先序（live / wayback / 既有資料）
 python3 scraper/test_build_topics.py    # 變動偵測（新增／附件更新／下架／抓取不完整）
+python3 scraper/test_ingest_topics.py   # 外部 HTML 匯入（專區歸屬、未歸入者回報）
 ```
 
 兩支都不需網路。`build_dataset.py` 的來源比較曾因直接比字串而讓 Wayback 存檔
@@ -141,8 +173,9 @@ python3 scraper/extract_rules.py cache/chapters --out docs/data/rules.json
   在可直連官網的環境執行 `fetch_live.py` 後重建即可補齊。
 - 章節清單目前仍取自網頁存檔（前端已標示），self-hosted runner 下次直抓官網後即會換成即時版。
 - 共擬會議／改善方案的頁面解析以健保署共通版型撰寫，並以表頭文字對應表格欄位
-  （各專區欄位不同，不可用固定欄位位置）；首次在 self-hosted runner 實抓後，
-  應檢查 `topics.json` 的項目數與附件是否合理。
+  （各專區欄位不同，不可用固定欄位位置）；**尚未對真實頁面驗證過**。首次以
+  self-hosted runner 實抓或以 `ingest_topics.py` 匯入後，應檢查 `topics.json`
+  的項目數與附件是否合理。
 - 本站僅供參考，實際給付規定以健保署公告為準。
 
 ## 家醫計畫資料更新
