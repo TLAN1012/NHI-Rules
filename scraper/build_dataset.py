@@ -40,6 +40,35 @@ def detect_source(path: pathlib.Path, html: str) -> str:
     return "live"
 
 
+def source_rank(source: str) -> tuple[int, str]:
+    """來源優先序：live > wayback（時間戳較新者優先）> 其他（既有資料）。
+
+    務必用本函式比較，不可直接比字串：「live」的字首 l 小於「wayback」的 w，
+    直接比大小會讓 Wayback 存檔永遠蓋掉官網即時抓取的結果（曾使整份給付規定
+    停在 114.08.22 的 2025 年快照達一年）。
+    """
+    if source == "live":
+        return (2, "")
+    if source.startswith("wayback:"):
+        return (1, source.split(":", 1)[-1])
+    return (0, source)
+
+
+def load_existing_block(path: pathlib.Path, count_key: str) -> tuple[dict, str] | tuple[None, str]:
+    """讀回既有結果當比較基底，回傳 (物件, 來源)。
+
+    雲端 runner 只有 Wayback 快取，若不比對既有來源，會把 self-hosted 以官網
+    即時抓到的最新版覆蓋回舊存檔版；每日雙班輪流跑就變成每天洗一次。
+    """
+    try:
+        obj = json.loads(path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return None, ""
+    if not obj.get(count_key):
+        return None, ""
+    return obj, obj.get("source", "")
+
+
 def classify_page(html: str) -> str:
     """依頁面特徵分類：list（公告列表）、chapters（分章節）、history（歷史檔）、other。"""
     if "section" in html and 'class="list"' in html and "發文字號" in html:
@@ -67,17 +96,9 @@ def merge_announcements(collected: dict[str, dict], anns: list[Announcement]) ->
         if old is None:
             collected[key] = rec
             continue
-        # 以較新的來源為準（live 優先，其次 wayback 時間戳較大者）
-        def rank(source: str) -> tuple[int, str]:
-            # live > wayback > existing（既有資料集）；同 key 由較優來源覆蓋，
-            # 但任何來源都不會使既有公告消失
-            if source == "live":
-                return (2, "")
-            if source == "existing":
-                return (0, "")
-            return (1, source.split(":", 1)[-1])
-
-        if rank(rec["source"]) > rank(old["source"]):
+        # 以較新的來源為準：live > wayback（時間戳較大者）> existing（既有資料集）；
+        # 同 key 由較優來源覆蓋，但任何來源都不會使既有公告消失
+        if source_rank(rec["source"]) > source_rank(old["source"]):
             rec["is_drug_rule"] = rec["is_drug_rule"] or old["is_drug_rule"]
             collected[key] = rec
 
@@ -115,6 +136,19 @@ def main() -> int:
     fulldoc_source = ""
     stats = {"files": 0, "list_pages": 0}
 
+    # 分章節／歷史檔／整份帶走同樣以既有結果為基底，本次來源不優於既有者不覆蓋
+    if not args.no_merge_existing:
+        prev, prev_source = load_existing_block(out / "chapters.json", "items")
+        if prev:
+            chapters, chapters_source = prev["items"], prev_source
+        prev, prev_source = load_existing_block(out / "history.json", "items")
+        if prev:
+            history, history_source = prev["items"], prev_source
+        prev, prev_source = load_existing_block(out / "fulldoc.json", "downloads")
+        if prev:
+            fulldoc = {"title": prev.get("title", ""), "downloads": prev["downloads"]}
+            fulldoc_source = prev_source
+
     for cache_dir in args.cache_dirs:
         for path in sorted(pathlib.Path(cache_dir).glob("*.htm*")):
             html = path.read_text(encoding="utf-8", errors="replace")
@@ -127,19 +161,19 @@ def main() -> int:
                 stats["list_pages"] += 1
             elif kind == "chapters":
                 items = parse_download_sections(html)
-                if items and (not chapters or source >= chapters_source):
+                if items and (not chapters or source_rank(source) >= source_rank(chapters_source)):
                     page = parse_content_page(html)
                     chapters = page["downloads"]
                     chapters_source = source
             elif kind == "fulldoc":
                 items = parse_download_sections(html)
-                if items and (not fulldoc or source >= fulldoc_source):
+                if items and (not fulldoc or source_rank(source) >= source_rank(fulldoc_source)):
                     page = parse_content_page(html)
                     fulldoc = {"title": page["title"], "downloads": page["downloads"]}
                     fulldoc_source = source
             elif kind == "history":
                 items = parse_download_sections(html)
-                if items and (not history or source >= history_source):
+                if items and (not history or source_rank(source) >= source_rank(history_source)):
                     page = parse_content_page(html)
                     history = page["downloads"]
                     history_source = source
