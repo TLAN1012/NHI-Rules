@@ -1,0 +1,14 @@
+{
+ "run_at": null,
+ "run_url": "",
+ "received": {},
+ "used": {},
+ "unassigned": [],
+ "unreadable": [],
+ "problems": [],
+ "notes": [
+  "尚未有任何投遞。run_at 為 null 代表這是初始狀態，不是處理失敗。",
+  "本檔由 scraper/drop_report.py 於每次處理後覆寫，請勿手動編輯。",
+  "投遞規則見同目錄 README.md。"
+ ]
+}

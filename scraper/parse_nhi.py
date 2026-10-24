@@ -197,3 +197,59 @@ def is_drug_rule_announcement(title: str) -> bool:
     """判斷公告是否與藥品給付規定相關。"""
     keywords = ("藥品給付規定", "給付規定", "暫予支付", "藥物給付項目及支付標準")
     return any(k in title for k in keywords)
+
+
+def parse_table_items(html: str, source: str = "live") -> list[dict]:
+    """解析 lp- 列表頁表格，以「表頭文字」對應欄位。
+
+    各專區的表格欄位不同（法規公告是主旨／發文字號／發文日期，共擬會議則是
+    會議名稱／日期之類），沿用固定欄位位置會在換一個專區時安靜地解析出空值，
+    故改以表頭比對；找不到表頭時退回「第一個含連結的欄位為標題」。
+    """
+    soup = BeautifulSoup(html, "html.parser")
+    results: list[dict] = []
+
+    for table in soup.select("table"):
+        headers = [th.get_text(strip=True) for th in table.select("thead th")]
+        for tr in table.select("tbody tr"):
+            cells = tr.find_all(["td", "th"])
+            if not cells:
+                continue
+            columns = {
+                headers[i]: cells[i].get_text(strip=True)
+                for i in range(min(len(headers), len(cells)))
+                if headers[i]
+            }
+            link = tr.find("a", href=True)
+            if link is None:
+                continue
+            title = link.get_text(strip=True)
+            if not title:
+                # 標題欄只放圖示或空連結時，改用最長的文字欄位當標題
+                title = max((v for v in columns.values()), key=len, default="")
+            if not title:
+                continue
+
+            date_iso = None
+            for header, value in columns.items():
+                if "日期" in header or "時間" in header:
+                    date_iso = roc_date_to_iso(value)
+                    if date_iso:
+                        break
+            if date_iso is None:
+                date_iso = roc_date_to_iso(tr.get_text(" ", strip=True))
+
+            results.append({
+                "title": title,
+                "url": normalize_url(link["href"]),
+                "date": date_iso,
+                "columns": columns,
+                "source": source,
+            })
+    return results
+
+
+def content_page_key(url: str) -> str:
+    """由內容頁網址取出穩定識別碼（cp-12345-abcde-678-1），取不到時退回整段網址。"""
+    m = re.search(r"/ch/(cp-\d+-[0-9a-z]+-\d+-\d+)\.html", url)
+    return m.group(1) if m else url
