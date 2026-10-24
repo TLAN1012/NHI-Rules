@@ -105,11 +105,16 @@ jobs:
       # 投遞區用完即清：資料已轉為 docs/data 下的 JSON，原始 HTML 留在
       # 工作目錄只會讓後續投遞分不清新舊。
       # 處理有問題時刻意保留投遞內容，供應端修正後可直接重跑，不必重抓官網。
+      # 只清兩個投遞子目錄，不碰 incoming/ 根層的檔案：回執 LAST_RUN.json
+      # 與規則 README.md 都在根層，用「排除清單」寫法只要日後多一個檔案就會
+      # 被誤刪（回執正是這樣差點每次寫完就被清掉）。
       - name: Clear drop
         if: steps.report.outcome == 'success'
         run: |
-          find incoming -type f ! -name '.gitkeep' ! -name 'README.md' -delete
-          find incoming -mindepth 1 -type d -empty -delete
+          for dir in topics drug; do
+            [ -d "incoming/$dir" ] || continue
+            find "incoming/$dir" -mindepth 1 ! -name '.gitkeep' -delete
+          done
           mkdir -p incoming/topics incoming/drug
           touch incoming/topics/.gitkeep incoming/drug/.gitkeep
 

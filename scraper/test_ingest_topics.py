@@ -56,6 +56,62 @@ def attach(title: str, dl: str) -> str:
             '</li></ol></li></ul></section><article class="cpArticle">內容</article>')
 
 
+def multi_hub_case() -> None:
+    """舊頁停更、內容搬家時，新舊 hub 並列仍應合成同一份資料。
+
+    健保署已把共擬會議從 lp-2771 移走（舊頁自 114-03-28 起不再更新）。
+    換頁期間兩邊都要走得到，且同一場會議不能因為兩頁都連到而變成兩筆。
+    直接在行程內替換設定，不經子行程——設定是模組層常數，子行程改不到。
+    """
+    sys.path.insert(0, str(ROOT / "scraper"))
+    import ingest_topics
+
+    original = ingest_topics.TOPICS
+    ingest_topics.TOPICS = {
+        **original,
+        "meetings": {**original["meetings"],
+                     "hubs": ["lp-2771-1.html", "lp-8888-1.html"]},
+    }
+    try:
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = pathlib.Path(tmp)
+            src, out = tmp / "src", tmp / "cache"
+            src.mkdir()
+            shared = "cp-2009-aa-2771-1.html"   # 兩個 hub 都連到的同一場會議
+            moved = "cp-3001-bb-8888-1.html"    # 只出現在新頁
+            files = {
+                "old.html": page("lp-2771-1.html", table([("115年第9次會議", shared, "115-09-10")])),
+                "new.html": page("lp-8888-1.html", table([
+                    ("115年第9次會議", shared, "115-09-10"),
+                    ("115年第11次會議", moved, "115-11-05"),
+                ])),
+                "a.html": page(shared, attach("115年第9次會議", "900")),
+                "b.html": page(moved, attach("115年第11次會議", "901")),
+            }
+            for name, html in files.items():
+                (src / name).write_text(html, encoding="utf-8")
+
+            argv = sys.argv
+            sys.argv = ["ingest_topics.py", str(src), "--out", str(out)]
+            try:
+                code = ingest_topics.main()
+            finally:
+                sys.argv = argv
+            check("多 hub：結束碼", code, 0)
+
+            report = json.loads((out / "_fetch_report.json").read_text(encoding="utf-8"))
+            check("多 hub：兩個 hub 都算到", report["meetings"]["hub_pages"], 2)
+            check("多 hub：子頁去重後 2 頁", report["meetings"]["children"], 2)
+            check("多 hub：無未歸入頁面", report["_ingest"]["unassigned"], [])
+            written = sorted(p.name for p in out.glob("topic-meetings__*"))
+            check("多 hub：共用子頁只寫出一次",
+                  written.count(f"topic-meetings__{shared}"), 1)
+            print(f"  新舊 hub 並列：hub {report['meetings']['hub_pages']} 頁、"
+                  f"子頁 {report['meetings']['children']} 頁（共用的那場會議未重複）")
+    finally:
+        ingest_topics.TOPICS = original
+
+
 def main() -> int:
     with tempfile.TemporaryDirectory() as tmp:
         tmp = pathlib.Path(tmp)
@@ -122,6 +178,8 @@ def main() -> int:
         check("匯入視為完整抓取", by_key["programs"]["stale"], False)
         print(f"  串接 build_topics：共擬會議 {len(by_key['meetings']['items'])} 筆、"
               f"改善方案 {len(by_key['programs']['items'])} 筆（含附件）")
+
+    multi_hub_case()
 
     print()
     if failures:

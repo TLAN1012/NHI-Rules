@@ -109,13 +109,14 @@ def main() -> int:
     assigned: dict[str, str] = {}
     report: dict[str, dict] = {}
     for topic, spec in TOPICS.items():
-        hub = spec["hub"]
-        if hub not in pages:
-            print(f"{topic}（{spec['name']}）：來源中沒有 hub 頁 {hub}，略過", file=sys.stderr)
+        present = [h for h in spec["hubs"] if h in pages]
+        if not present:
+            print(f"{topic}（{spec['name']}）：來源中沒有任何 hub 頁"
+                  f"（{'、'.join(spec['hubs'])}），略過", file=sys.stderr)
             report[topic] = {"hub_pages": 0, "children": 0, "failed": 0}
             continue
 
-        queue, seen = [hub], {hub}
+        queue, seen = list(present), set(present)
         members: list[str] = []
         while queue:
             pid = queue.pop(0)

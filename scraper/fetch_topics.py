@@ -92,9 +92,12 @@ def main() -> int:
 
     for topic in wanted:
         spec = TOPICS[topic]
-        hubs = [spec["hub"]]
+        hubs = list(spec["hubs"])
         if spec["kind"] == "list":
-            hubs += [f"{spec['hub']}?pi={p}&ps=60" for p in range(1, args.pages + 1)]
+            # ps 參數不是每個專區都吃（lp-2771 固定每頁 20 筆、ps=60 無效）。
+            # 多抓幾頁無妨：子頁連結會去重，重複的頁只是多一次請求。
+            hubs += [f"{h}?pi={i}&ps=60" for h in spec["hubs"]
+                     for i in range(1, args.pages + 1)]
 
         children: list[str] = []
         hub_ok = 0
