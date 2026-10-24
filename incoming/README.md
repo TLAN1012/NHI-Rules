@@ -69,7 +69,13 @@ DOM 結構。轉成 Markdown 之後這些資訊已經被壓掉，無法還原。
 
 ## 回執：`incoming/LAST_RUN.json`
 
-**每次投遞前先讀這個檔。** 它是雙方的信箱，記錄上一批處理的結果：
+**每次投遞前先讀這個檔。** 本 repo 公開，讀取不需要任何權杖：
+
+```
+https://raw.githubusercontent.com/TLAN1012/NHI-Rules/<分支>/incoming/LAST_RUN.json
+```
+
+`run_at` 為 `null` 代表還沒有過任何投遞（初始狀態），不是處理失敗。 它是雙方的信箱，記錄上一批處理的結果：
 
 ```jsonc
 {
