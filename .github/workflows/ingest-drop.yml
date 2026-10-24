@@ -86,17 +86,38 @@ jobs:
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
 
+      # 回執是供應端與本專案之間的信箱：下次投遞前先讀它，就知道上一批
+      # 收到幾份、用了幾份、還缺什麼。訊息跟著資料放在同一個 repo。
+      - name: Write drop report
+        id: report
+        continue-on-error: true
+        env:
+          GITHUB_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          {
+            echo
+            echo "## 回執"
+            echo '```'
+            .venv/bin/python scraper/drop_report.py 2>&1
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
       # 投遞區用完即清：資料已轉為 docs/data 下的 JSON，原始 HTML 留在
       # 工作目錄只會讓後續投遞分不清新舊。
+      # 處理有問題時刻意保留投遞內容，供應端修正後可直接重跑，不必重抓官網。
       - name: Clear drop
+        if: steps.report.outcome == 'success'
         run: |
           find incoming -type f ! -name '.gitkeep' ! -name 'README.md' -delete
           find incoming -mindepth 1 -type d -empty -delete
           mkdir -p incoming/topics incoming/drug
           touch incoming/topics/.gitkeep incoming/drug/.gitkeep
 
+      # 即使處理有問題也要提交：回執本身就是要給供應端看的訊息，
+      # 失敗時扣住回執只會讓對方不知道哪裡錯。
       - name: Commit if changed
         id: commit
+        if: always()
         run: |
           git config user.name "nhi-data-bot"
           git config user.email "actions@github.com"
@@ -111,9 +132,17 @@ jobs:
           fi
 
       - name: Publish docs/ to gh-pages
-        if: steps.commit.outputs.changed == 'true'
+        if: steps.commit.outputs.changed == 'true' && steps.report.outcome == 'success'
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
           commit_message: "deploy: 投遞資料更新"
+
+      # 回執寫入並提交之後才讓整個 run 失敗：GitHub 預設會對失敗的執行寄出
+      # 通知，不必另外做一套告警。
+      - name: Fail on drop problems
+        if: steps.report.outcome != 'success'
+        run: |
+          echo "::error::投遞處理有問題，詳見 incoming/LAST_RUN.json 的 problems"
+          exit 1
