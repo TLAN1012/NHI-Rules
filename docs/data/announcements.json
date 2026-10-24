@@ -1,5 +1,89 @@
 [
  {
+  "title": "公告115年10、11、12月份全民健康保險臺灣地區外自墊醫療費用核退上限",
+  "url": "https://www.nhi.gov.tw/ch/cp-20671-7c173-3258-1.html",
+  "doc_no": "健保醫字第1150664675號",
+  "issued_date": "2026-10-20",
+  "published_date": "2026-10-20",
+  "expiry_date": "2029-10-20",
+  "issued_date_roc": "115-10-20",
+  "source": "live",
+  "key": "cp-20671-7c173-3258-1",
+  "is_drug_rule": false
+ },
+ {
+  "title": "公告「全民健康保險週日及國定假日輕急症中心(UCC)試辦計畫」之增設地點核定名單(附件)，並自115年11月1日生效。",
+  "url": "https://www.nhi.gov.tw/ch/cp-20668-f5f34-3258-1.html",
+  "doc_no": "健保醫字第1158132474號",
+  "issued_date": "2026-10-19",
+  "published_date": "2026-10-19",
+  "expiry_date": "2029-10-19",
+  "issued_date_roc": "115-10-19",
+  "source": "live",
+  "key": "cp-20668-f5f34-3258-1",
+  "is_drug_rule": false
+ },
+ {
+  "title": "公告暫予支付含rADAMTS13成分藥品Adzynma 1500IU, 500IU powder and solvent for solution for injection共2項目及其藥品給付規定。",
+  "url": "https://www.nhi.gov.tw/ch/cp-20485-a32d2-3258-1.html",
+  "doc_no": "健保審字第1150057146號",
+  "issued_date": "2026-10-15",
+  "published_date": "2026-10-15",
+  "expiry_date": "2028-10-15",
+  "issued_date_roc": "115-10-15",
+  "source": "live",
+  "key": "cp-20485-a32d2-3258-1",
+  "is_drug_rule": true
+ },
+ {
+  "title": "公告暫予支付含concizumab成分藥品Alhemo solution for injection in pre-filled pen 15mg/1.5mL、60mg/1.5mL、150mg/1.5mL及300mg/3mL共4項目及其藥品給付規定，並修訂藥品給付規定通則等相關給付規定。",
+  "url": "https://www.nhi.gov.tw/ch/cp-20484-a6ca2-3258-1.html",
+  "doc_no": "健保審字第1150057388號",
+  "issued_date": "2026-10-14",
+  "published_date": "2026-10-14",
+  "expiry_date": "2029-10-13",
+  "issued_date_roc": "115-10-14",
+  "source": "live",
+  "key": "cp-20484-a6ca2-3258-1",
+  "is_drug_rule": true
+ },
+ {
+  "title": "公告新增全民健康保險特材自付差額類別「脊髓刺激器」計13項暨其給付規定，自115年11月1日生效。",
+  "url": "https://www.nhi.gov.tw/ch/cp-20478-1c400-3258-1.html",
+  "doc_no": "健保審字第1150672629號",
+  "issued_date": "2026-10-07",
+  "published_date": "2026-10-07",
+  "expiry_date": "2029-10-07",
+  "issued_date_roc": "115-10-07",
+  "source": "live",
+  "key": "cp-20478-1c400-3258-1",
+  "is_drug_rule": true
+ },
+ {
+  "title": "更正本署115年7月31日健保審字第1150671973號公告之主旨及其附件「全民健康保險藥品已收載項目異動明細表」。",
+  "url": "https://www.nhi.gov.tw/ch/cp-20471-86f23-3258-1.html",
+  "doc_no": "健保審字第1150057157號",
+  "issued_date": "2026-10-02",
+  "published_date": "2026-10-02",
+  "expiry_date": "2028-10-02",
+  "issued_date_roc": "115-10-02",
+  "source": "live",
+  "key": "cp-20471-86f23-3258-1",
+  "is_drug_rule": false
+ },
+ {
+  "title": "公告新增含5.0％ amino acids、dextrose及electrolyte 成分注射劑1,500mL為「特殊藥品」，及異動Clinimix N17G35E solution for infusion \"BAXTER\"之支付價格。",
+  "url": "https://www.nhi.gov.tw/ch/cp-20455-43f4e-3258-1.html",
+  "doc_no": "健保審字第1150057103號",
+  "issued_date": "2026-09-29",
+  "published_date": "2026-09-29",
+  "expiry_date": "2028-09-29",
+  "issued_date_roc": "115-09-29",
+  "source": "live",
+  "key": "cp-20455-43f4e-3258-1",
+  "is_drug_rule": false
+ },
+ {
   "title": "公告「全民健康保險慢性腎衰竭病人門診透析服務品質保證保留款實施方案」，追溯自115年1月1日生效。",
   "url": "https://www.nhi.gov.tw/ch/cp-20443-d255d-3258-1.html",
   "doc_no": "健保醫字第1150119405號",
@@ -3379,7 +3463,7 @@
   "published_date": "2025-09-24",
   "expiry_date": "2026-09-30",
   "issued_date_roc": "114-09-24",
-  "source": "live",
+  "source": "wayback:20251009213522",
   "key": "cp-18952-bb74d-3258-1",
   "is_drug_rule": false
  },
@@ -3595,7 +3679,7 @@
   "published_date": "2025-09-15",
   "expiry_date": "2026-09-30",
   "issued_date_roc": "114-09-15",
-  "source": "live",
+  "source": "wayback:20251009213522",
   "key": "cp-18920-f19f7-3258-1",
   "is_drug_rule": false
  },
@@ -7243,7 +7327,7 @@
   "published_date": "2024-10-01",
   "expiry_date": "2026-09-30",
   "issued_date_roc": "113-10-01",
-  "source": "live",
+  "source": "wayback:20251018075950",
   "key": "cp-15544-87c35-3258-1",
   "is_drug_rule": false
  },
@@ -10723,7 +10807,7 @@
   "published_date": "2023-10-20",
   "expiry_date": "2026-10-20",
   "issued_date_roc": "112-10-20",
-  "source": "live",
+  "source": "wayback:20240421031404",
   "key": "cp-11526-9323b-3258-1",
   "is_drug_rule": false
  },
@@ -10735,7 +10819,7 @@
   "published_date": "2023-10-20",
   "expiry_date": "2026-10-20",
   "issued_date_roc": "112-10-20",
-  "source": "live",
+  "source": "wayback:20240126052559",
   "key": "cp-11364-c6270-3258-1",
   "is_drug_rule": false
  },
@@ -10747,7 +10831,7 @@
   "published_date": "2023-10-19",
   "expiry_date": "2026-10-19",
   "issued_date_roc": "112-10-18",
-  "source": "live",
+  "source": "wayback:20240126052559",
   "key": "cp-9825-ab2a9-3258-1",
   "is_drug_rule": false
  },
@@ -10759,7 +10843,7 @@
   "published_date": "2023-10-16",
   "expiry_date": "2026-10-16",
   "issued_date_roc": "112-10-16",
-  "source": "live",
+  "source": "wayback:20240126052559",
   "key": "cp-9393-90a9d-3258-1",
   "is_drug_rule": true
  },
@@ -10771,7 +10855,7 @@
   "published_date": "2023-10-16",
   "expiry_date": "2026-10-16",
   "issued_date_roc": "112-10-13",
-  "source": "live",
+  "source": "wayback:20240126052559",
   "key": "cp-9544-ff68e-3258-1",
   "is_drug_rule": false
  },
@@ -10783,7 +10867,7 @@
   "published_date": "2023-10-16",
   "expiry_date": "2026-10-16",
   "issued_date_roc": "112-10-13",
-  "source": "live",
+  "source": "wayback:20240126052559",
   "key": "cp-9545-a13b4-3258-1",
   "is_drug_rule": true
  },
@@ -10795,7 +10879,7 @@
   "published_date": "2023-10-16",
   "expiry_date": "2026-10-16",
   "issued_date_roc": "112-10-13",
-  "source": "live",
+  "source": "wayback:20240126052559",
   "key": "cp-9546-02dd5-3258-1",
   "is_drug_rule": true
  },
@@ -10807,7 +10891,7 @@
   "published_date": "2023-10-13",
   "expiry_date": "2026-10-13",
   "issued_date_roc": "112-10-13",
-  "source": "live",
+  "source": "existing",
   "key": "cp-9381-e3426-3258-1",
   "is_drug_rule": true
  },
@@ -10819,7 +10903,7 @@
   "published_date": "2023-10-12",
   "expiry_date": "2026-10-12",
   "issued_date_roc": "112-10-12",
-  "source": "live",
+  "source": "existing",
   "key": "cp-9379-88668-3258-1",
   "is_drug_rule": true
  },
@@ -10831,7 +10915,7 @@
   "published_date": "2023-10-13",
   "expiry_date": "2026-10-13",
   "issued_date_roc": "112-10-11",
-  "source": "live",
+  "source": "wayback:20240122084417",
   "key": "cp-9380-f7ca6-3258-1",
   "is_drug_rule": false
  },
@@ -10843,7 +10927,7 @@
   "published_date": "2023-10-11",
   "expiry_date": "2026-10-11",
   "issued_date_roc": "112-10-11",
-  "source": "live",
+  "source": "wayback:20240122084417",
   "key": "cp-9377-b27d2-3258-1",
   "is_drug_rule": false
  },
@@ -10855,7 +10939,7 @@
   "published_date": "2023-10-11",
   "expiry_date": "2026-10-11",
   "issued_date_roc": "112-10-11",
-  "source": "live",
+  "source": "wayback:20240122084417",
   "key": "cp-9378-148e9-3258-1",
   "is_drug_rule": true
  },
@@ -10867,7 +10951,7 @@
   "published_date": "2023-10-06",
   "expiry_date": "2026-10-06",
   "issued_date_roc": "112-10-06",
-  "source": "live",
+  "source": "wayback:20240122084417",
   "key": "cp-9375-ae880-3258-1",
   "is_drug_rule": true
  },
@@ -10879,7 +10963,7 @@
   "published_date": "2023-10-06",
   "expiry_date": "2026-10-06",
   "issued_date_roc": "112-10-03",
-  "source": "live",
+  "source": "wayback:20240122084417",
   "key": "cp-9376-2f65d-3258-1",
   "is_drug_rule": true
  },
@@ -10891,7 +10975,7 @@
   "published_date": "2023-10-03",
   "expiry_date": "2026-10-03",
   "issued_date_roc": "112-10-03",
-  "source": "live",
+  "source": "wayback:20240122084417",
   "key": "cp-9373-8d6bb-3258-1",
   "is_drug_rule": false
  },
@@ -10903,7 +10987,7 @@
   "published_date": "2023-10-02",
   "expiry_date": "2026-10-02",
   "issued_date_roc": "112-10-02",
-  "source": "live",
+  "source": "wayback:20240122084417",
   "key": "cp-9372-c300c-3258-1",
   "is_drug_rule": true
  },
@@ -10915,7 +10999,7 @@
   "published_date": "2023-09-28",
   "expiry_date": "2026-09-28",
   "issued_date_roc": "112-09-28",
-  "source": "live",
+  "source": "wayback:20240122084417",
   "key": "cp-7870-71d13-3258-1",
   "is_drug_rule": false
  },
@@ -10927,7 +11011,7 @@
   "published_date": "2023-09-27",
   "expiry_date": "2026-09-27",
   "issued_date_roc": "112-09-27",
-  "source": "live",
+  "source": "wayback:20240122084417",
   "key": "cp-7710-0cb5a-3258-1",
   "is_drug_rule": false
  },
@@ -10939,7 +11023,7 @@
   "published_date": "2023-09-27",
   "expiry_date": "2026-09-27",
   "issued_date_roc": "112-09-27",
-  "source": "live",
+  "source": "wayback:20240122084417",
   "key": "cp-7709-8c5c5-3258-1",
   "is_drug_rule": false
  },
@@ -10951,7 +11035,7 @@
   "published_date": "2023-09-25",
   "expiry_date": "2026-09-25",
   "issued_date_roc": "112-09-25",
-  "source": "live",
+  "source": "wayback:20240122084417",
   "key": "cp-7708-3806a-3258-1",
   "is_drug_rule": true
  },
@@ -10963,7 +11047,7 @@
   "published_date": "2023-09-23",
   "expiry_date": "2026-09-23",
   "issued_date_roc": "112-09-23",
-  "source": "live",
+  "source": "wayback:20240122084417",
   "key": "cp-7707-3e21a-3258-1",
   "is_drug_rule": false
  },
@@ -10975,7 +11059,7 @@
   "published_date": "2023-09-22",
   "expiry_date": "2026-09-22",
   "issued_date_roc": "112-09-22",
-  "source": "live",
+  "source": "wayback:20240122084417",
   "key": "cp-7706-4ed2c-3258-1",
   "is_drug_rule": false
  },
@@ -10987,7 +11071,7 @@
   "published_date": "2023-09-22",
   "expiry_date": "2026-09-22",
   "issued_date_roc": "112-09-22",
-  "source": "live",
+  "source": "wayback:20240122084417",
   "key": "cp-7705-6496c-3258-1",
   "is_drug_rule": true
  },
@@ -11023,7 +11107,7 @@
   "published_date": "2023-09-18",
   "expiry_date": "2026-09-27",
   "issued_date_roc": "112-09-18",
-  "source": "live",
+  "source": "wayback:20240122084417",
   "key": "cp-7702-75ab1-3258-1",
   "is_drug_rule": false
  },
@@ -11107,7 +11191,7 @@
   "published_date": "2023-09-15",
   "expiry_date": "2026-09-27",
   "issued_date_roc": "112-09-15",
-  "source": "live",
+  "source": "wayback:20240122084426",
   "key": "cp-7695-0cccc-3258-1",
   "is_drug_rule": true
  },
@@ -12576,6 +12660,78 @@
   "is_drug_rule": false
  },
  {
+  "title": "公告修訂藥品給付規定中年齡之用詞",
+  "url": "https://www.nhi.gov.tw/ch/cp-2797-996d7-3258-1.html",
+  "doc_no": "健保審字第1100036731號",
+  "issued_date": "2022-01-10",
+  "published_date": "2022-01-10",
+  "expiry_date": "2025-01-10",
+  "issued_date_roc": "111-01-10",
+  "source": "wayback:20241214201844",
+  "key": "cp-2797-996d7-3258-1",
+  "is_drug_rule": true
+ },
+ {
+  "title": "公告110年度特殊材料價量調查結果辦理之支付點數調整事宜。",
+  "url": "https://www.nhi.gov.tw/ch/cp-2798-4c0e7-3258-1.html",
+  "doc_no": "健保審字第1110772729號",
+  "issued_date": "2022-01-07",
+  "published_date": "2022-01-07",
+  "expiry_date": "2025-01-07",
+  "issued_date_roc": "111-01-07",
+  "source": "wayback:20241214201844",
+  "key": "cp-2798-4c0e7-3258-1",
+  "is_drug_rule": false
+ },
+ {
+  "title": "公告修訂全民健康保險中醫門診總額品質保證保留款實施方案",
+  "url": "https://www.nhi.gov.tw/ch/cp-2799-494dc-3258-1.html",
+  "doc_no": "健保醫字第1100017843號",
+  "issued_date": "2022-01-06",
+  "published_date": "2022-01-06",
+  "expiry_date": "2025-01-06",
+  "issued_date_roc": "111-01-06",
+  "source": "wayback:20241214201844",
+  "key": "cp-2799-494dc-3258-1",
+  "is_drug_rule": false
+ },
+ {
+  "title": "公告全民健康保險法第22條規定第3類被保險人適用之投保金額",
+  "url": "https://www.nhi.gov.tw/ch/cp-2801-e1250-3258-1.html",
+  "doc_no": "健保財字第1100031875號",
+  "issued_date": "2021-12-30",
+  "published_date": "2023-12-30",
+  "expiry_date": "2024-12-30",
+  "issued_date_roc": "110-12-30",
+  "source": "wayback:20241214201844",
+  "key": "cp-2801-e1250-3258-1",
+  "is_drug_rule": false
+ },
+ {
+  "title": "公告「全民健康保險中醫門診總額照護機構中醫醫療照護方案」",
+  "url": "https://www.nhi.gov.tw/ch/cp-2802-45819-3258-1.html",
+  "doc_no": "健保醫字第1100017739號",
+  "issued_date": "2021-12-30",
+  "published_date": "2021-12-30",
+  "expiry_date": "2024-12-30",
+  "issued_date_roc": "110-12-30",
+  "source": "wayback:20241214201844",
+  "key": "cp-2802-45819-3258-1",
+  "is_drug_rule": false
+ },
+ {
+  "title": "公告全民健康保險法第23條規定之第4類及第5類保險對象保險費",
+  "url": "https://www.nhi.gov.tw/ch/cp-2800-6d8bf-3258-1.html",
+  "doc_no": "健保財字第1100031877號",
+  "issued_date": "2021-12-30",
+  "published_date": "2021-12-30",
+  "expiry_date": "2024-12-30",
+  "issued_date_roc": "110-12-30",
+  "source": "wayback:20241214201844",
+  "key": "cp-2800-6d8bf-3258-1",
+  "is_drug_rule": false
+ },
+ {
   "title": "公告「全民健康保險提供保險對象收容於矯正機關者醫療服務計畫(第四期)」承作院所暨團隊名單，施行期間自111年1月1日起至113年12月31日止。",
   "url": "https://www.nhi.gov.tw/ch/cp-3076-63554-3258-1.html",
   "doc_no": "健保醫字第1100034547號",
@@ -12585,6 +12741,126 @@
   "issued_date_roc": "110-12-29",
   "source": "wayback:20251018063739",
   "key": "cp-3076-63554-3258-1",
+  "is_drug_rule": false
+ },
+ {
+  "title": "公告111年度全民健康保險中醫門診醫療給付費用總額一般服務地區預算分配計畫",
+  "url": "https://www.nhi.gov.tw/ch/cp-3078-3a3ad-3258-1.html",
+  "doc_no": "1100046329A-1",
+  "issued_date": "2021-12-27",
+  "published_date": "2021-12-27",
+  "expiry_date": "2024-12-27",
+  "issued_date_roc": "110-12-27",
+  "source": "wayback:20241214201844",
+  "key": "cp-3078-3a3ad-3258-1",
+  "is_drug_rule": false
+ },
+ {
+  "title": "公告111年度全民健康保險中醫門診醫療給付費用總額一般服務地區預算分配計畫",
+  "url": "https://www.nhi.gov.tw/ch/cp-3081-e6d07-3258-1.html",
+  "doc_no": "健保醫字第1100017485號",
+  "issued_date": "2021-12-27",
+  "published_date": "2021-12-27",
+  "expiry_date": "2024-12-27",
+  "issued_date_roc": "110-12-27",
+  "source": "wayback:20241214201844",
+  "key": "cp-3081-e6d07-3258-1",
+  "is_drug_rule": false
+ },
+ {
+  "title": "公告異動110年11月30日以健保審字第1100036313號公告之新藥支付價格調整結果。",
+  "url": "https://www.nhi.gov.tw/ch/cp-3082-6dc3c-3258-1.html",
+  "doc_no": "健保審字第1100062676號",
+  "issued_date": "2021-12-23",
+  "published_date": "2021-12-23",
+  "expiry_date": "2024-12-23",
+  "issued_date_roc": "110-12-23",
+  "source": "wayback:20241214201844",
+  "key": "cp-3082-6dc3c-3258-1",
+  "is_drug_rule": false
+ },
+ {
+  "title": "公告暫予支付異動「配合111年1月1日全民健康保險藥品費用分配比率目標制(DET)之第一大類及第三大類藥品支付價格調整」之藥物品項計16項。",
+  "url": "https://www.nhi.gov.tw/ch/cp-3088-b2de5-3258-1.html",
+  "doc_no": "健保審字第1100075984號",
+  "issued_date": "2021-12-17",
+  "published_date": "2021-12-17",
+  "expiry_date": "2024-12-17",
+  "issued_date_roc": "110-12-17",
+  "source": "wayback:20241214201844",
+  "key": "cp-3088-b2de5-3258-1",
+  "is_drug_rule": true
+ },
+ {
+  "title": "異動原110年11月12日健保審字第1100061801號公告及110年12月1日健保審字第1100036484號之藥品支付價格調整事項。",
+  "url": "https://www.nhi.gov.tw/ch/cp-3086-4f027-3258-1.html",
+  "doc_no": "健保審字第1100036648號",
+  "issued_date": "2021-12-17",
+  "published_date": "2021-12-17",
+  "expiry_date": "2024-12-17",
+  "issued_date_roc": "110-12-17",
+  "source": "wayback:20241214201844",
+  "key": "cp-3086-4f027-3258-1",
+  "is_drug_rule": false
+ },
+ {
+  "title": "修正「全民健康保險醫療費用審查注意事項」部分規定，並自中華民國一百十一年一月一日生效。",
+  "url": "https://www.nhi.gov.tw/ch/cp-3084-cd7ff-3258-1.html",
+  "doc_no": "健保審字第1100036610號",
+  "issued_date": "2021-12-17",
+  "published_date": "2021-12-17",
+  "expiry_date": "2024-12-17",
+  "issued_date_roc": "110-12-17",
+  "source": "wayback:20241214201844",
+  "key": "cp-3084-cd7ff-3258-1",
+  "is_drug_rule": false
+ },
+ {
+  "title": "公告暫予支付特殊材料「“卓爾”拋棄式去顫電極-電極貼片」共1品項暨其給付規定。",
+  "url": "https://www.nhi.gov.tw/ch/cp-3095-e324d-3258-1.html",
+  "doc_no": "健保審字第1100062795號公告",
+  "issued_date": "2021-12-15",
+  "published_date": "2021-12-16",
+  "expiry_date": "2024-12-16",
+  "issued_date_roc": "110-12-15",
+  "source": "wayback:20241214201844",
+  "key": "cp-3095-e324d-3258-1",
+  "is_drug_rule": true
+ },
+ {
+  "title": "公告異動含bortezomib成分藥品Myzomib之支付價格及修訂其藥品給付規定。",
+  "url": "https://www.nhi.gov.tw/ch/cp-3090-38b50-3258-1.html",
+  "doc_no": "健保審字第1100062677號",
+  "issued_date": "2021-12-15",
+  "published_date": "2021-12-16",
+  "expiry_date": "2024-12-16",
+  "issued_date_roc": "110-12-15",
+  "source": "wayback:20241214201844",
+  "key": "cp-3090-38b50-3258-1",
+  "is_drug_rule": true
+ },
+ {
+  "title": "公告暫予支付含sodium glycerophosphate成分藥品Glycophos Concentrate for Infusion 20 ML/vial暨其藥品給付規定",
+  "url": "https://www.nhi.gov.tw/ch/cp-3092-0c240-3258-1.html",
+  "doc_no": "健保審字第1100062309號",
+  "issued_date": "2021-12-15",
+  "published_date": "2021-12-16",
+  "expiry_date": "2024-12-16",
+  "issued_date_roc": "110-12-15",
+  "source": "wayback:20241214201844",
+  "key": "cp-3092-0c240-3258-1",
+  "is_drug_rule": true
+ },
+ {
+  "title": "修正「全民健康保險保險醫事服務機構收取自費特材費用規範」並將名稱修正為「全民健保尚未納入給付特材管理作業要點」，並自即日起生效。",
+  "url": "https://www.nhi.gov.tw/ch/cp-3094-3b266-3258-1.html",
+  "doc_no": "健保審字第1100036634號",
+  "issued_date": "2021-12-15",
+  "published_date": "2021-12-15",
+  "expiry_date": "2024-12-15",
+  "issued_date_roc": "110-12-15",
+  "source": "wayback:20241214201844",
+  "key": "cp-3094-3b266-3258-1",
   "is_drug_rule": false
  },
  {
@@ -12598,6 +12874,114 @@
   "source": "wayback:20251018063739",
   "key": "cp-3108-17b64-3258-1",
   "is_drug_rule": false
+ },
+ {
+  "title": "公告暫予支付特殊材料「“美敦力”奧尼斯液態周邊栓塞系統」暨其給付規定。",
+  "url": "https://www.nhi.gov.tw/ch/cp-3129-8ebf7-3258-1.html",
+  "doc_no": "健保審字第1100061811號",
+  "issued_date": "2021-11-12",
+  "published_date": "2021-11-12",
+  "expiry_date": "2024-11-12",
+  "issued_date_roc": "110-11-12",
+  "source": "wayback:20241103064818",
+  "key": "cp-3129-8ebf7-3258-1",
+  "is_drug_rule": true
+ },
+ {
+  "title": "公告異動含pimecrolimus成分藥品(Elidel 1% cream)之支付價格及修訂其藥品給付規定。",
+  "url": "https://www.nhi.gov.tw/ch/cp-3131-9ea57-3258-1.html",
+  "doc_no": "健保審字第1100036477號",
+  "issued_date": "2021-11-12",
+  "published_date": "2021-11-12",
+  "expiry_date": "2024-11-12",
+  "issued_date_roc": "110-11-12",
+  "source": "wayback:20241103064818",
+  "key": "cp-3131-9ea57-3258-1",
+  "is_drug_rule": true
+ },
+ {
+  "title": "公告110年10月起新增「全民健康保險西醫住院病患中醫特定疾病輔助醫療計畫」、「全民健康保險中醫提升孕產照護品質計畫」、「全民健康保險中醫門診總額兒童過敏性鼻炎照護試辦計畫」、「全民健康保險中醫急症處置計畫」、「全民康保險中醫癌症患者加強照護整合方案」及「全民健康保險中醫慢性腎臟病門診加強照護計畫」等6項中醫門診總額照計畫承作院所及醫師名單，執行日自110年10月1日起。",
+  "url": "https://www.nhi.gov.tw/ch/cp-3137-dfb93-3258-1.html",
+  "doc_no": "健保醫字第1100034614號",
+  "issued_date": "2021-11-11",
+  "published_date": "2021-11-11",
+  "expiry_date": "2024-11-11",
+  "issued_date_roc": "110-11-11",
+  "source": "wayback:20241103064818",
+  "key": "cp-3137-dfb93-3258-1",
+  "is_drug_rule": false
+ },
+ {
+  "title": "公告增修自付差額特殊材料「特殊功能及材質髓內釘組」功能分類品項暨給付規定。",
+  "url": "https://www.nhi.gov.tw/ch/cp-3135-363ec-3258-1.html",
+  "doc_no": "健保審字第1100036455號",
+  "issued_date": "2021-11-11",
+  "published_date": "2021-11-11",
+  "expiry_date": "2024-11-11",
+  "issued_date_roc": "110-11-11",
+  "source": "wayback:20241103064818",
+  "key": "cp-3135-363ec-3258-1",
+  "is_drug_rule": true
+ },
+ {
+  "title": "公告暫予支付特材「\"信迪思\"波帝斯人工頸椎椎間盤」等9項暨其給付規定。",
+  "url": "https://www.nhi.gov.tw/ch/cp-3139-9e23b-3258-1.html",
+  "doc_no": "健保審字第1100036442號",
+  "issued_date": "2021-11-09",
+  "published_date": "2021-11-10",
+  "expiry_date": "2024-11-10",
+  "issued_date_roc": "110-11-09",
+  "source": "wayback:20241103064818",
+  "key": "cp-3139-9e23b-3258-1",
+  "is_drug_rule": true
+ },
+ {
+  "title": "公告暫予支付特殊材料「\"艾飛斯\"低阻力針筒」暨其給付規定。",
+  "url": "https://www.nhi.gov.tw/ch/cp-3145-8454e-3258-1.html",
+  "doc_no": "健保審字第1100061757號",
+  "issued_date": "2021-11-09",
+  "published_date": "2021-11-09",
+  "expiry_date": "2024-11-09",
+  "issued_date_roc": "110-11-09",
+  "source": "wayback:20241103064818",
+  "key": "cp-3145-8454e-3258-1",
+  "is_drug_rule": true
+ },
+ {
+  "title": "公告增修既有功能類別特殊材料「液態栓塞系統(中樞神經血管)」之給付規定。",
+  "url": "https://www.nhi.gov.tw/ch/cp-3147-51c70-3258-1.html",
+  "doc_no": "健保審字第1100036439號",
+  "issued_date": "2021-11-09",
+  "published_date": "2021-11-09",
+  "expiry_date": "2024-11-09",
+  "issued_date_roc": "110-11-09",
+  "source": "wayback:20241103064818",
+  "key": "cp-3147-51c70-3258-1",
+  "is_drug_rule": true
+ },
+ {
+  "title": "公告暫予支付特殊材料「\"史密斯\" 百弗納氣切套管與配件」暨其給付規定。",
+  "url": "https://www.nhi.gov.tw/ch/cp-3144-f7f7a-3258-1.html",
+  "doc_no": "健保審字第1100061620號",
+  "issued_date": "2021-11-09",
+  "published_date": "2021-11-09",
+  "expiry_date": "2024-11-09",
+  "issued_date_roc": "110-11-09",
+  "source": "wayback:20241103064818",
+  "key": "cp-3144-f7f7a-3258-1",
+  "is_drug_rule": true
+ },
+ {
+  "title": "公告暫予支付特殊材料「”伊格”明膠微粒栓塞物」計1項暨其給付規定。",
+  "url": "https://www.nhi.gov.tw/ch/cp-3149-60bd7-3258-1.html",
+  "doc_no": "健保審字第1100036387號",
+  "issued_date": "2021-11-03",
+  "published_date": "2021-11-04",
+  "expiry_date": "2024-11-04",
+  "issued_date_roc": "110-11-03",
+  "source": "wayback:20241103064818",
+  "key": "cp-3149-60bd7-3258-1",
+  "is_drug_rule": true
  },
  {
   "title": "公告新增及異動「全民健康保險藥物給付項目及支付標準之特材品項」計158項。",
