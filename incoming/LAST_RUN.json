@@ -1,14 +1,21 @@
 {
- "run_at": null,
- "run_url": "",
- "received": {},
+ "run_at": "2026-10-24T22:07:37+00:00",
+ "run_url": "https://github.com/TLAN1012/NHI-Rules/actions/runs/40137197264",
+ "received": {
+  "topics": {
+   "html": 0,
+   "non_html": [],
+   "bytes": 0
+  },
+  "drug": {
+   "html": 0,
+   "non_html": [],
+   "bytes": 0
+  }
+ },
  "used": {},
  "unassigned": [],
  "unreadable": [],
  "problems": [],
- "notes": [
-  "尚未有任何投遞。run_at 為 null 代表這是初始狀態，不是處理失敗。",
-  "本檔由 scraper/drop_report.py 於每次處理後覆寫，請勿手動編輯。",
-  "投遞規則見同目錄 README.md。"
- ]
+ "notes": []
 }
