@@ -145,6 +145,13 @@ https://raw.githubusercontent.com/TLAN1012/NHI-Rules/<分支>/incoming/LAST_RUN.
 
 處理結果（收到幾份、用了幾份、哪些沒歸入）會寫在那次 Actions 執行的摘要裡。
 
+## 有話要說？
+
+投遞相關的自動回饋走 `LAST_RUN.json`；**需要討論的事情走 `comms/`**
+（一訊息一檔、只新增不修改，格式與用法見 `comms/README.md`）。
+
+不要把說明文字塞進投遞區——`topics/` 與 `drug/` 會在每次處理後清空。
+
 ## 本機手動跑
 
 ```bash

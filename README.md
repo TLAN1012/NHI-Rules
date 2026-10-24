@@ -53,14 +53,18 @@
 │   ├── fetch_topics.py   # 抓上述兩專區的 hub 頁與子頁
 │   ├── ingest_topics.py  # 把別處抓好的原始 HTML 匯入成快取（繞過 Cloudflare）
 │   ├── drop_report.py    # 產生投遞回執，處理結果明顯不對時讓 run 失敗
+│   ├── comms.py          # 訊息通道：寫／讀／格式檢查
 │   ├── build_topics.py   # 解析兩專區 → topics.json ＋ 附件層級的變動比對
 │   ├── test_build_dataset.py  # 來源優先序測試
 │   ├── test_build_topics.py   # 變動偵測測試
 │   ├── test_ingest_topics.py  # 外部 HTML 匯入測試
 │   ├── test_drop_report.py    # 投遞回執測試
+│   ├── test_comms.py          # 訊息通道測試
 │   ├── extract_rules.py  # 完整版 PDF／章節檔 → 逐條給付規定 rules.json
 │   ├── extract_fm.py     # 家醫計畫問答集＋計畫本文 PDF → fm_qa.json / fm_plan.json
 │   └── requirements.txt
+├── comms/                # 供應端與處理端的訊息通道（一訊息一檔，只新增不修改）
+│   └── README.md         # 通道規則與訊息格式
 ├── incoming/             # 供應端投遞原始 HTML 的位置（處理後自動清空）
 │   ├── README.md         # 給供應端的檔案規則
 │   └── LAST_RUN.json     # 回執：上一批收到幾份、用了幾份、還缺什麼
@@ -130,6 +134,7 @@ python3 scraper/test_build_dataset.py   # 來源優先序（live / wayback / 既
 python3 scraper/test_build_topics.py    # 變動偵測（新增／附件更新／下架／抓取不完整）
 python3 scraper/test_ingest_topics.py   # 外部 HTML 匯入（專區歸屬、未歸入者回報）
 python3 scraper/test_drop_report.py     # 投遞回執（缺 hub、版型不符、雜訊不誤報）
+python3 scraper/test_comms.py           # 訊息通道（格式檢查、待回覆追蹤、斷鏈偵測）
 ```
 
 兩支都不需網路。`build_dataset.py` 的來源比較曾因直接比字串而讓 Wayback 存檔
@@ -176,6 +181,9 @@ python3 scraper/extract_rules.py cache/chapters --out docs/data/rules.json
   檔案規則見 `incoming/README.md`；處理結果寫回 `incoming/LAST_RUN.json`，
   供應端下次投遞前讀它即可知道上一批缺了什麼——訊息與資料同處一個 repo，
   不另開溝通管道。
+- `comms.yml`：`comms/` 有新訊息時檢查格式，並把標記「需回覆」的訊息彙整成
+  一張固定的 GitHub Issue（待回覆清空後自動關閉）。兩端都不是常駐的，
+  能真正喚醒另一端的只有通知到人。
 - `probe-sources.yml`：資料源可及性探測（手動觸發），佐證上述結論。
 
 > self-hosted runner 近期約四分之一的班次被 Cloudflare 擋而退回 Wayback 存檔
