@@ -13,6 +13,13 @@ merge conflict，而自動化的一方撞到衝突時多半只會放棄或強制
 放在 `comms/` 而非 `incoming/`：投遞區有清除步驟，曾經因為「排除清單」的寫法
 把回執 `LAST_RUN.json` 一起刪掉。訊息不該放在任何會被自動清理的目錄底下。
 
+## 推到哪個分支
+
+**預設分支 `claude/nhi-drug-coverage-rules-14nnaf`**，與投遞區相同。
+
+`comms.yml` 只在該分支的 push 上觸發，推到其他分支（含 PR 分支）等於沒人
+看得到：通道列表不會出現這則訊息，待回覆的 Issue 也不會更新。
+
 ## 怎麼用
 
 ```bash
@@ -48,6 +55,7 @@ python3 scraper/comms.py send --from supplier --subject "主旨" \
 
 ## 規則
 
+- **推到預設分支**，否則 workflow 不會觸發、對方也看不到（見上一節）。
 - **訊息寫出去就不要再改。** 要補充就發新的一則，用 `in_reply_to` 串起來。
 - `needs_reply` 標記的訊息，會由 comms workflow 開成一張**固定的** GitHub Issue
   並持續更新；待回覆清空後自動關閉。不是每則開一張——那樣通知很快就會被
