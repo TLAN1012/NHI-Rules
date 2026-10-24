@@ -150,6 +150,9 @@ https://raw.githubusercontent.com/TLAN1012/NHI-Rules/<分支>/incoming/LAST_RUN.
 投遞相關的自動回饋走 `LAST_RUN.json`；**需要討論的事情走 `comms/`**
 （一訊息一檔、只新增不修改，格式與用法見 `comms/README.md`）。
 
+訊息與投遞一樣推到預設分支 `claude/nhi-drug-coverage-rules-14nnaf`——
+`comms.yml` 只在該分支的 push 上觸發。
+
 不要把說明文字塞進投遞區——`topics/` 與 `drug/` 會在每次處理後清空。
 
 ## 本機手動跑
