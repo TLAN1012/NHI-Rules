@@ -59,6 +59,8 @@
 │   ├── extract_rules.py  # 完整版 PDF／章節檔 → 逐條給付規定 rules.json
 │   ├── extract_fm.py     # 家醫計畫問答集＋計畫本文 PDF → fm_qa.json / fm_plan.json
 │   └── requirements.txt
+├── incoming/             # 供應端投遞原始 HTML 的位置（處理後自動清空）
+│   └── README.md         # 給供應端的檔案規則
 └── cache/wayback/        # 已抓取的網頁存檔（本次資料集的來源，可重現建置）
 ```
 
@@ -164,7 +166,18 @@ python3 scraper/extract_rules.py cache/chapters --out docs/data/rules.json
   - 每週六台北 16:00：同上，另加抓共擬會議／改善方案兩個專區並比對變動
     （這兩區需逐頁走訪子頁才拿得到附件，每日抓對官網是不必要的負擔）
   安裝方式見該 workflow 檔內註解；未安裝前不影響其他流程。
+- `ingest-drop.yml`：供應端（會開瀏覽器的 bot／人工）把官網原始 HTML 推進
+  `incoming/` 後**自動觸發**，解析 → 更新 `docs/data` → 清空投遞區 → 重新發布。
+  跑在一般 GitHub runner：官網由供應端讀取，這裡只做解析，**不需通過 Cloudflare**。
+  檔案規則見 `incoming/README.md`。
 - `probe-sources.yml`：資料源可及性探測（手動觸發），佐證上述結論。
+
+> self-hosted runner 近期約四分之一的班次被 Cloudflare 擋而退回 Wayback 存檔
+> （以 commit 訊息中的「wayback fallback」計）。投遞管線不受此影響，是目前
+> 較可靠的更新路徑。
+>
+> 投遞不會造成無限觸發：workflow 自己的 commit 以內建 `GITHUB_TOKEN` 推送，
+> 這類推送依 GitHub 設計不會再觸發任何 workflow。
 
 ### 已知限制
 

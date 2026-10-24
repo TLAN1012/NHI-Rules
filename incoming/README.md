@@ -1,0 +1,85 @@
+# 資料投遞區（給供應端的檔案規則）
+
+把從健保署官網抓到的**原始 HTML** 放進這裡並推送，GitHub Actions 會自動處理：
+解析 → 更新 `docs/data/*.json` → 清空本目錄 → 重新發布網站。
+
+處理跑在一般的 GitHub runner 上，不需要通過 Cloudflare——官網由你那端讀取，
+這裡只做解析。
+
+## 放哪裡
+
+```
+incoming/
+├── topics/     共擬會議、醫療給付改善方案
+└── drug/       藥品給付規定與法規公告（選用）
+```
+
+兩個目錄都是選用的，有什麼放什麼；沒放的那區會沿用既有資料，不會被清空。
+
+## 要放什麼
+
+**原始 HTML（頁面原始碼），不是 Markdown、不是 PDF、不是截圖。**
+
+解析器讀的是 `section.fileDownload`、`span.fileType`、表格的 `<thead>` 這些
+DOM 結構。轉成 Markdown 之後這些資訊已經被壓掉，無法還原。瀏覽器裡「檢視
+網頁原始碼」或 `document.documentElement.outerHTML` 存下來的就是要的東西。
+
+### `incoming/topics/`
+
+| 專區 | 要抓的頁 |
+|---|---|
+| 共擬會議 | `lp-2771-1.html`，含分頁 `?pi=1&ps=60`、`?pi=2&ps=60`… |
+| | 上述表格每一列連到的 `cp-` 內容頁 |
+| 改善方案 | `np-2823-1.html` |
+| | 其下子分類的 `np-` 頁 |
+| | 子分類底下的 `cp-` 方案頁 |
+
+### `incoming/drug/`（選用）
+
+| 要抓的頁 |
+|---|
+| `lp-3258-1.html`，含分頁 `?pi=1&ps=60` 起算約 15 頁 |
+| `np-2505-1.html`、`np-2506-1.html`、`np-2508-1.html`、`np-3397-1.html`、`np-2509-1.html`、`np-3420-1.html` |
+
+> ⚠️ 兩個目錄**不要混放**。藥品給付規定的解析器會把共擬會議的列表頁誤判成
+> 法規公告，污染 `announcements.json`。
+
+## 不要放什麼
+
+**不要放附件檔案**（PDF／DOC／ODT 等會議紀錄、計畫書、問答集）。
+
+資料集只記錄附件的檔名、類型、大小與官網連結，前端也是直接連到官網原始檔，
+本站不轉存。
+
+這一條很重要：**git 歷史是永久的**。附件一旦推進來，就算下一個 commit 刪掉，
+檔案仍留在歷史裡，repo 會持續膨脹且無法回收。整批要的 HTML 通常只有數 MB，
+附件則可能數百 MB。
+
+處理時若偵測到非 HTML 檔案，Actions 會發出警告並列出檔名。
+
+## 檔名怎麼取
+
+**不拘。** 處理時會自己從 `<link rel="canonical">`、`og:url`、或檔名裡的頁面
+代號判斷每份檔案是哪一頁。用原始網址、用中文標題、用流水號都可以。
+
+專區歸屬是從 hub 頁沿著連結走出來的，不是靠網址規則——改善方案的方案頁帶的
+是子分類代號（如 `np-2824`）而非 hub 代號（`np-2823`），照網址比對會整批歸錯。
+
+沒被任何 hub 連到的檔案會列在 Actions 的警告裡，不會被靜靜丟掉。
+
+## 推送之後
+
+推送到主要工作分支即可觸發。處理完成後：
+
+- `docs/data/topics.json`、`topic_changes.json`（及 `drug/` 有放時的公告資料）更新
+- 本目錄的檔案被清空（`.gitkeep` 保留）
+- 網站重新發布
+
+處理結果（收到幾份、用了幾份、哪些沒歸入）會寫在那次 Actions 執行的摘要裡。
+
+## 本機手動跑
+
+```bash
+python3 scraper/ingest_topics.py incoming/topics --out cache/topics
+python3 scraper/build_topics.py cache/topics --out docs/data
+```

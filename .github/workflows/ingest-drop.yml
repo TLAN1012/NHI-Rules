@@ -1,0 +1,119 @@
+name: Ingest data drop
+
+# 供應端（會開瀏覽器的 bot／人工）把官網原始 HTML 推進 incoming/ 後自動處理。
+# 檔案規則見 incoming/README.md。
+#
+# 跑在一般 GitHub runner：官網由供應端讀取，這裡只做解析，不需要通過
+# Cloudflare。這也是本流程相對於 self-hosted runner 的意義——後者近期約有
+# 四分之一的班次被擋而退回 Wayback 存檔。
+#
+# 不會無限觸發：workflow 自己的 commit 是用內建 GITHUB_TOKEN 推送的，
+# 這類推送依 GitHub 設計不會再觸發任何 workflow。
+
+on:
+  push:
+    branches: [claude/nhi-drug-coverage-rules-14nnaf]
+    paths: ["incoming/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data        # 與排程班共用，避免同時寫入 docs/data
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          python3 -m venv .venv
+          .venv/bin/python -m pip install -q beautifulsoup4
+
+      # 先把收到什麼講清楚，再決定要不要跑。非 HTML 檔案要明確警告：
+      # git 歷史是永久的，附件推進來之後刪掉也收不回空間。
+      - name: Inspect drop
+        id: drop
+        run: |
+          {
+            echo "## 收到的投遞"
+            echo
+            for dir in topics drug; do
+              path="incoming/$dir"
+              [ -d "$path" ] || continue
+              html=$(find "$path" -type f \( -name '*.html' -o -name '*.htm' \) | wc -l | tr -d " ")
+              other=$(find "$path" -type f ! -name '*.html' ! -name '*.htm' ! -name '.gitkeep' | wc -l | tr -d " ")
+              size=$(du -sh "$path" 2>/dev/null | cut -f1)
+              echo "- \`$dir/\`：HTML $html 份、其他 $other 份、合計 $size"
+              if [ "$other" -gt 0 ]; then
+                echo "::warning::incoming/$dir 含 $other 個非 HTML 檔案。資料集只記錄附件連結、不轉存附件；git 歷史無法回收，請供應端只推送 HTML（見 incoming/README.md）"
+                find "$path" -type f ! -name '*.html' ! -name '*.htm' ! -name '.gitkeep' -printf '    - %p (%s bytes)\n' | head -20
+              fi
+            done
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          count() { find "incoming/$1" -type f \( -name '*.html' -o -name '*.htm' \) 2>/dev/null | wc -l | tr -d " "; }
+          echo "topics=$(count topics)" >> "$GITHUB_OUTPUT"
+          echo "drug=$(count drug)" >> "$GITHUB_OUTPUT"
+
+      - name: Ingest topic sections
+        if: steps.drop.outputs.topics != '0'
+        run: |
+          {
+            echo
+            echo "## 共擬會議／改善方案"
+            echo '```'
+            .venv/bin/python scraper/ingest_topics.py incoming/topics --out cache/topics 2>&1
+            .venv/bin/python scraper/build_topics.py cache/topics --out docs/data 2>&1
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # 藥品給付規定走既有的 build_dataset：投遞的頁面會被判為 live 來源，
+      # 排序上優於 cache/wayback 的存檔，故可直接與存檔一起建置。
+      - name: Rebuild drug dataset
+        if: steps.drop.outputs.drug != '0'
+        run: |
+          {
+            echo
+            echo "## 藥品給付規定"
+            echo '```'
+            .venv/bin/python scraper/build_dataset.py incoming/drug cache/wayback --out docs/data 2>&1
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # 投遞區用完即清：資料已轉為 docs/data 下的 JSON，原始 HTML 留在
+      # 工作目錄只會讓後續投遞分不清新舊。
+      - name: Clear drop
+        run: |
+          find incoming -type f ! -name '.gitkeep' ! -name 'README.md' -delete
+          find incoming -mindepth 1 -type d -empty -delete
+          mkdir -p incoming/topics incoming/drug
+          touch incoming/topics/.gitkeep incoming/drug/.gitkeep
+
+      - name: Commit if changed
+        id: commit
+        run: |
+          git config user.name "nhi-data-bot"
+          git config user.email "actions@github.com"
+          git add docs/data incoming
+          if git diff --cached --quiet; then
+            echo "資料無變化" >> "$GITHUB_STEP_SUMMARY"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "chore(data): 處理投遞資料（topics ${{ steps.drop.outputs.topics }} 份、drug ${{ steps.drop.outputs.drug }} 份）"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Publish docs/ to gh-pages
+        if: steps.commit.outputs.changed == 'true'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          commit_message: "deploy: 投遞資料更新"
