@@ -28,7 +28,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
+      # 需要完整歷史：推送前要 rebase 到遠端最新狀態，淺層 checkout 找不到
+      # 共同祖先，rebase 會失敗。
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Install dependencies
         run: |
@@ -130,11 +134,23 @@ jobs:
           if git diff --cached --quiet; then
             echo "資料無變化" >> "$GITHUB_STEP_SUMMARY"
             echo "changed=false" >> "$GITHUB_OUTPUT"
-          else
-            git commit -m "chore(data): 處理投遞資料（topics ${{ steps.drop.outputs.topics }} 份、drug ${{ steps.drop.outputs.drug }} 份）"
-            git push
-            echo "changed=true" >> "$GITHUB_OUTPUT"
+            exit 0
           fi
+          git commit -m "chore(data): 處理投遞資料（topics ${{ steps.drop.outputs.topics }} 份、drug ${{ steps.drop.outputs.drug }} 份）"
+
+          # 本流程與排程班共用 concurrency 群組，排隊期間對方可能已推送新 commit，
+          # 此時 checkout 的基準已落後，直接 push 會被拒。第一次正式執行就踩到：
+          # 一次 merge 同時觸發兩個流程，序列化讓這個競態幾乎必然發生。
+          for attempt in 1 2 3; do
+            if git pull --rebase origin "$GITHUB_REF_NAME" && git push; then
+              echo "changed=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            echo "::warning::推送失敗（第 $attempt 次），重新同步後再試"
+            sleep $((attempt * 5))
+          done
+          echo "::error::連續三次推送失敗，請檢查分支狀態"
+          exit 1
 
       - name: Publish docs/ to gh-pages
         if: steps.commit.outputs.changed == 'true' && steps.report.outcome == 'success'
