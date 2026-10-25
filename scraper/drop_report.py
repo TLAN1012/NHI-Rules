@@ -117,6 +117,15 @@ def main() -> int:
                 "「檔案下載」區解析——附件全為 0 通常代表子頁版型與解析器的假設不符，"
                 "或投遞的子頁其實是列表頁而非內容頁。"
             )
+        elif stat["hub_pages"] and not stat["child_pages"] and unassigned:
+            # 有 hub、零子頁、卻有一堆未歸入 ⇒ 投的子頁不屬於投的 hub。
+            # 只記 note 會讓該次 run 成功、投遞區被清空，證據跟著消失；
+            # 實際發生過一次（投了 lp-2771 第 2 頁，子頁卻都在第 1 頁底下）。
+            problems.append(
+                f"{key}：收到 hub {stat['hub_pages']} 頁，但沒有任何子頁被歸入，"
+                f"同時有 {len(unassigned)} 頁未歸入。代表投遞的子頁並不屬於投遞的 hub"
+                "——多半是 hub 分頁投錯頁，或缺了中間層的年度／子分類節點頁。"
+            )
         elif stat["hub_pages"] and not stat["child_pages"]:
             notes.append(
                 f"{key}：只收到 hub 頁、沒有子頁。附件掛在子頁上，"

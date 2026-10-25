@@ -68,7 +68,7 @@ jobs:
             # 多個流程共用 update-data concurrency 群組，排隊期間對方可能已推送，
             # 此時 checkout 的基準已落後、直接 push 會被拒（投遞流程首次執行即踩到）
             for attempt in 1 2 3; do
-              git pull --rebase origin "$GITHUB_REF_NAME" && git push && break
+              git pull --rebase -X theirs origin "$GITHUB_REF_NAME" && git push && break
               echo "::warning::推送失敗（第 $attempt 次），重新同步後再試"
               sleep $((attempt * 5))
             done
