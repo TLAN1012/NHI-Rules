@@ -1,21 +1,21 @@
 {
- "run_at": "2026-10-25T03:04:41+00:00",
- "run_url": "https://github.com/TLAN1012/NHI-Rules/actions/runs/40156855535",
+ "run_at": "2026-10-25T03:06:31+00:00",
+ "run_url": "https://github.com/TLAN1012/NHI-Rules/actions/runs/40156973072",
  "received": {
   "topics": {
-   "html": 4,
+   "html": 3,
    "non_html": [],
-   "bytes": 218568
+   "bytes": 172535
   },
   "drug": {
-   "html": 0,
+   "html": 1,
    "non_html": [],
-   "bytes": 0
+   "bytes": 52383
   }
  },
  "used": {
   "meetings": {
-   "hub_pages": 2,
+   "hub_pages": 0,
    "child_pages": 0,
    "items": 0,
    "attachments": 0
@@ -28,13 +28,15 @@
   }
  },
  "unassigned": [
-  "cp-14129-98c03-2771-1.html",
-  "cp-18030-b0aca-2771-1.html"
+  "cp-6509-582cb-2771-1.html",
+  "cp-6520-23f9d-2771-1.html",
+  "cp-6523-7ada8-2771-1.html"
  ],
  "unreadable": [],
- "problems": [],
+ "problems": [
+  "topics/ 收到 3 份 HTML，但沒有任何一頁被歸入專區。最可能的原因是沒附上 hub 頁（lp-2771-1.html／np-2823-1.html）——專區歸屬是從 hub 沿連結走出來的，沒有 hub 就無從判斷。"
+ ],
  "notes": [
-  "meetings：只收到 hub 頁、沒有子頁。附件掛在子頁上，請一併投遞 hub 連到的 cp- 內容頁。",
-  "有 2 頁沒被任何 hub 連到，已略過：cp-14129-98c03-2771-1.html, cp-18030-b0aca-2771-1.html。若它們應該被收錄，代表缺了中間層的 hub／子分類頁。"
+  "有 3 頁沒被任何 hub 連到，已略過：cp-6509-582cb-2771-1.html, cp-6520-23f9d-2771-1.html, cp-6523-7ada8-2771-1.html。若它們應該被收錄，代表缺了中間層的 hub／子分類頁。"
  ]
 }
