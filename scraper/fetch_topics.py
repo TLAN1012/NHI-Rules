@@ -33,7 +33,7 @@ from fetch_live import (  # noqa: E402
 )
 from bs4 import BeautifulSoup  # noqa: E402
 
-from parse_nhi import parse_node_page, parse_table_items  # noqa: E402
+from parse_nhi import content_scopes, parse_node_page, parse_table_items  # noqa: E402
 from topics_config import TOPICS  # noqa: E402
 
 CHILD_RE = re.compile(r"/ch/((?:cp|np)-[\w-]+\.html)")
@@ -50,10 +50,9 @@ def child_paths(html: str, kind: str) -> list[str]:
     else:
         urls = [link["url"] for link in parse_node_page(html)]
     if not urls:
-        soup = BeautifulSoup(html, "html.parser")
         urls = [
             a["href"]
-            for scope in soup.select("main, .contentbox, article")
+            for scope in content_scopes(BeautifulSoup(html, "html.parser"))
             for a in scope.select("a[href]")
         ]
     seen, paths = set(), []

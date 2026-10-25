@@ -39,8 +39,17 @@ MAX_CHANGES = 500
 
 
 def fingerprint(files: list[dict]) -> str:
-    """附件指紋：對 (類型, 網址, 大小) 排序後雜湊，與附件在頁面上的順序無關。"""
-    payload = sorted((f.get("file_type", ""), f.get("url", ""), f.get("size", "")) for f in files)
+    """附件指紋：對 (類型, 網址, 大小, 標題) 排序後雜湊，與附件在頁面上的順序無關。
+
+    標題必須納入：健保署換新版時會沿用同一個 dl- 網址。實測整份給付規定從
+    115.08.21 換到 115.10.22，三個 dl- 編號完全沒變，只有檔案標題與大小改了。
+    大小是四捨五入的粗略值（「6 MB」），換版後很可能顯示相同，只靠網址與大小
+    會漏掉換版；而標題幾乎都帶版本日期（如「…1151022.pdf」），是最可靠的訊號。
+    """
+    payload = sorted(
+        (f.get("file_type", ""), f.get("url", ""), f.get("size", ""), f.get("title", ""))
+        for f in files
+    )
     return hashlib.sha1(json.dumps(payload, ensure_ascii=False).encode("utf-8")).hexdigest()[:16]
 
 

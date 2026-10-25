@@ -14,7 +14,10 @@ from __future__ import annotations
 TOPICS: dict[str, dict] = {
     "meetings": {
         "name": "支付標準與共同擬訂會議",
-        "hubs": ["lp-2771-1.html"],
+        # np-3720 是官網新位置（舊頁 lp-2771 自 114-03-28 停更）。兩者是不同的樹：
+        # lp-2771 直接掛 22 個年度頁 cp-…-2771-1；np-3720 下還有一層年度節點
+        # np-…（115年 np-4147、114年 np-3911…），會議頁在再下一層。
+        "hubs": ["lp-2771-1.html", "np-3720-1.html"],
         "kind": "list",  # lp- 列表頁，子頁在表格裡
         "url": "https://www.nhi.gov.tw/ch/lp-2771-1.html",
     },

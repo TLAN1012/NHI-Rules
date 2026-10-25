@@ -199,6 +199,19 @@ def is_drug_rule_announcement(title: str) -> bool:
     return any(k in title for k in keywords)
 
 
+def content_scopes(soup: BeautifulSoup) -> list:
+    """回傳內文區塊，並先移除導覽元素。
+
+    健保署每一頁都有 div.breadcrumb 列出祖先節點（健保服務 → 健保醫療費用 → …），
+    而它位在 main 之內。不先拿掉就會把祖先當成子頁：走訪沿著麵包屑往上爬，
+    再往下把其他專區的頁面也一併歸進來（兩個專區共用「健保服務」這個祖先）。
+    實測 lp-2771 的 main 含 6 個麵包屑連結，.contentbox 則只有真正的子頁。
+    """
+    for junk in soup.select("div.breadcrumb, header, footer, nav"):
+        junk.decompose()
+    return soup.select("main, .contentbox, article") or [soup]
+
+
 def parse_table_items(html: str, source: str = "live") -> list[dict]:
     """解析 lp- 列表頁表格，以「表頭文字」對應欄位。
 
