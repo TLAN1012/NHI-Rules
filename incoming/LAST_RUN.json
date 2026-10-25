@@ -1,11 +1,11 @@
 {
- "run_at": "2026-10-24T22:32:53+00:00",
- "run_url": "https://github.com/TLAN1012/NHI-Rules/actions/runs/40139018566",
+ "run_at": "2026-10-25T03:04:41+00:00",
+ "run_url": "https://github.com/TLAN1012/NHI-Rules/actions/runs/40156855535",
  "received": {
   "topics": {
-   "html": 0,
+   "html": 4,
    "non_html": [],
-   "bytes": 0
+   "bytes": 218568
   },
   "drug": {
    "html": 0,
@@ -13,9 +13,28 @@
    "bytes": 0
   }
  },
- "used": {},
- "unassigned": [],
+ "used": {
+  "meetings": {
+   "hub_pages": 2,
+   "child_pages": 0,
+   "items": 0,
+   "attachments": 0
+  },
+  "programs": {
+   "hub_pages": 0,
+   "child_pages": 0,
+   "items": 0,
+   "attachments": 0
+  }
+ },
+ "unassigned": [
+  "cp-14129-98c03-2771-1.html",
+  "cp-18030-b0aca-2771-1.html"
+ ],
  "unreadable": [],
  "problems": [],
- "notes": []
+ "notes": [
+  "meetings：只收到 hub 頁、沒有子頁。附件掛在子頁上，請一併投遞 hub 連到的 cp- 內容頁。",
+  "有 2 頁沒被任何 hub 連到，已略過：cp-14129-98c03-2771-1.html, cp-18030-b0aca-2771-1.html。若它們應該被收錄，代表缺了中間層的 hub／子分類頁。"
+ ]
 }
