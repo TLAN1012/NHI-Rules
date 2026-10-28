@@ -2,29 +2,6 @@
  "source": "live",
  "items": [
   {
-   "name": "附表十八之七：全民健康保險血友病患者使用「Alhemo (concizumab)」在家治療紀錄表(115.10.22新增)",
-   "files": [
-    {
-     "file_type": "doc",
-     "url": "https://www.nhi.gov.tw/ch/dl-103576-b1c8bef2b82b4d3c86da54b9ea1317b8-1.docx",
-     "title": "附表十八之七：全民健康保險血友病患者使用「Alhemo (concizumab)」在家治療紀錄表(115.10.22新增).docx",
-     "size": "1 MB"
-    },
-    {
-     "file_type": "odt",
-     "url": "https://www.nhi.gov.tw/ch/dl-103577-9650baecdffa4e8f9729b3a6bcc3b128-1.odt",
-     "title": "附表十八之七：全民健康保險血友病患者使用「Alhemo (concizumab)」在家治療紀錄表(115.10.22新增).odt",
-     "size": "1 MB"
-    },
-    {
-     "file_type": "pdf",
-     "url": "https://www.nhi.gov.tw/ch/dl-103578-b8f0debd377b4d6db6f8c4c73361b658-1.pdf",
-     "title": "附表十八之七：全民健康保險血友病患者使用「Alhemo (concizumab)」在家治療紀錄表(115.10.22新增).pdf",
-     "size": "182 KB"
-    }
-   ]
-  },
-  {
    "name": "通則(115.10.22更新)",
    "files": [
     {
@@ -1065,6 +1042,29 @@
      "url": "https://www.nhi.gov.tw/ch/dl-42688-c50a15ca5e12429a89c6548f89943d8d-1.pdf",
      "title": "附表十八之六：全民健康保險血友病患者使用「雙特異性單株抗體藥物」在家治療紀錄表(109.07.22新增).pdf",
      "size": "183 KB"
+    }
+   ]
+  },
+  {
+   "name": "附表十八之七：全民健康保險血友病患者使用「Alhemo (concizumab)」在家治療紀錄表(115.10.22新增)",
+   "files": [
+    {
+     "file_type": "doc",
+     "url": "https://www.nhi.gov.tw/ch/dl-103576-b1c8bef2b82b4d3c86da54b9ea1317b8-1.docx",
+     "title": "附表十八之七：全民健康保險血友病患者使用「Alhemo (concizumab)」在家治療紀錄表(115.10.22新增).docx",
+     "size": "1 MB"
+    },
+    {
+     "file_type": "odt",
+     "url": "https://www.nhi.gov.tw/ch/dl-103577-9650baecdffa4e8f9729b3a6bcc3b128-1.odt",
+     "title": "附表十八之七：全民健康保險血友病患者使用「Alhemo (concizumab)」在家治療紀錄表(115.10.22新增).odt",
+     "size": "1 MB"
+    },
+    {
+     "file_type": "pdf",
+     "url": "https://www.nhi.gov.tw/ch/dl-103578-b8f0debd377b4d6db6f8c4c73361b658-1.pdf",
+     "title": "附表十八之七：全民健康保險血友病患者使用「Alhemo (concizumab)」在家治療紀錄表(115.10.22新增).pdf",
+     "size": "182 KB"
     }
    ]
   },
