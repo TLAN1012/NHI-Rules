@@ -1,19 +1,4605 @@
 {
- "generated_at": "2026-10-25T03:06:29+00:00",
+ "generated_at": "2026-10-31T14:03:42+00:00",
  "topics": [
   {
    "key": "meetings",
    "name": "支付標準與共同擬訂會議",
    "url": "https://www.nhi.gov.tw/ch/lp-2771-1.html",
-   "items": [],
-   "stale": true
+   "items": [
+    {
+     "key": "cp-3327-70dc3-2597-1",
+     "title": "轉帳代繳之優點",
+     "url": "https://www.nhi.gov.tw/ch/cp-3327-70dc3-2597-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-50704-a0e741c8d09e4a7982691c8c43f8bdb5-1.pdf",
+       "title": "委託轉帳代繳全民健康保險費約定書(113.04.17更新).pdf",
+       "size": "129 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-11115-0090572e2f21426e99e4498925148273-1.pdf",
+       "title": "委託轉帳代繳全民健康保險費約定書(信用卡版)(107.09.27更新).pdf",
+       "size": "126 KB"
+      }
+     ],
+     "fingerprint": "95acd4b9ec441d77"
+    },
+    {
+     "key": "cp-18630-a4c13-3969-1",
+     "title": "資訊技術文件",
+     "url": "https://www.nhi.gov.tw/ch/cp-18630-a4c13-3969-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-85785-526e047968e8406494df1060fa61f73c-1.pdf",
+       "title": "電子處方箋資料QR code說明文件.pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-85784-fd7aa4f97e744de7bce30f21b165e30a-1.pdf",
+       "title": "電子處方箋QR code Sample.pdf",
+       "size": "64 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-85778-68e3a3fe359b48fe90693d9b731bfde2-1.pdf",
+       "title": "電子處方箋開立端Web API說明文件(控制軟體6.0).pdf",
+       "size": "574 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-85783-6653870e3a8f408c94b29f75949ca1c8-1.pdf",
+       "title": "電子處方箋調劑端Web API說明文件(控制軟體6.0).pdf",
+       "size": "668 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-85786-3790c4c38bf94a1bb35b960c84e63168-1.pdf",
+       "title": "電子處方箋開立端WebAPI說明文件.pdf",
+       "size": "565 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-85787-5a121f710c68422e913b5f426488da29-1.pdf",
+       "title": "電子處方箋調劑端WebAPI說明文件.pdf",
+       "size": "674 KB"
+      }
+     ],
+     "fingerprint": "db747aa9ab652ab7"
+    },
+    {
+     "key": "cp-5548-135e8-2931-1",
+     "title": "特約醫事機構代碼網路查詢服務",
+     "url": "https://www.nhi.gov.tw/ch/cp-5548-135e8-2931-1.html",
+     "date": null,
+     "files": [],
+     "fingerprint": "97d170e1550eee4a"
+    },
+    {
+     "key": "cp-2042-8a66c-3301-1",
+     "title": "特殊造影檢查影像及報告申請(原特定檢查資源共享試辦計畫)",
+     "url": "https://www.nhi.gov.tw/ch/cp-2042-8a66c-3301-1.html",
+     "date": null,
+     "files": [],
+     "fingerprint": "97d170e1550eee4a"
+    },
+    {
+     "key": "cp-5718-400fe-2779-1",
+     "title": "特殊材料給付規定",
+     "url": "https://www.nhi.gov.tw/ch/cp-5718-400fe-2779-1.html",
+     "date": null,
+     "files": [],
+     "fingerprint": "97d170e1550eee4a"
+    },
+    {
+     "key": "cp-2629-3c936-2528-1",
+     "title": "特材收載品項表下載",
+     "url": "https://www.nhi.gov.tw/ch/cp-2629-3c936-2528-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "txt",
+       "url": "https://www.nhi.gov.tw/ch/dl-75678-67a9552bb8d44f7c90c015acd8b30bb4-1.txt",
+       "title": "帶走所有壓縮檔.txt檔(115.10.21更新)(下載欄位格式請用109.04更新格式檔案).txt",
+       "size": "162 MB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-9556-eeed972d935a4bbcbd5878a242db2860-1.odt",
+       "title": "健保特殊材料品項 .txt 檔 欄位格式說明(105.06.06更新)-適用於106年10月前更新之檔案.odt",
+       "size": "5 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-9557-369a9be46c524d58b6b098a75f6943f3-1.pdf",
+       "title": "健保特殊材料品項 .txt 檔 欄位格式說明(105.06.06更新)-適用於106年10月前更新之檔案.pdf",
+       "size": "47 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-9558-dfd94b1cd5ff4a448bc38977b9ceb334-1.odt",
+       "title": "健保特殊材料品項 .txt 檔 欄位格式說明(106.11.09更新)-適用於106年11月(含)後更新之檔案.odt",
+       "size": "5 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-9559-093654306ecf44128ea59b2ec64fd9e1-1.pdf",
+       "title": "健保特殊材料品項 .txt 檔 欄位格式說明(106.11.09更新)-適用於106年11月(含)後更新之檔案.pdf",
+       "size": "47 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-9560-9c8a4b7f87834ef79b083d486852e96c-1.pdf",
+       "title": "健保特殊材料品項 .txt 檔 欄位格式說明(109.02.21更新)-適用於109年2月(含)後更新之檔案.pdf",
+       "size": "25 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-9561-ae54d5044e634180a91d926544bea81e-1.pdf",
+       "title": "健保特殊材料品項 .txt 檔 欄位格式說明(109.04更新)-適用於109年4月(含)後更新之檔案.pdf",
+       "size": "248 KB"
+      },
+      {
+       "file_type": "csv",
+       "url": "https://www.nhi.gov.tw/ch/dl-91109-eb357306490340f6a2c8b8b019144e86-1.csv",
+       "title": "特材收載品項表(115.10.21更新).csv",
+       "size": "4 MB"
+      },
+      {
+       "file_type": "csv",
+       "url": "https://www.nhi.gov.tw/ch/dl-62006-a4362a658b964545b49c86bda3611006-1.csv",
+       "title": "整組組件特材關聯代碼表(115.10.21更新).csv",
+       "size": "414 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-62005-b607d62f1fb34173a3fe18d28a28284b-1.pdf",
+       "title": "整組組件特材關聯代碼表(115.10.21更新).pdf",
+       "size": "6 MB"
+      }
+     ],
+     "fingerprint": "d85d9b679e986887"
+    },
+    {
+     "key": "cp-2739-71852-2539-1",
+     "title": "建議書表格下載及填表說明",
+     "url": "https://www.nhi.gov.tw/ch/cp-2739-71852-2539-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-97732-53b06305a7284ecfbb6ffd5d444185c8-1.odt",
+       "title": "特殊材料生產成本分析表_切結書.odt",
+       "size": "6 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-97733-9e8b29e03e9a4cc8a1a0bd52135427b0-1.pdf",
+       "title": "特殊材料生產成本分析表_切結書.pdf",
+       "size": "61 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-97731-8e3cca3280fd462daac2a01a6f7c3a94-1.doc",
+       "title": "特殊材料生產成本分析表_切結書.doc",
+       "size": "32 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-97725-aaf20d4070fb4e989647341bf5693951-1.docx",
+       "title": "特殊材料生產成本分析表_國產.docx",
+       "size": "17 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-97727-044574ee6c7b4fca810a1baa23565868-1.pdf",
+       "title": "特殊材料生產成本分析表_國產.pdf",
+       "size": "52 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-97726-fe1ec63dbd7143199d2fc57520667e54-1.odt",
+       "title": "特殊材料生產成本分析表_國產.odt",
+       "size": "11 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-97728-b4af3cf17d944b73b6477149f124897a-1.doc",
+       "title": "特殊材料生產成本分析表_輸入.doc",
+       "size": "34 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-97730-1c7052c254fb40ebbd6992c7081b828f-1.pdf",
+       "title": "特殊材料生產成本分析表_輸入.pdf",
+       "size": "59 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-97729-b6bea16650fa4d38b8b92e6691d885b2-1.odt",
+       "title": "特殊材料生產成本分析表_輸入.odt",
+       "size": "7 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-10079-9749803136714958a3194c1cdc1edfd1-1.pdf",
+       "title": "特殊材料建議全民健康保險收載作業手冊(111.09.30新增).pdf",
+       "size": "509 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-10080-e0eb750c8e384c98b162d2cb579f26a1-1.pdf",
+       "title": "新特材建議收載線上作業使用者手冊(114.02.25更新).pdf",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-72976-59161f42d65d46f1bb0a35bbe9488461-1.pdf",
+       "title": "既有特材建議收載線上作業使用者手冊(114.02.25更新).pdf",
+       "size": "7 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-10082-93d048d98f0c48ad9a7e2f82dcb8a726-1.pdf",
+       "title": "藥物納入全民健康保險給付建議書格式(新功能類別特材)(105.07.26更新).pdf",
+       "size": "341 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-10081-f98ae84237234a7d99a960b42872334a-1.odt",
+       "title": "藥物納入全民健康保險給付建議書格式(新功能類別特材)(105.07.26更新).odt",
+       "size": "38 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-10084-9a9e1b6d027a44c99b2c8b36f9f8a586-1.pdf",
+       "title": "藥物納入全民健康保險給付建議書格式(既有功能類別特材) (111.09.30更新).pdf",
+       "size": "134 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-10083-3acfdffd0adf4eae90dc80aa9da2cd43-1.odt",
+       "title": "藥物納入全民健康保險給付建議書格式(既有功能類別特材) (111.09.30更新).odt",
+       "size": "19 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-10085-769c240e25134a04abdd95ecd631ed20-1.pdf",
+       "title": "藥物納入健保給付建議書相關函文(101.10.23新增).pdf",
+       "size": "65 KB"
+      },
+      {
+       "file_type": "jpg",
+       "url": "https://www.nhi.gov.tw/ch/dl-10086-499de5dd76464170b2e50a458132709b-1.jpg",
+       "title": "藥物納入健保給付建議書相關函文(101.10.23新增).jpg",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-10088-eb568a70d5fe4c42a3629ae5cd712665-1.pdf",
+       "title": "新藥及新醫材病人意見分享品項認識產品-摘要資訊(105.01.22新增).pdf",
+       "size": "59 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-10087-277c27e5653840c1a2b8283e99a720c3-1.odt",
+       "title": "新藥及新醫材病人意見分享品項認識產品-摘要資訊(105.01.22新增).odt",
+       "size": "8 KB"
+      },
+      {
+       "file_type": "ods",
+       "url": "https://www.nhi.gov.tw/ch/dl-61990-5ac883c197b34302be3b800488892939-1.ods",
+       "title": "廠牌名稱對照表(115.10.21更新).ods",
+       "size": "30 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-61989-c573252830cc476497f2a751e2112394-1.pdf",
+       "title": "廠牌名稱對照表(115.10.21更新).pdf",
+       "size": "301 KB"
+      }
+     ],
+     "fingerprint": "7ebca5a4c10dd231"
+    },
+    {
+     "key": "cp-5664-07267-2471-1",
+     "title": "執行原則藥物名單",
+     "url": "https://www.nhi.gov.tw/ch/cp-5664-07267-2471-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "ods",
+       "url": "https://www.nhi.gov.tw/ch/dl-66440-cfd5fad7e32b465b984863d688ec395c-1.ods",
+       "title": "經簽訂供貨無虞合約適用「全民健康保險藥物給付項目及支付標準」不可替代特殊藥品及罕見疾病用藥「尊重市場價格」之執行原則藥物名單.ods",
+       "size": "19 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-66439-e55181be688844d5b6b2dc68c386af7e-1.pdf",
+       "title": "經簽訂供貨無虞合約適用「全民健康保險藥物給付項目及支付標準」不可替代特殊藥品及罕見疾病用藥「尊重市場價格」之執行原則藥物名單.pdf",
+       "size": "174 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-66441-d3dc85b7012b481da25bf51bc6f64d96-1.pdf",
+       "title": "落實罕藥用於國民健康署認定罕見疾病病人作業.pdf",
+       "size": "122 KB"
+      }
+     ],
+     "fingerprint": "fe9547d4ff296dcf"
+    },
+    {
+     "key": "cp-20657-7f97d-4147-1",
+     "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議115年第3次會議紀錄實錄(115.10.16新增)",
+     "url": "https://www.nhi.gov.tw/ch/cp-20657-7f97d-4147-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-103527-838fe70542f64f87853314d7eafb1c39-1.mp3",
+       "title": "01主席致詞.mp3",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-103528-2d757cb759584ddb81ab9c63e1bc080c-1.mp3",
+       "title": "02優先討論事項第一案.mp3",
+       "size": "40 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-103529-ce0220e585c046118636531366572571-1.mp3",
+       "title": "03報告事項第一案.mp3",
+       "size": "5 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-103532-b8f79903390e4be4be96ccf23637d0c6-1.mp3",
+       "title": "04報告事項第二案.mp3",
+       "size": "6 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-103531-99768c27c3fc45b6909b6b47a9faba70-1.mp3",
+       "title": "05報告事項第三案.mp3",
+       "size": "5 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-103533-59afefc2ae754c8bb78b58868c7d6ed4-1.mp3",
+       "title": "06報告事項第四案.mp3",
+       "size": "12 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-103534-a1687b6d717d4b3ea005a74e57d20ae8-1.mp3",
+       "title": "07報告事項第五案.mp3",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-103535-892f8f9dad644d56ab7282089c2de6bc-1.mp3",
+       "title": "08報告事項第六案.mp3",
+       "size": "9 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-103536-67e68f70cfab46e6b3715a37278cf456-1.mp3",
+       "title": "09報告事項第七案.mp3",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-103537-456d9a06dec84d01ba40b6fe98df7b56-1.mp3",
+       "title": "10報告事項第八案.mp3",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-103538-6dbe1f6242dd46c8b80410d8dbc2b959-1.mp3",
+       "title": "11報告事項第九案.mp3",
+       "size": "4 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-103539-67ac39c2a39941108a5598eb177072ad-1.mp3",
+       "title": "12討論事項第一案.mp3",
+       "size": "13 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-103540-1e8241c073f645a4a1fea83d21c81adc-1.mp3",
+       "title": "13討論事項第二案.mp3",
+       "size": "18 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-103541-b62d3f0160814ac2abf8a594423bea79-1.mp3",
+       "title": "14討論事項第三案.mp3",
+       "size": "14 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-103542-c080f5000c09439abeb4088e4fdf082c-1.mp3",
+       "title": "15討論事項第四案.mp3",
+       "size": "22 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-103543-5637664737ae431190d9af3d91a4a279-1.mp3",
+       "title": "16臨時提案第一案.mp3",
+       "size": "9 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-103544-6b55273c5e3243e395c6b8ee0cbca685-1.mp3",
+       "title": "17臨時提案第二案.mp3",
+       "size": "21 MB"
+      }
+     ],
+     "fingerprint": "5c6613f8e30c3afb"
+    },
+    {
+     "key": "cp-20291-d3ec1-4147-1",
+     "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議115年第2次會議紀錄實錄",
+     "url": "https://www.nhi.gov.tw/ch/cp-20291-d3ec1-4147-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-100682-84a4a4bac437472d98f4e6ad0a26ea0d-1.mp3",
+       "title": "01主席致詞.mp3",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-100683-2234eaf0913b4c2c98405151e5816955-1.mp3",
+       "title": "02優先討論事項第一案-1.mp3",
+       "size": "33 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-100684-cc49c101337e4ca68df73d261d44a30d-1.mp3",
+       "title": "02優先討論事項第一案-2.mp3",
+       "size": "34 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-100698-e4c9bb0abc164e23abaceec0dd508147-1.mp3",
+       "title": "03討論事項第一案.mp3",
+       "size": "41 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-100697-6b479755c55d4b649719bd9f5d7f1b05-1.mp3",
+       "title": "04討論事項第二案.mp3",
+       "size": "26 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-100696-48f181227e5843b38ad3c8af262ed0bc-1.mp3",
+       "title": "05報告事項第一案.mp3",
+       "size": "8 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-100694-f921d75f511b47e098075d03430b134e-1.mp3",
+       "title": "06報告事項第二案-1.mp3",
+       "size": "30 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-100695-c1ee5e65dcb441fdbe988ac16c91d4e3-1.mp3",
+       "title": "06報告事項第二案-2.mp3",
+       "size": "30 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-100693-5b0eede99d944b9fb3c25de7fd44a253-1.mp3",
+       "title": "07報告事項第三案.mp3",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-100692-b352e244effc4b189a9d7150ce118439-1.mp3",
+       "title": "08報告事項第四案.mp3",
+       "size": "894 KB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-100691-e256bc19d7774e4789216f2937207330-1.mp3",
+       "title": "09報告事項第五案.mp3",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-100690-e5e66af8a0414ca6945bd5e586499128-1.mp3",
+       "title": "10報告事項第六案.mp3",
+       "size": "789 KB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-100689-7dce770dd0c04b50b005ba346e556fbf-1.mp3",
+       "title": "11報告事項第七案.mp3",
+       "size": "6 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-100688-1add4ebaf801411b8ba5f3b457ec404d-1.mp3",
+       "title": "12報告事項第八案.mp3",
+       "size": "979 KB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-100687-1d5816a324804493b822d245284ea272-1.mp3",
+       "title": "13報告事項第九案.mp3",
+       "size": "663 KB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-100686-fedd52ed003f4105b3eb95830d920863-1.mp3",
+       "title": "14報告事項第十案.mp3",
+       "size": "4 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-100685-c0adf475a01f4769ae3885a04eb52e9a-1.mp3",
+       "title": "15報告事項第十一案.mp3",
+       "size": "3 MB"
+      }
+     ],
+     "fingerprint": "8a6070e8a092c729"
+    },
+    {
+     "key": "cp-19797-aa6db-4147-1",
+     "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議115年第1次會議紀錄實錄",
+     "url": "https://www.nhi.gov.tw/ch/cp-19797-aa6db-4147-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-97787-ab71c954e28741248b6710ca5b9e20c1-1.mp3",
+       "title": "01主席致詞.mp3",
+       "size": "759 KB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-97788-5cbf05be28c745ad84a7118813797764-1.mp3",
+       "title": "02優先討論事項第一案.mp3",
+       "size": "24 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-97789-e4a0f4e83c7746a4a383324e4c321b22-1.mp3",
+       "title": "03優先討論事項第二案.mp3",
+       "size": "28 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-97790-6d2facee785a42788bc8f3fd1eb1eeb9-1.mp3",
+       "title": "04報告事項第一案.mp3",
+       "size": "22 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-97791-cba4a66f4de143959efc0b0349600e67-1.mp3",
+       "title": "05報告事項第二案.mp3",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-97792-d00fd68c851f437eb521a07fe5ae8055-1.mp3",
+       "title": "06報告事項第三案.mp3",
+       "size": "19 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-97793-bca6531b476d4450a17ff527ec2d373b-1.mp3",
+       "title": "07報告事項第四案.mp3",
+       "size": "29 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-97794-d8c78e03c8a64df29b869b464848af04-1.mp3",
+       "title": "08討論事項第一案.mp3",
+       "size": "20 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-97795-e2716f62809747ecb4d9724a15c8257d-1.mp3",
+       "title": "09討論事項第二案.mp3",
+       "size": "8 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-97796-8d6526361be54330a94ba0cc4341e20c-1.mp3",
+       "title": "10臨時提案第一案.mp3",
+       "size": "9 MB"
+      }
+     ],
+     "fingerprint": "7f973959168baffb"
+    },
+    {
+     "key": "cp-19794-5b395-3911-1",
+     "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議114年第4次會議紀錄實錄",
+     "url": "https://www.nhi.gov.tw/ch/cp-19794-5b395-3911-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-98229-1b084b002d3141339383deea4d3c55f0-1.mp3",
+       "title": "01主席致詞.mp3",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-98230-b93aaa92fc6d4ea8afe67b83951b283d-1.mp3",
+       "title": "02優先討論事項第1案.mp3",
+       "size": "18 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-98231-9efab388e9c647ba8bccca867bf28988-1.mp3",
+       "title": "03報告事項第1案.mp3",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-98232-8c9a85303b3b4efab75ccb4084dd7989-1.mp3",
+       "title": "04報告事項第2案.mp3",
+       "size": "807 KB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-98233-4dc53e03869f441186b6eb5cfff0cc43-1.mp3",
+       "title": "05報告事項第3案.mp3",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-98234-4afb5040734c42f2ad6eb735f52f6aff-1.mp3",
+       "title": "06報告事項第4案.mp3",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-98235-61c65a6f1f9f4129a4ffb9b86cb5554a-1.mp3",
+       "title": "07報告事項第5案_1.mp3",
+       "size": "19 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-98236-cbaaa6e99d5341ecbfcc25f438ea195f-1.mp3",
+       "title": "07報告事項第5案_2.mp3",
+       "size": "20 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-98237-1b2b472c720e42579c0cd0ba749e1310-1.mp3",
+       "title": "07報告事項第5案_3.mp3",
+       "size": "15 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-98238-23c98be98c4f4db3897be68ee345ff20-1.mp3",
+       "title": "08報告事項第6案.mp3",
+       "size": "4 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-98239-4912b5c6352049188135efcd15cf696c-1.mp3",
+       "title": "09報告事項第7案.mp3",
+       "size": "20 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-98240-ffa3cf1c89554b46bf3b22e233eddb76-1.mp3",
+       "title": "10報告事項第8案.mp3",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-98241-3ed80449b4b24e83a02b7d209305147c-1.mp3",
+       "title": "11報告事項第9案.mp3",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-98242-e9bf41d4557241efafe8d10eb6c9ff30-1.mp3",
+       "title": "12報告事項第10案.mp3",
+       "size": "5 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-98243-71b93313557443f28e78fe622f11dc70-1.mp3",
+       "title": "13報告事項第11案.mp3",
+       "size": "5 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-98244-c799bc6bafc84ef5b375faa4bc471957-1.mp3",
+       "title": "14討論事項第1案.mp3",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-98245-28a7ca0f80d0457db8097849822ae6c2-1.mp3",
+       "title": "15討論事項第2案.mp3",
+       "size": "4 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-98246-5292d36e1d0042d6ba0d1bdcd34fedeb-1.mp3",
+       "title": "16討論事項第3案.mp3",
+       "size": "7 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-98247-233b344cff9d4de8a1eed9a6349c9e32-1.mp3",
+       "title": "17討論事項第4案.mp3",
+       "size": "8 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-98248-d40412a16bc846ba870af2212e042fa7-1.mp3",
+       "title": "18討論事項第5案.mp3",
+       "size": "8 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-98249-1014c4c8aa584dfdba455b068f465c2e-1.mp3",
+       "title": "19討論事項第6案.mp3",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-98250-c49e5a6ff2c343e8a7b0ff6d6b2c054d-1.mp3",
+       "title": "20討論事項第7案.mp3",
+       "size": "10 MB"
+      }
+     ],
+     "fingerprint": "22d1d0569c345502"
+    },
+    {
+     "key": "cp-18972-b92d3-3911-1",
+     "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議114年第3次會議紀錄實錄(114.10.13新增)",
+     "url": "https://www.nhi.gov.tw/ch/cp-18972-b92d3-3911-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-90615-6194ad1daf834a0a87866130f60263af-1.mp3",
+       "title": "01優先討論事項第1案.mp3",
+       "size": "27 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-90616-186b4f5462294886b43577e34c5e50fe-1.mp3",
+       "title": "02報告事項第1案.mp3",
+       "size": "10 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-90617-80627fecf1ed4f4d955875ddeece3990-1.mp3",
+       "title": "03報告事項第2案.mp3",
+       "size": "23 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-90618-3b3e118d57604d33a29efdb724fc23ef-1.mp3",
+       "title": "04報告事項第3案.mp3",
+       "size": "9 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-90619-308ed3e804544f7f8b9481bd2966e0a6-1.mp3",
+       "title": "05報告事項第4案.mp3",
+       "size": "7 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-90620-7252c77b2d7b49aba9cec315be72e712-1.mp3",
+       "title": "06報告事項第5案.mp3",
+       "size": "14 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-90621-e7b984f8042840c9ac0b734451fae730-1.mp3",
+       "title": "07報告事項第6案.mp3",
+       "size": "25 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-90622-9e0ccf58608a483e92b4a9a8a7cada0c-1.mp3",
+       "title": "08報告事項第7案.mp3",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-90623-162e38c8df434ae6a03421ee4ca8301c-1.mp3",
+       "title": "09討論事項第1案.mp3",
+       "size": "18 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-90624-d69e19dc0163401d8fcce238d7ac0d11-1.mp3",
+       "title": "10討論事項第2案.mp3",
+       "size": "10 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-90625-7dae72d6ee50497e96fb53527ed69eba-1.mp3",
+       "title": "11討論事項第3案.mp3",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-90626-cc296808cfc84e56bddd4a41dadcb2e6-1.mp3",
+       "title": "12討論事項第4案.mp3",
+       "size": "5 MB"
+      }
+     ],
+     "fingerprint": "7cdfaeea19636695"
+    },
+    {
+     "key": "cp-18708-6252e-3911-1",
+     "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議114年第2次會議紀錄實錄(114.7.8新增)",
+     "url": "https://www.nhi.gov.tw/ch/cp-18708-6252e-3911-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-86376-6f08fa784a2a40a99c6e19a28cbcc58f-1.mp3",
+       "title": "01.主席致詞及確認上次會議紀錄.mp3",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-86377-04f72111af704bc9b03373a64c859fa9-1.mp3",
+       "title": "02.優先討論事項第1案-1.mp3",
+       "size": "9 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-86378-11c3ad879aa3450398f02211dd4009bb-1.mp3",
+       "title": "02.優先討論事項第1案-2.mp3",
+       "size": "15 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-86379-1baaa38110914c6aa6f78a6ba997b16f-1.mp3",
+       "title": "02.優先討論事項第1案-3.mp3",
+       "size": "14 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-86380-cbae83d3357841bb89379fd1c2299621-1.mp3",
+       "title": "02.優先討論事項第1案-4.mp3",
+       "size": "15 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-86381-684c8726e8fe400abc09ada50c9889f6-1.mp3",
+       "title": "02.優先討論事項第1案-5.mp3",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-86382-76b1776a18d645e288589a3f8ed126f6-1.mp3",
+       "title": "03.報告事項第1案.mp3",
+       "size": "12 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-86383-ed19b03ce74d4b8b82026dce44138fe0-1.mp3",
+       "title": "04.報告事項第2案.mp3",
+       "size": "4 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-86384-f6c1512ab0f74a1e8d032c4141be7d30-1.mp3",
+       "title": "05.報告事項第3案-1.mp3",
+       "size": "27 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-86385-e9ce38ce616e4c1eabd9ce29a3437524-1.mp3",
+       "title": "05.報告事項第3案-2.mp3",
+       "size": "389 KB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-86386-4757be2259224aa9b3f6f199a5d0cf3e-1.mp3",
+       "title": "06.報告事項第4案.mp3",
+       "size": "16 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-86387-104628f3cf814550a0a0d231436d0a0b-1.mp3",
+       "title": "07.報告事項第5案.mp3",
+       "size": "6 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-86388-7797d9316a7a41c48da39d6a7da4a02e-1.mp3",
+       "title": "08.討論事項第1案.mp3",
+       "size": "24 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-86389-c00e156d50e94e049954c03497a87dc2-1.mp3",
+       "title": "09.討論事項第2案.mp3",
+       "size": "6 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-86390-c67b03d6136646e08056c485284c84d7-1.mp3",
+       "title": "10.討論事項第3案.mp3",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-86391-cdbad1a0573c4fafa675ef647d565fa0-1.mp3",
+       "title": "11.討論事項第4案.mp3",
+       "size": "4 MB"
+      }
+     ],
+     "fingerprint": "edca7b6d937b0d55"
+    },
+    {
+     "key": "cp-18100-795f5-2771-1",
+     "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議114年第1次會議紀錄實錄(114.4.7新增)",
+     "url": "https://www.nhi.gov.tw/ch/cp-18100-795f5-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-83142-95716c87e355450ab2c8eadefddec2d6-1.mp3",
+       "title": "01.主席致詞.mp3",
+       "size": "5 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-83143-5b44b33446ab4d82b73e49e525412609-1.mp3",
+       "title": "02.確認上次會議紀錄.mp3",
+       "size": "928 KB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-83144-44f78df47ef249f8a2e9cbed50c996f5-1.mp3",
+       "title": "03.優先報告事項第1案.mp3",
+       "size": "9 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-83145-a5c22c60567940928f4beb125d87c3de-1.mp3",
+       "title": "04.優先討論事項第1案-1.mp3",
+       "size": "26 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-83146-a2b682bb58d04c4db75670846bb91340-1.mp3",
+       "title": "04.優先討論事項第1案-2.mp3",
+       "size": "27 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-83147-70c90c99f2d94eaba23ae22daf95b67e-1.mp3",
+       "title": "04.優先討論事項第1案-3.mp3",
+       "size": "25 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-83148-96776b360d4446469f589732c25ba1b9-1.mp3",
+       "title": "05.報告事項第1案.mp3",
+       "size": "12 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-83149-72ff983c64de471290ba0cfcce354b26-1.mp3",
+       "title": "06.報告事項第2案.mp3",
+       "size": "23 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-83150-5a0f407c22a04e6bb4721b13ffa09725-1.mp3",
+       "title": "07.報告事項第3案.mp3",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-83151-10b649cf87e3483882726e54b881dd0a-1.mp3",
+       "title": "08.報告事項第4案.mp3",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-83152-aa5a666bfba14fd5bf5b527ae940a6ba-1.mp3",
+       "title": "09.報告事項第5案.mp3",
+       "size": "26 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-83153-64412b89fb524859aef5b1ccf0e9ab34-1.mp3",
+       "title": "10.報告事項第6案.mp3",
+       "size": "12 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-83154-924cd7d05c7d40c2b3cd8835c763b4a3-1.mp3",
+       "title": "11.報告事項第7案.mp3",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-83155-0fc7d919bce346279ddfb48fc5be0149-1.mp3",
+       "title": "12.報告事項第8案.mp3",
+       "size": "11 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-83156-28411274994948b69088da5462a32d3d-1.mp3",
+       "title": "13.報告事項第9案.mp3",
+       "size": "8 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-83157-e4f0c3ec7d054caabb35efc13ebd21fe-1.mp3",
+       "title": "14.報告事項第10案.mp3",
+       "size": "14 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-83158-2fcdf6e6acb947479c31e5d242e00ec3-1.mp3",
+       "title": "15.報告事項第11案.mp3",
+       "size": "13 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-83159-b32e6b23b114483ea1b9087bdb0ed211-1.mp3",
+       "title": "16.討論事項第1案.mp3",
+       "size": "13 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-83160-303a770277664a88b5bdf2752502889f-1.mp3",
+       "title": "17.討論事項第2案.mp3",
+       "size": "12 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-83161-7ea590d80c2c41c38ea287dfb55d66f3-1.mp3",
+       "title": "18.討論事項第3案.mp3",
+       "size": "9 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-83162-3e800503bc784d5d9135f957facf1c8c-1.mp3",
+       "title": "19.討論事項第4案.mp3",
+       "size": "2 MB"
+      }
+     ],
+     "fingerprint": "59149543d2caa374"
+    },
+    {
+     "key": "cp-17859-b57ef-2771-1",
+     "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議113年第5次會議紀錄實錄(114.1.16新增)",
+     "url": "https://www.nhi.gov.tw/ch/cp-17859-b57ef-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-81647-b1819971000f4958a2f0e91003f55e4d-1.mp3",
+       "title": "01主席致詞.mp3",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-81648-04189584d8684786b599e18141509649-1.mp3",
+       "title": "02報告事項第1案.mp3",
+       "size": "16 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-81660-286af29f43034073819f3c5c9e92cd0b-1.mp3",
+       "title": "03報告事項第2案.mp3",
+       "size": "6 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-81659-b813d358588d4182af3356184d0b1e19-1.mp3",
+       "title": "04報告事項第3案.mp3",
+       "size": "8 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-81658-3ef250542a1145b5855e82a93fc2622b-1.mp3",
+       "title": "05報告事項第4案.mp3",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-81657-e7762cc8911c480d8ac3f09c6d9a60fa-1.mp3",
+       "title": "06報告事項第5案.mp3",
+       "size": "4 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-81656-65b2cdb83a64416f87aed88c19cc335b-1.mp3",
+       "title": "07報告事項第6案.mp3",
+       "size": "14 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-81655-4549e98df8b7456e8d4b1e6b75ab45cb-1.mp3",
+       "title": "08報告事項第7案.mp3",
+       "size": "13 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-81654-bc11fea99a4c4884bc0b989734b80db3-1.mp3",
+       "title": "09報告事項第8案.mp3",
+       "size": "17 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-81653-dfdd8714a08b472fbe545067806477c4-1.mp3",
+       "title": "10報告事項第9案.mp3",
+       "size": "6 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-81652-0503246c5ecf465a9c1b0226959e68ce-1.mp3",
+       "title": "11報告事項第10案_1.mp3",
+       "size": "16 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-81651-c86f40b240b74ef384d463a96e000ecd-1.mp3",
+       "title": "11報告事項第10案_2.mp3",
+       "size": "18 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-81650-0b9e707c190c450981697c3327072afc-1.mp3",
+       "title": "12討論提案第1案.mp3",
+       "size": "11 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-81649-786d7a33edbf42368337ed4c09f06e4b-1.mp3",
+       "title": "13討論提案第2案.mp3",
+       "size": "12 MB"
+      }
+     ],
+     "fingerprint": "707a007846f0b7ee"
+    },
+    {
+     "key": "cp-15627-84bf0-2771-1",
+     "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議113年第4次會議紀錄實錄(113.10.24新增)",
+     "url": "https://www.nhi.gov.tw/ch/cp-15627-84bf0-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-75500-a6eb09590ce74524acc16672174c193d-1.mp3",
+       "title": "01主席致詞.mp3",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-75501-e89b654df70043ce80838e9fad42de58-1.mp3",
+       "title": "02參閱並確認上次會議紀錄.mp3",
+       "size": "5 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-75502-ee35d8e792fe479db533841350ebf96e-1.mp3",
+       "title": "03報告事項第1案.mp3",
+       "size": "11 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-75503-a1fd6e59bb3e4c1a9950958cebb90bc6-1.mp3",
+       "title": "04報告事項第2案.mp3",
+       "size": "11 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-75504-ecfda8ad36c34bbfb83c83686d97dc77-1.mp3",
+       "title": "05報告事項第3案.mp3",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-75505-0875f15b8cb64f57962861e7d022c758-1.mp3",
+       "title": "06報告事項第4案.mp3",
+       "size": "9 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-75506-d82e0a9212964431972294f501c3eff3-1.mp3",
+       "title": "07報告事項第5案.mp3",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-75507-659924976e334695b9331e22bec678c5-1.mp3",
+       "title": "08報告事項第6案.mp3",
+       "size": "12 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-75508-ca367e2dc99d49378caa3857b6bd4d81-1.mp3",
+       "title": "09報告事項第7案.mp3",
+       "size": "12 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-75509-eb4d1b302bda4af0bbe5d950de018e44-1.mp3",
+       "title": "10討論事項第1案_1.mp3",
+       "size": "19 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-75510-a136da6dfee54e0a8f4c5c82c1d415f9-1.mp3",
+       "title": "10討論事項第1案_2.mp3",
+       "size": "18 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-75511-cc28e56bd8a64e9fa2fc7654cdc9ef54-1.mp3",
+       "title": "10討論事項第1案_3.mp3",
+       "size": "15 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-75512-8dec3f5906624fafb44cf45edbf620c9-1.mp3",
+       "title": "11討論事項第2案.mp3",
+       "size": "21 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-75513-aff5934abf12456ea32913f113afdf97-1.mp3",
+       "title": "12討論事項第3案.mp3",
+       "size": "22 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-75514-9531f1c79dc34abebbeab46f387e5c10-1.mp3",
+       "title": "13臨時討論案1_1.mp3",
+       "size": "20 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-75515-4e73ff22c0c5411da03b12f1ff38ba72-1.mp3",
+       "title": "13臨時討論案1_2.mp3",
+       "size": "21 MB"
+      }
+     ],
+     "fingerprint": "e03024fea71a8280"
+    },
+    {
+     "key": "cp-15355-bd50a-2771-1",
+     "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議113年第3次會議紀錄實錄(113.7.16新增)",
+     "url": "https://www.nhi.gov.tw/ch/cp-15355-bd50a-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-72012-7366732616fe4cc78590675b68e8d51b-1.mp3",
+       "title": "01主席致詞.mp3",
+       "size": "618 KB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-72013-9b78b4a1019843d5aa44270bdbd8b683-1.mp3",
+       "title": "02前次會議紀錄確認.mp3",
+       "size": "7 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-72014-396998fa0c184fa5b8c1138f32cfe024-1.mp3",
+       "title": "03報告事項第1案.mp3",
+       "size": "26 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-72030-d2ce9a0f8f3b413fb60be23ccf932c0b-1.mp3",
+       "title": "04報告事項第2案.mp3",
+       "size": "9 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-72029-f843084bb0804b37a4ef333a65d2a798-1.mp3",
+       "title": "05報告事項第3案.mp3",
+       "size": "14 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-72028-479441cf56ab4ea783ed8c0b8a77f8b4-1.mp3",
+       "title": "06報告事項第4案.mp3",
+       "size": "18 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-72027-672a4760099f402fa04bb141d9896163-1.mp3",
+       "title": "06報告事項第4案.mp3",
+       "size": "6 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-72026-e03bd7e6937e447b9b37e75c917203f6-1.mp3",
+       "title": "07報告事項第5案.mp3",
+       "size": "20 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-72025-2c04d61d132549d385e76675dc96a450-1.mp3",
+       "title": "08報告事項第6案.mp3",
+       "size": "4 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-72024-544939422fda40d588bb10b652d6d0e2-1.mp3",
+       "title": "09報告事項第7案.mp3",
+       "size": "14 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-72023-6a4379ca8fb6490eb63a5afbe7798b6f-1.mp3",
+       "title": "10報告事項第9案.mp3",
+       "size": "18 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-72022-200319fa2c474680a76db8ee625a9a99-1.mp3",
+       "title": "10報告事項第9案.mp3",
+       "size": "12 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-72021-634570ef436b4cf8838d4047d42ff2c0-1.mp3",
+       "title": "11討論事項第2案.mp3",
+       "size": "15 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-72020-76d57358ba8f449fa72c885c16514b2d-1.mp3",
+       "title": "11討論事項第2案.mp3",
+       "size": "12 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-72019-5bd942f1b3ac4e8dbaeafca687cb60ff-1.mp3",
+       "title": "12討論事項第3案.mp3",
+       "size": "25 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-72018-0102f5ee3ad94a27951d0045cf35b22f-1.mp3",
+       "title": "13報告事項第8案.mp3",
+       "size": "21 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-72017-28cda5f83bfb44fdb5a544adad287fba-1.mp3",
+       "title": "13報告事項第8案.mp3",
+       "size": "21 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-72016-125eb6766050483abd55dcb8d446f2d5-1.mp3",
+       "title": "14討論事項第1案.mp3",
+       "size": "25 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-72015-32b135aac25443a8baf200c5968aae1d-1.mp3",
+       "title": "14討論事項第1案.mp3",
+       "size": "28 MB"
+      }
+     ],
+     "fingerprint": "e384427280adf088"
+    },
+    {
+     "key": "cp-14472-7f258-2771-1",
+     "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議113年第2次會議紀錄實錄(113.3.26新增)",
+     "url": "https://www.nhi.gov.tw/ch/cp-14472-7f258-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-67434-a8bf9d09ee18456eb14fcd93a879d8fa-1.mp3",
+       "title": "01主席致詞.mp3",
+       "size": "382 KB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-67446-10e39cc4aef84aa5af463946a55b4fc1-1.mp3",
+       "title": "02前次會議紀錄確認.mp3",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-67447-f8fff791f4034ea9acc47c80a748c408-1.mp3",
+       "title": "03報告事項第1案.mp3",
+       "size": "18 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-67449-32527963977647d2aa1d8609b15d354a-1.mp3",
+       "title": "04報告事項第2案.mp3",
+       "size": "9 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-67468-5b9cb59b530040489877f7307972187d-1.mp3",
+       "title": "05報告事項第3案.mp3",
+       "size": "4 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-67469-fad43b5ad20f403fac6550b77cc0c024-1.mp3",
+       "title": "06報告事項第4案.mp3",
+       "size": "22 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-67470-3fbc58361f0c433c90ab9ef37c41ddc0-1.mp3",
+       "title": "06報告事項第4案.mp3",
+       "size": "20 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-67471-b49736ac5d2e4d8cb01093925b39b296-1.mp3",
+       "title": "07報告事項第5案.mp3",
+       "size": "54 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-67472-1e413e024be44dd9af3015fd78eb73c9-1.mp3",
+       "title": "08報告事項第6案.mp3",
+       "size": "7 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-67473-756ea252451e4940a0ef7caf8e18f9a4-1.mp3",
+       "title": "09報告事項第7案.mp3",
+       "size": "39 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-67474-f526b3f887134085939355a0feea12cd-1.mp3",
+       "title": "10報告事項第8案.mp3",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-67475-e33a570508d2403ab99e4a24afc3937b-1.mp3",
+       "title": "11報告事項第9案.mp3",
+       "size": "23 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-67476-4ea5f6bb63524643818fd000732bde3c-1.mp3",
+       "title": "12報告事項第10案.mp3",
+       "size": "18 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-67477-d40ce466069e4f9e8589a38eccccf4fb-1.mp3",
+       "title": "13討論事項第1案.mp3",
+       "size": "22 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-67480-4b3423c61bb54bb7a429b9aff30679a0-1.mp3",
+       "title": "13討論事項第1案.mp3",
+       "size": "20 MB"
+      }
+     ],
+     "fingerprint": "9fb4a5098bcf9cfc"
+    },
+    {
+     "key": "cp-15068-e9d96-2771-1",
+     "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議113年第1次臨時會會議紀錄實錄(113.5.6新增)",
+     "url": "https://www.nhi.gov.tw/ch/cp-15068-e9d96-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-69458-637b1f499d3b489596b36888b9c9dd3a-1.mp3",
+       "title": "01主席致詞.mp3",
+       "size": "498 KB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-69459-a15181f94c344b60b7af01008aef8737-1.mp3",
+       "title": "02參閱並確認上次會議紀錄.mp3",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-69462-afdfeec4ce254729ae8e731a04216469-1.mp3",
+       "title": "03報告事項第1案.mp3",
+       "size": "29 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-69464-23fac77b2d1c4151b01537e6f0c283a3-1.mp3",
+       "title": "04討論提案第1案.mp3",
+       "size": "28 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-69465-4aa99134c4cb4dc697ff50f159bee54e-1.mp3",
+       "title": "04討論提案第1案.mp3",
+       "size": "27 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-69466-2a8547483281477f802c4e12b2e98c7d-1.mp3",
+       "title": "04討論提案第1案.mp3",
+       "size": "26 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-69467-5957b72c3c6b49e69c6c8a1591f9fca1-1.mp3",
+       "title": "04討論提案第1案.mp3",
+       "size": "22 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-69468-f9ed52cb638e4e9baee70ebafdfcbbe3-1.mp3",
+       "title": "05討論提案第2案.mp3",
+       "size": "28 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-69469-9b61ef73c3d249c6854b78f38e144946-1.mp3",
+       "title": "05討論提案第2案.mp3",
+       "size": "27 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-69470-c8ba7bcc40fa4e139caa30d3ad3d6b36-1.mp3",
+       "title": "05討論提案第2案.mp3",
+       "size": "26 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-69471-1aac00c8fcbc4e5496b47069e5ad82fb-1.mp3",
+       "title": "05討論提案第2案.mp3",
+       "size": "17 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-69472-89125d0227f84ba884a7ae3fe10bca19-1.mp3",
+       "title": "06討論提案第3案.mp3",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-69473-5c1a1c4c8e384e17a49fa6272c0e865e-1.mp3",
+       "title": "07討論提案第4案.mp3",
+       "size": "6 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-69474-a8e8711fd53645959434d91beac96e74-1.mp3",
+       "title": "08討論提案第5案.mp3",
+       "size": "26 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-69475-3023bac446504f2e9b4adad178e87883-1.mp3",
+       "title": "08討論提案第5案.mp3",
+       "size": "8 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-69476-696792f7a6d04bff8aa9c1788413e528-1.mp3",
+       "title": "09討論提案第6案.mp3",
+       "size": "16 MB"
+      }
+     ],
+     "fingerprint": "42e70217603f3a33"
+    },
+    {
+     "key": "cp-14322-5fbb3-2771-1",
+     "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議113年第1次會議紀錄實錄(113.1.30新增)",
+     "url": "https://www.nhi.gov.tw/ch/cp-14322-5fbb3-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-66594-b20fe7195f944fc9989f89ee6929d589-1.mp3",
+       "title": "01主席致詞.mp3",
+       "size": "11 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-66595-5f341ae0307b4006aecb7cf5699f28f8-1.mp3",
+       "title": "02報告事項第1案.mp3",
+       "size": "20 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-66596-b61d6e20990948419d79cb40507c11ee-1.mp3",
+       "title": "02報告事項第1案.mp3",
+       "size": "18 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-66597-222d2057615e4dad85c4173859cfc465-1.mp3",
+       "title": "03報告事項第2案.mp3",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-66598-457ea049be2843a68f168efcfe586af6-1.mp3",
+       "title": "04報告事項第3案.mp3",
+       "size": "23 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-66599-785b7f0a24e84cc289bcf1f0c56de98d-1.mp3",
+       "title": "05報告事項第4案.mp3",
+       "size": "23 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-66600-5853b832f28d4399921467d723eab1d1-1.mp3",
+       "title": "06報告事項第5案.mp3",
+       "size": "19 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-66601-8b3300be82be497b9641cf6106c046c2-1.mp3",
+       "title": "07報告事項第6案.mp3",
+       "size": "26 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-66602-e88c39e7f1a64031929ec931115660fa-1.mp3",
+       "title": "07報告事項第6案.mp3",
+       "size": "27 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-66603-a79aedca0de148ec9dac418b744fd335-1.mp3",
+       "title": "08討論事項第1案.mp3",
+       "size": "28 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-66604-4284d89866b34e138dafabde1571b628-1.mp3",
+       "title": "08討論事項第1案.mp3",
+       "size": "29 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-66605-ef2f1df05d2c4799a552e97daa121bd6-1.mp3",
+       "title": "08討論事項第1案.mp3",
+       "size": "25 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-66606-0a68db65f46a4d19ae111c85d67eb8fc-1.mp3",
+       "title": "09臨時提案第2案.mp3",
+       "size": "26 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-66607-67c2d72e5b2e42a0949e111112f4778a-1.mp3",
+       "title": "09臨時提案第2案.mp3",
+       "size": "26 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-66608-2e0a939070ef407d8b3cf77abc146b5c-1.mp3",
+       "title": "09臨時提案第2案.mp3",
+       "size": "20 MB"
+      }
+     ],
+     "fingerprint": "d4a30f5c85a95835"
+    },
+    {
+     "key": "cp-13709-72757-2771-1",
+     "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議112年第4次會議紀錄實錄(112.12.20新增)",
+     "url": "https://www.nhi.gov.tw/ch/cp-13709-72757-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-65765-69ae1ff80f224f01a9772764a1fb4449-1.mp3",
+       "title": "01.主席致詞並確認上一次會議紀錄.mp3",
+       "size": "545 KB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-60195-e60b12df434a40d0a902359c1dc2a505-1.mp3",
+       "title": "02.報告事項第1案.mp3",
+       "size": "16 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-60196-473e9810aefd473a86e62926b82d631d-1.mp3",
+       "title": "03.報告事項第2案.mp3",
+       "size": "966 KB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-60197-bb18b9abf2424db4bf8b97c9f78730e9-1.mp3",
+       "title": "04.報告事項第3案.mp3",
+       "size": "28 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-60198-517549a973234ac6bf0b052239b82cb9-1.mp3",
+       "title": "05.報告事項第4案.mp3",
+       "size": "4 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-60199-b4520d2aef1d401aad9b8f01754a348e-1.mp3",
+       "title": "06.報告事項第5案.mp3",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-60200-99edf609181545e48ff483dacf87c2bd-1.mp3",
+       "title": "07.報告事項第6案.mp3",
+       "size": "12 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-60201-ab1445fb7c294774b59ea6605aaa2c1e-1.mp3",
+       "title": "08.報告事項第7案.mp3",
+       "size": "18 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-60203-8844f85cd1f64e5ea91c0441726d9075-1.mp3",
+       "title": "09.報告事項第8案.mp3",
+       "size": "21 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-60202-4952debe805647b7990b4d8740efdebe-1.mp3",
+       "title": "09.報告事項第8案.mp3",
+       "size": "21 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-60204-c8589f90aa084f25838c9be805001335-1.mp3",
+       "title": "10.報告事項第9案.mp3",
+       "size": "13 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-60205-b3ecaa9254924ab9abeb72c159520321-1.mp3",
+       "title": "11.報告事項第10案.mp3",
+       "size": "4 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-60207-a79ab940b7e943c1966f58d2b46f4801-1.mp3",
+       "title": "12.報告事項第11案.mp3",
+       "size": "22 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-60206-ec5f9c740c6847b49e782e454db031dc-1.mp3",
+       "title": "12.報告事項第11案.mp3",
+       "size": "22 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-60208-da5518d842ad465282361749c568ada2-1.mp3",
+       "title": "13.討論事項第1案.mp3",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-60209-f55c68c0c573418ab92f5f4e2bd969db-1.mp3",
+       "title": "14.討論事項第2案.mp3",
+       "size": "10 MB"
+      }
+     ],
+     "fingerprint": "a092c39cc51c11a4"
+    },
+    {
+     "key": "cp-11530-5467a-2771-1",
+     "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議112年第3次會議紀錄實錄",
+     "url": "https://www.nhi.gov.tw/ch/cp-11530-5467a-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-51103-61df688e9ea8453791cdc7df82f8ddf6-1.mp3",
+       "title": "01.主席致詞並確認上一次會議紀錄.mp3",
+       "size": "4 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-51104-f700edd0a52447db8763984f018f599c-1.mp3",
+       "title": "02.報告事項第1案.mp3",
+       "size": "5 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-51105-d5f43c5abeca46fe8a84ffa5998c1f2f-1.mp3",
+       "title": "03.報告事項第2案.mp3",
+       "size": "16 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-51106-fc95917bd2d14817a34fa8511536757a-1.mp3",
+       "title": "04.報告事項第3案.mp3",
+       "size": "11 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-51107-480531c96d0943db84c8888076b45be5-1.mp3",
+       "title": "05.報告事項第4案.mp3",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-51108-8ce29ba2d61d478580a317065945a813-1.mp3",
+       "title": "06.報告事項第5案.mp3",
+       "size": "24 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-51109-a7601f88df994c08a17d2258d0de5937-1.mp3",
+       "title": "07.報告事項第6案.mp3",
+       "size": "5 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-51110-ab1cd30d71bf468aaf104e36d6be17b6-1.mp3",
+       "title": "08.報告事項第7案.mp3",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-51111-8685cb01988e41ceaf445c05883093db-1.mp3",
+       "title": "09.報告事項第8案.mp3",
+       "size": "12 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-51112-2e77f732b2e844148af9608db579dfa7-1.mp3",
+       "title": "10.報告事項第9案.mp3",
+       "size": "11 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-51113-e02470e86650425a85ef4a1ce9af4ac9-1.mp3",
+       "title": "11.報告事項第10案.mp3",
+       "size": "31 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-51115-bcfe3bad93f44ee18f1cf2c83ffffa59-1.mp3",
+       "title": "12.討論事項第1案.mp3",
+       "size": "19 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-51114-7d823c7155a24943b0aecd2a4e24f348-1.mp3",
+       "title": "12.討論事項第1案.mp3",
+       "size": "21 MB"
+      }
+     ],
+     "fingerprint": "e8d0abfb6b6bd9d9"
+    },
+    {
+     "key": "cp-6512-833b8-2771-1",
+     "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議112年第2次會議紀錄實錄",
+     "url": "https://www.nhi.gov.tw/ch/cp-6512-833b8-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-34431-2af4eccfd1ea4f6e9cf18697f0cf80cf-1.mp3",
+       "title": "01主席致詞並確認上次會議紀錄.mp3",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-34432-ba3f22533a16462080b85c9b308943bb-1.mp3",
+       "title": "02報告事項第1案.mp3",
+       "size": "21 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-34433-06931e045be9401dab690662eea08431-1.mp3",
+       "title": "03報告事項第2案.mp3",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-34434-5dcf75e8d5934c108d4d13eee5ca8808-1.mp3",
+       "title": "04報告事項第3案.mp3",
+       "size": "10 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-34435-a1d8efa56fcd4e98a8f29365a35902f5-1.mp3",
+       "title": "05報告事項第4案.mp3",
+       "size": "24 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-34436-1cf172d0b8d040559bc45097bcfd5738-1.mp3",
+       "title": "06報告事項第5案.mp3",
+       "size": "34 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-34437-08ceb2738253472d972fb58e7132f740-1.mp3",
+       "title": "06報告事項第5案.mp3",
+       "size": "35 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-34438-4fd8f68f1ed24af09240812327f4df1d-1.mp3",
+       "title": "07報告事項第6案.mp3",
+       "size": "35 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-34439-3be19e3e7e884faeaac80aaacdff58e3-1.mp3",
+       "title": "08報告事項第7案.mp3",
+       "size": "7 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-34440-1a2e58f28072440f880b28453f29e81b-1.mp3",
+       "title": "09討論事項第1案.mp3",
+       "size": "36 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-34441-0708501a5fe442f68235a40fcee787da-1.mp3",
+       "title": "09討論事項第1案.mp3",
+       "size": "35 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-34442-3a641b7628d94f518901e23ca7b63e68-1.mp3",
+       "title": "09討論事項第1案.mp3",
+       "size": "33 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-34443-763865eeb7f74a45bd24b5dc0867005d-1.mp3",
+       "title": "09討論事項第1案.mp3",
+       "size": "37 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-34444-01eedea9dc0d4f0b930c8fef42092f77-1.mp3",
+       "title": "09討論事項第1案.mp3",
+       "size": "32 MB"
+      },
+      {
+       "file_type": "mp3",
+       "url": "https://www.nhi.gov.tw/ch/dl-34445-cbf79e17355149348c84663d1f8fed37-1.mp3",
+       "title": "10討論提案第2案.mp3",
+       "size": "14 MB"
+      }
+     ],
+     "fingerprint": "ecf06b62e5c914df"
+    },
+    {
+     "key": "cp-3166-56af4-2457-1",
+     "title": "全民健保行動快易通│健康存摺APP",
+     "url": "https://www.nhi.gov.tw/ch/cp-3166-56af4-2457-1.html",
+     "date": null,
+     "files": [],
+     "fingerprint": "97d170e1550eee4a"
+    },
+    {
+     "key": "cp-1376-49582-3071-1",
+     "title": "全民健保法相關法規",
+     "url": "https://www.nhi.gov.tw/ch/cp-1376-49582-3071-1.html",
+     "date": null,
+     "files": [],
+     "fingerprint": "97d170e1550eee4a"
+    },
+    {
+     "key": "cp-5663-9a5dd-3387-1",
+     "title": "DRG住院診斷關聯群支付制度",
+     "url": "https://www.nhi.gov.tw/ch/cp-5663-9a5dd-3387-1.html",
+     "date": null,
+     "files": [],
+     "fingerprint": "97d170e1550eee4a"
+    },
+    {
+     "key": "cp-6539-b370d-2771-1",
+     "title": "99年",
+     "url": "https://www.nhi.gov.tw/ch/cp-6539-b370d-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34746-f881e46f4f634a39b418ab7e0f1bb2a1-1.doc",
+       "title": "第5次「全民健康保險醫療給付協議會議」會議紀錄(100.01.10新增).doc",
+       "size": "178 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34747-253ca96ae1b943cf928484890d3dbb18-1.odt",
+       "title": "第5次「全民健康保險醫療給付協議會議」會議紀錄(100.01.10新增).odt",
+       "size": "72 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34732-7bdb929d939b4f88a8091b19f5f3b06a-1.pdf",
+       "title": "第5次「全民健康保險醫療給付協議會議」會議紀錄(100.01.10新增).pdf",
+       "size": "347 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34748-bad09f6f7fe5481792ef1db3569696dd-1.doc",
+       "title": "第4次「全民健康保險醫療給付協議會議」會議紀錄(99.12.17新增).doc",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34749-3cf20bf6a07f41948fa982ddbe599f4e-1.odt",
+       "title": "第4次「全民健康保險醫療給付協議會議」會議紀錄(99.12.17新增).odt",
+       "size": "408 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34733-3ed4dc928d7547fd94cfa2eb56fd25f0-1.pdf",
+       "title": "第4次「全民健康保險醫療給付協議會議」會議紀錄(99.12.17新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34750-8588735c6d86496aaa91d18033b7ba05-1.doc",
+       "title": "第3次「全民健康保險醫療給付協議會議」會議紀錄(99.09.09新增).doc",
+       "size": "95 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34751-e0f9109c185d455c831f95e632ce2bf8-1.odt",
+       "title": "第3次「全民健康保險醫療給付協議會議」會議紀錄(99.09.09新增).odt",
+       "size": "49 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34734-c509fd18526c4d49bc4637768b2ab102-1.pdf",
+       "title": "第3次「全民健康保險醫療給付協議會議」會議紀錄(99.09.09新增).pdf",
+       "size": "268 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34752-7b318e05ee64419886d8bb60e7028479-1.doc",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄(99.07.07新增).doc",
+       "size": "73 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34753-fdf5bd60706a47529dadc7935c725e12-1.odt",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄(99.07.07新增).odt",
+       "size": "30 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34735-051c3a042c99415cb7e764ae81ce0dec-1.pdf",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄(99.07.07新增).pdf",
+       "size": "236 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34754-eff37b9fde1447409f89ba1cd687717d-1.doc",
+       "title": "第1次「全民健康保險醫療給付協議會議」會議紀錄(99.03.23新增).doc",
+       "size": "49 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34755-039e03a631274365b4aa94e086c48bcf-1.odt",
+       "title": "第1次「全民健康保險醫療給付協議會議」會議紀錄(99.03.23新增).odt",
+       "size": "17 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34736-97226070bb0a4d82a1e7cf8d0e986af3-1.pdf",
+       "title": "第1次「全民健康保險醫療給付協議會議」會議紀錄(99.03.23新增).pdf",
+       "size": "124 KB"
+      }
+     ],
+     "fingerprint": "15da73af3c0c3120"
+    },
+    {
+     "key": "cp-6540-ec5fd-2771-1",
+     "title": "98年",
+     "url": "https://www.nhi.gov.tw/ch/cp-6540-ec5fd-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34773-6e464451d3844dfab24c27f075971892-1.doc",
+       "title": "第5次「全民健康保險醫療給付協議會議」會議紀錄(99.01.07新增).doc",
+       "size": "48 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34774-c37b878645f449c6ac393ab44d6690e2-1.odt",
+       "title": "第5次「全民健康保險醫療給付協議會議」會議紀錄(99.01.07新增).odt",
+       "size": "16 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34759-8351f01d57f34b558fb13831f45ae533-1.pdf",
+       "title": "第5次「全民健康保險醫療給付協議會議」會議紀錄(99.01.07新增).pdf",
+       "size": "106 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34775-f1c7392a5f474a8884aa53ccfaea0513-1.doc",
+       "title": "第4次「全民健康保險醫療給付協議會議」會議紀錄(98.12.08新增).doc",
+       "size": "55 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34776-fdc9e310c0bc429eb7ba1ffe36ddf472-1.odt",
+       "title": "第4次「全民健康保險醫療給付協議會議」會議紀錄(98.12.08新增).odt",
+       "size": "20 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34760-258ce010f8a645d69c97ec60158f7463-1.pdf",
+       "title": "第4次「全民健康保險醫療給付協議會議」會議紀錄(98.12.08新增).pdf",
+       "size": "153 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34777-b1464bd38c7e40ac8f95f96420e7f2ff-1.doc",
+       "title": "第3次「全民健康保險醫療給付協議會議」會議紀錄(98.09.09新增).doc",
+       "size": "50 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34778-6734f39137c44f32b6671aa9d7421044-1.odt",
+       "title": "第3次「全民健康保險醫療給付協議會議」會議紀錄(98.09.09新增).odt",
+       "size": "16 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34761-d9002c730d064a86afddad3efc9f59f5-1.pdf",
+       "title": "第3次「全民健康保險醫療給付協議會議」會議紀錄(98.09.09新增).pdf",
+       "size": "133 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34779-ab68a1e8f4c347c591164e99a95a810e-1.doc",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄(98.07.28新增).doc",
+       "size": "53 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34780-fbf1ca35fc544512a051af992e137af5-1.odt",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄(98.07.28新增).odt",
+       "size": "16 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34762-c947643783dd4c4d80283a29fc8b7ccf-1.pdf",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄(98.07.28新增).pdf",
+       "size": "138 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34781-b54d5b0f527a4d9383bc9b0f12298387-1.doc",
+       "title": "第1次「全民健康保險醫療給付協議會議」會議紀錄(98.03.24新增).doc",
+       "size": "65 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34782-379e0d0c4e004132a4612a708b3d5760-1.odt",
+       "title": "第1次「全民健康保險醫療給付協議會議」會議紀錄(98.03.24新增).odt",
+       "size": "24 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34766-bf7db82552f446d2a737a6e86e844065-1.pdf",
+       "title": "第1次「全民健康保險醫療給付協議會議」會議紀錄(98.03.24新增).pdf",
+       "size": "102 KB"
+      }
+     ],
+     "fingerprint": "e72dabd41bae2a0e"
+    },
+    {
+     "key": "cp-6541-b81b6-2771-1",
+     "title": "97年",
+     "url": "https://www.nhi.gov.tw/ch/cp-6541-b81b6-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34786-0d5c8379c6a9404fb0e1ca28a6d70b0f-1.doc",
+       "title": "第3次「全民健康保險醫療給付協議會議」會議紀錄(97.12.25新增).doc",
+       "size": "74 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34788-018cd589450246e5aa835306b8d3bbe2-1.odt",
+       "title": "第3次「全民健康保險醫療給付協議會議」會議紀錄(97.12.25新增).odt",
+       "size": "27 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34787-10da0309c383457b985b06f11d72071d-1.pdf",
+       "title": "第3次「全民健康保險醫療給付協議會議」會議紀錄(97.12.25新增).pdf",
+       "size": "168 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34803-9b12128110cd4621b49d8feb82955f6c-1.doc",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄(97.07.23新增).doc",
+       "size": "65 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34804-287d24163e06486f9c23cbfab03e40de-1.odt",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄(97.07.23新增).odt",
+       "size": "21 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34789-25ad3afd82684dd3bd15715763fae029-1.pdf",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄(97.07.23新增).pdf",
+       "size": "155 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34805-41f039b3e4c948c381eb7310c5a1f821-1.doc",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄(97.07.23新增)__附件1.doc",
+       "size": "72 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34806-12ed3d2d41ec469c9418e9558a1b2a58-1.odt",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄(97.07.23新增)__附件1.odt",
+       "size": "20 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34790-eaba3d4e12024ea6aa2b72d238ce9b11-1.pdf",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄(97.07.23新增)__附件1.pdf",
+       "size": "184 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34807-e5f3874af5d9455ebaf82c929f95cb80-1.doc",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄(97.07.23新增)__附件2.doc",
+       "size": "34 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34808-3bd55740c10a44bd9ccfc196046c7f13-1.odt",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄(97.07.23新增)__附件2.odt",
+       "size": "10 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34793-aec0b2e85c5f4564ab76c35c990b9069-1.pdf",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄(97.07.23新增)__附件2.pdf",
+       "size": "145 KB"
+      },
+      {
+       "file_type": "xls",
+       "url": "https://www.nhi.gov.tw/ch/dl-34810-4dd27ccf261447d69d3eced2b98b2d83-1.xls",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄(97.07.23新增)__附件3.xls",
+       "size": "122 KB"
+      },
+      {
+       "file_type": "ods",
+       "url": "https://www.nhi.gov.tw/ch/dl-34809-2c4445d07e7042caab28ac158ac402ef-1.ods",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄(97.07.23新增)__附件3.ods",
+       "size": "52 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34794-700db442ebee4aa4a713b3a40762555e-1.pdf",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄(97.07.23新增)__附件3.pdf",
+       "size": "474 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34811-02609e626a0f4fc180f69a556dd3d4ff-1.doc",
+       "title": "第1次「全民健康保險醫療給付協議會議」會議紀錄(97.03.31新增).doc",
+       "size": "88 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34812-d7a3cf008fe540ee8dcf0dabff5bebf6-1.odt",
+       "title": "第1次「全民健康保險醫療給付協議會議」會議紀錄(97.03.31新增).odt",
+       "size": "30 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34796-8c1390cdc4bf4407a4c50cb231e57d4e-1.pdf",
+       "title": "第1次「全民健康保險醫療給付協議會議」會議紀錄(97.03.31新增).pdf",
+       "size": "198 KB"
+      }
+     ],
+     "fingerprint": "3460287a279e3318"
+    },
+    {
+     "key": "cp-6542-bea58-2771-1",
+     "title": "96年",
+     "url": "https://www.nhi.gov.tw/ch/cp-6542-bea58-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34816-c021d8b34533420f99176cc7b6cbda5e-1.doc",
+       "title": "第3次「全民健康保險醫療給付協議會議」會議紀錄(97.01.09新增).doc",
+       "size": "67 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34817-ef7b31b7ccf449f79c6dff6c34149521-1.odt",
+       "title": "第3次「全民健康保險醫療給付協議會議」會議紀錄(97.01.09新增).odt",
+       "size": "22 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34813-5c1708525eec432a88240e75a7149bec-1.pdf",
+       "title": "第3次「全民健康保險醫療給付協議會議」會議紀錄(97.01.09新增).pdf",
+       "size": "151 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34818-6a35b465ba9e4390bda2719ef031ef4b-1.doc",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄(96.11.01新增).doc",
+       "size": "46 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34819-b1146d2c64934a6a89c1b5eafcc56935-1.odt",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄(96.11.01新增).odt",
+       "size": "14 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34814-ab8d93c867954de1894bf3b0b89ea0e2-1.pdf",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄(96.11.01新增).pdf",
+       "size": "147 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34820-887ea00c2f1e4cf7b366831db2c3bdf4-1.doc",
+       "title": "第1次「全民健康保險醫療給付協議會議」會議紀錄(96.06.22新增).doc",
+       "size": "58 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34821-2529c27dacd34a42ac01a34fb57d4aae-1.odt",
+       "title": "第1次「全民健康保險醫療給付協議會議」會議紀錄(96.06.22新增).odt",
+       "size": "10 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34815-4094ddb0c25b4b5a8e82ae5f81354de4-1.pdf",
+       "title": "第1次「全民健康保險醫療給付協議會議」會議紀錄(96.06.22新增).pdf",
+       "size": "15 KB"
+      }
+     ],
+     "fingerprint": "6f28da5228fb1f28"
+    },
+    {
+     "key": "cp-6543-d1d5f-2771-1",
+     "title": "95年",
+     "url": "https://www.nhi.gov.tw/ch/cp-6543-d1d5f-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34830-04657904ee334958b614273aa150a531-1.doc",
+       "title": "第7次「全民健康保險醫療給付協議會議」會議紀錄(95.12.26).doc",
+       "size": "51 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34831-8565c8c527d3494490ffca0983347f87-1.odt",
+       "title": "第7次「全民健康保險醫療給付協議會議」會議紀錄(95.12.26).odt",
+       "size": "21 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34822-0a1dbbf6ac454249a38d3ed123005491-1.pdf",
+       "title": "第7次「全民健康保險醫療給付協議會議」會議紀錄(95.12.26).pdf",
+       "size": "82 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34832-a932fe003d094de6a69f69c044bab614-1.doc",
+       "title": "第6次「全民健康保險醫療給付協議會議」會議紀錄(95.11.14).doc",
+       "size": "52 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34833-1e75bf8bd7e14276810f5f51f5a7e1d9-1.odt",
+       "title": "第6次「全民健康保險醫療給付協議會議」會議紀錄(95.11.14).odt",
+       "size": "21 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34823-a9480cb98ee84de987adcc70f6a9c749-1.pdf",
+       "title": "第6次「全民健康保險醫療給付協議會議」會議紀錄(95.11.14).pdf",
+       "size": "23 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34834-62ce2ea07fb94e4ca65d0a5eac92e80e-1.doc",
+       "title": "第5次「全民健康保險醫療給付協議會議」會議紀錄(95.09.27).doc",
+       "size": "38 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34835-5b8793cbab504b43994f04d8481c83b3-1.odt",
+       "title": "第5次「全民健康保險醫療給付協議會議」會議紀錄(95.09.27).odt",
+       "size": "15 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34824-19c6b7f92f174b6b882e3839ef171936-1.pdf",
+       "title": "第5次「全民健康保險醫療給付協議會議」會議紀錄(95.09.27).pdf",
+       "size": "11 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34836-4ae64d2e779243c18cdf8fccac47c1b7-1.doc",
+       "title": "第4次「全民健康保險醫療給付協議會議」會議紀錄(95.07.20).doc",
+       "size": "40 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34837-e174c66d02524e1f87ebdade9e046a17-1.odt",
+       "title": "第4次「全民健康保險醫療給付協議會議」會議紀錄(95.07.20).odt",
+       "size": "16 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34825-e30c7ed679d94b9c817bb86169a963b6-1.pdf",
+       "title": "第4次「全民健康保險醫療給付協議會議」會議紀錄(95.07.20).pdf",
+       "size": "12 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34838-ce32b1c56e284922b9e1847a54be103a-1.doc",
+       "title": "第3次「全民健康保險醫療給付協議會議」會議紀錄(95.06.19).doc",
+       "size": "41 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34839-fb6ea3107e9443b28188cb4f1849e397-1.odt",
+       "title": "第3次「全民健康保險醫療給付協議會議」會議紀錄(95.06.19).odt",
+       "size": "17 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34826-cff4e80abbe54ccc80d108defe800f9d-1.pdf",
+       "title": "第3次「全民健康保險醫療給付協議會議」會議紀錄(95.06.19).pdf",
+       "size": "19 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34840-c04ea10677a547aa8fbf02abc1b1806c-1.doc",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄.doc",
+       "size": "37 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34841-a658c09f10064aec8756821e4475cba4-1.odt",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄.odt",
+       "size": "16 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34827-40e5722e0d13485bb95259d1d5c62181-1.pdf",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄.pdf",
+       "size": "91 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34842-e835612e961441a7b316d45ba7ec6257-1.doc",
+       "title": "第1次「全民健康保險醫療給付協議會議」會議紀錄.doc",
+       "size": "198 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34843-f045e5826a48400cb67a129223c919f8-1.odt",
+       "title": "第1次「全民健康保險醫療給付協議會議」會議紀錄.odt",
+       "size": "11 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34829-f29bdfd5f1064036ac7b0f89d6664926-1.pdf",
+       "title": "第1次「全民健康保險醫療給付協議會議」會議紀錄.pdf",
+       "size": "15 KB"
+      }
+     ],
+     "fingerprint": "99c211f2bedaed7a"
+    },
+    {
+     "key": "cp-6544-a4545-2771-1",
+     "title": "94年",
+     "url": "https://www.nhi.gov.tw/ch/cp-6544-a4545-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34850-97d818d124f24d0fbf1868e726421bfd-1.doc",
+       "title": "第6次「全民健康保險醫療給付協議會議」會議紀錄.doc",
+       "size": "198 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34851-2b05469897e84463b443cd09585eb59d-1.odt",
+       "title": "第6次「全民健康保險醫療給付協議會議」會議紀錄.odt",
+       "size": "12 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34844-d8de684ab332441ea63725ea679b108a-1.pdf",
+       "title": "第6次「全民健康保險醫療給付協議會議」會議紀錄.pdf",
+       "size": "15 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34852-566638266a514cc1b47009a13701719f-1.doc",
+       "title": "第5次「全民健康保險醫療給付協議會議」會議紀錄.doc",
+       "size": "38 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34853-34b791185dc04984936940c6b0dde906-1.odt",
+       "title": "第5次「全民健康保險醫療給付協議會議」會議紀錄.odt",
+       "size": "16 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34845-181c22a6d3c743299a3ebf69f93a5efd-1.pdf",
+       "title": "第5次「全民健康保險醫療給付協議會議」會議紀錄.pdf",
+       "size": "23 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34854-efc2a45ddb214366b02adc60fa0c8ce2-1.doc",
+       "title": "第4次「全民健康保險醫療給付協議會議」會議紀錄.doc",
+       "size": "193 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34855-eb8154fda9c54958ad386bb65a4942be-1.odt",
+       "title": "第4次「全民健康保險醫療給付協議會議」會議紀錄.odt",
+       "size": "12 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34846-ff1111d9e02e4ec0bea3c13ee6c3e4d3-1.pdf",
+       "title": "第4次「全民健康保險醫療給付協議會議」會議紀錄.pdf",
+       "size": "86 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34856-866bdc563b3d4fe98cb5ab9a9b939e1b-1.doc",
+       "title": "第3次「全民健康保險醫療給付協議會議」會議紀錄.doc",
+       "size": "191 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34857-e06274b1e54a45edae819347faf19643-1.odt",
+       "title": "第3次「全民健康保險醫療給付協議會議」會議紀錄.odt",
+       "size": "11 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34847-08d49b7531fa40fc936df7ad75c2b3fe-1.pdf",
+       "title": "第3次「全民健康保險醫療給付協議會議」會議紀錄.pdf",
+       "size": "77 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34858-0c4f63ffa529452eb29ccec303a885a5-1.doc",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄.doc",
+       "size": "235 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34859-3e7704e7bdb842d5b55a503096e4091b-1.odt",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄.odt",
+       "size": "26 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34848-bc70a6d0c7c245eb8a230c3e8421e4f3-1.pdf",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄.pdf",
+       "size": "263 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34860-fba40b58f46e44b3be91513c930bf74a-1.doc",
+       "title": "第1次「全民健康保險醫療給付協議會議」會議紀錄.doc",
+       "size": "181 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34861-993e126658d74857a7159e40219a578a-1.odt",
+       "title": "第1次「全民健康保險醫療給付協議會議」會議紀錄.odt",
+       "size": "12 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34849-fd40a15e729541c8b200ec662254202d-1.pdf",
+       "title": "第1次「全民健康保險醫療給付協議會議」會議紀錄.pdf",
+       "size": "85 KB"
+      }
+     ],
+     "fingerprint": "35e3d5ade7456be0"
+    },
+    {
+     "key": "cp-6545-866f0-2771-1",
+     "title": "93年",
+     "url": "https://www.nhi.gov.tw/ch/cp-6545-866f0-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34870-e95553e26d844c4481349f49be25ab0d-1.doc",
+       "title": "第8次「全民健康保險醫療給付協議會議」會議紀錄.doc",
+       "size": "160 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34871-8f22b0d81e014344897e59e2af4b7736-1.odt",
+       "title": "第8次「全民健康保險醫療給付協議會議」會議紀錄.odt",
+       "size": "12 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34862-640d866865f04b71a17e84c3267a76b7-1.pdf",
+       "title": "第8次「全民健康保險醫療給付協議會議」會議紀錄.pdf",
+       "size": "89 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34872-12fa99b590544bab80d828263eeabb33-1.doc",
+       "title": "第7次「全民健康保險醫療給付協議會議」會議紀錄.doc",
+       "size": "149 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34873-cf03ae731ebe4f10be986262bb742ebc-1.odt",
+       "title": "第7次「全民健康保險醫療給付協議會議」會議紀錄.odt",
+       "size": "12 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34863-ec71eff44fc04f8eb90e6c776a432717-1.pdf",
+       "title": "第7次「全民健康保險醫療給付協議會議」會議紀錄.pdf",
+       "size": "95 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34874-f4264c80555c435d81b4cd2c039bda87-1.doc",
+       "title": "第6次「全民健康保險醫療給付協議會議」會議紀錄.doc",
+       "size": "139 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34875-3e2ea95f33c148f785f6e159733d002b-1.odt",
+       "title": "第6次「全民健康保險醫療給付協議會議」會議紀錄.odt",
+       "size": "11 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34864-c6d8a4f377044c7cafa98da748b126dd-1.pdf",
+       "title": "第6次「全民健康保險醫療給付協議會議」會議紀錄.pdf",
+       "size": "84 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34876-3ab5f213782c4f1583c9adb99b860049-1.doc",
+       "title": "第5次「全民健康保險醫療給付協議會議」會議紀錄.doc",
+       "size": "126 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34877-ba16e3e59c544671aee1e8bd1161958e-1.odt",
+       "title": "第5次「全民健康保險醫療給付協議會議」會議紀錄.odt",
+       "size": "11 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34865-2d0b886dad764010b12023dcb1dc90b5-1.pdf",
+       "title": "第5次「全民健康保險醫療給付協議會議」會議紀錄.pdf",
+       "size": "74 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34878-1728c6b28e4e4ebb8428677e0aea6d9f-1.doc",
+       "title": "第4次「全民健康保險醫療給付協議會議」會議紀錄.doc",
+       "size": "109 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34879-2156f499c50d418e9cd7b6caa80b1911-1.odt",
+       "title": "第4次「全民健康保險醫療給付協議會議」會議紀錄.odt",
+       "size": "11 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34866-4cffd7aca5b94901877ee419ce770763-1.pdf",
+       "title": "第4次「全民健康保險醫療給付協議會議」會議紀錄.pdf",
+       "size": "108 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34884-81c3c1b2147c425faca031b8e4a84ae8-1.doc",
+       "title": "第3次「全民健康保險醫療給付協議會議」會議紀錄.doc",
+       "size": "97 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34885-082efb2236e14a7aa0bab07a48fb70af-1.odt",
+       "title": "第3次「全民健康保險醫療給付協議會議」會議紀錄.odt",
+       "size": "12 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34867-af813ab1a7e34a43bff0bcf9eb458872-1.pdf",
+       "title": "第3次「全民健康保險醫療給付協議會議」會議紀錄.pdf",
+       "size": "112 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34880-cd2c94ae3cf64bcc9dda1e221ed7db97-1.doc",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄.doc",
+       "size": "90 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34881-db6a7a7b7675430ca463048a9eb74ae3-1.odt",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄.odt",
+       "size": "9 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34868-bf430281934845899598d52f85f42365-1.pdf",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄.pdf",
+       "size": "82 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34882-a572cac2c4fc421ba21fd0f021d3c83d-1.doc",
+       "title": "第1次「全民健康保險醫療給付協議會議」會議紀錄.doc",
+       "size": "81 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34883-761175c95bbd4e689b9ade163b76ae5d-1.odt",
+       "title": "第1次「全民健康保險醫療給付協議會議」會議紀錄.odt",
+       "size": "10 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34869-a64497bd7b1341e38bac441123cea8a6-1.pdf",
+       "title": "第1次「全民健康保險醫療給付協議會議」會議紀錄.pdf",
+       "size": "91 KB"
+      }
+     ],
+     "fingerprint": "52351ebf6cd134a4"
+    },
+    {
+     "key": "cp-18030-b0aca-2771-1",
+     "title": "114年",
+     "url": "https://www.nhi.gov.tw/ch/cp-18030-b0aca-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-83053-2aa7b7a8b417433f8bb5f11a1f107b66-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議114年第1次會議補充資料(114.3.27新增).pdf",
+       "size": "714 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-82786-26fa9f5568a24a839b001d4f625e5d28-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議114年第1次會議議程(114.3.20新增，114.3.21更新報7、討4，114.3.24更新優討1、報8、報11、討1、討3，114.3.26更新加註總頁碼).pdf",
+       "size": "12 MB"
+      }
+     ],
+     "fingerprint": "2e8989646e0459d5"
+    },
+    {
+     "key": "cp-14129-98c03-2771-1",
+     "title": "113年",
+     "url": "https://www.nhi.gov.tw/ch/cp-14129-98c03-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-81577-f38c632b0f8142e988551ec6521dec6b-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議113年第5次會議紀錄(114.1.17新增).pdf",
+       "size": "4 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-80352-fdadcc5e19c541058016839692c2e7b2-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議113年第5次會議議程(113.12.19新增，113.12.23更新報告案4、9、10案、討論案1、2案及報4附錄6.7.5及6.7.5.1，113.12.26新增補充報告案6、9、10案及討論案1案).pdf",
+       "size": "11 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-80353-168729371a0a4611b2a9b0e88db47b0a-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議113年第5次會議議程(113.12.19新增，113.12.23更新報告案4、9、10案、討論案1、2案及報4附錄6.7.5及6.7.5.1，113.12.26新增補充報告案6、9、10案及討論案1案).pdf",
+       "size": "19 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-80457-7b5e7bbdf9a149f8b15a526bc96910f1-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議113年第5次會議議程(113.12.19新增，113.12.23更新報告案4、9、10案、討論案1、2案及報4附錄6.7.5及6.7.5.1，113.12.26新增補充報告案6、9、10案及討論案1案).pdf",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-75455-4a021156791047b38cc0a814be5f388c-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議113年第4次會議紀錄(113.10.23新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-74926-f40248a2003e4053b9d5083bf0493d7c-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議113年第4次會議議程(113.9.20新增，113.9.27更新).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-74927-059f21cd93a340ada2e207cdebd9320f-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議113年第4次會議議程(113.9.20新增，113.9.27更新).pdf",
+       "size": "155 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-74612-c04c0e32f8e54b3f80840a6cd5d136e5-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議113年第4次會議議程(113.9.20新增，113.9.27更新).pdf",
+       "size": "6 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-72339-d760cb5bca264916a1afb6b97c275f70-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議113年第3次會議紀錄(113.08.01新增).pdf",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-71869-8ce71da9750d4ccbb5e20d18be18e0ef-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議113年第3次會議議程(113.7.5新增，113.8.1更新V4).pdf",
+       "size": "8 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-69479-4c638adb41c448c0b37100b6b6eefa5b-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議113年第1次臨時會會議紀錄(113.5.7新增).pdf",
+       "size": "667 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-68917-5b20fb4dd2a847ff967183476038c1b1-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議113年第1次臨時會討論案第2案之簡報(113.4.26新增).pdf",
+       "size": "714 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-68596-b8d84b1dad9f43eda6e33d6a0af67de7-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議113年第1次臨時會會議議程(113.4.18新增，113.4.25更新V4).pdf",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-67779-4568ff37290b457d86b4f2ff6f195482-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議113年第2次會議紀錄(113.04.01新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-68044-1aeea30e6cc448f69da78b91be1dc877-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議113年第2次會議議程(113.3.14新增，113.4.10更新V4).pdf",
+       "size": "8 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-66740-3c7ef8fd62974ba3949fbdb81c3f72f0-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議113年第1次會議紀錄(113.02.06新增).pdf",
+       "size": "4 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-66390-848e6b77399f459f996b3f1c2d2db5e3-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議113年第1次會議議程(113.1.9新增，113.1.16更新Ｖ4).pdf",
+       "size": "12 MB"
+      }
+     ],
+     "fingerprint": "3e03e4b8e6178e7e"
+    },
+    {
+     "key": "cp-6509-582cb-2771-1",
+     "title": "112年",
+     "url": "https://www.nhi.gov.tw/ch/cp-6509-582cb-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-62865-524f9fe3b9214b01b889e8ee2018f888-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議112年第4次會議紀錄(113.01.08新增，113.02.06更新).pdf",
+       "size": "4 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-56201-d8d6bc8cc75f4c8dbae3334b31eca217-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議112年第4次會議議程(112.12.07新增，112.12.13更新).pdf",
+       "size": "20 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-44593-24820b055f934f7a8e3ae7f374ebe03d-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議112年第3次會議紀錄(112.09.26新增).pdf",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-44594-838a3683772b40a6a6733fee4899b197-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」112年第3次會議議程(112.09.08新增，112.09.12更新).pdf",
+       "size": "4 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34423-fd0e75ba7cc14cd7ae8765ff84c0f793-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議112年第2次會議紀錄(112.07.18新增).pdf",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34424-fbf717d81fec4edfa4bbf8f8a937f9e0-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議112年第2次會議議程(112.06.21新增，112.06.29更新).pdf",
+       "size": "15 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34425-d1485984bb344ebb8381c00cdcca0036-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」112年第1次臨時會會議紀錄(112.05.22新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34426-0704e41330174dc4889c52f41dfe875b-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議112年第1次臨時會會議議程(112.04.20新增，112.04.26更新).pdf",
+       "size": "13 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34427-eabc893cd785453fa4c1b32a80ccfd83-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議112年第1次臨時會會議議程(112.04.20新增，112.04.26更新).pdf",
+       "size": "241 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34428-6f10d1374ca84064835c6125c2ea46b9-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議112年第1次會議紀錄(112.04.26新增).pdf",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34429-247308c96b3c4d6187cee8d1605f58b8-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議112年第1次會議議程(112.03.25新增，112.04.17更新).pdf",
+       "size": "13 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34430-caae84b00ae94c2fb92ad9684079bc1d-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議112年第1次會議議程(112.03.25新增，112.04.17更新).pdf",
+       "size": "2 MB"
+      }
+     ],
+     "fingerprint": "590925296fa6af17"
+    },
+    {
+     "key": "cp-6520-23f9d-2771-1",
+     "title": "111年",
+     "url": "https://www.nhi.gov.tw/ch/cp-6520-23f9d-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34446-0c9eda0d186643c48ee42b986fdcb4b2-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議111年第4次會議紀錄(112.01.18新增).pdf",
+       "size": "11 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34447-201eb6367bd6411696a56f0b33c99796-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議111年第4次會議議程(111.12.16新增，111.12.23更新補充資料).pdf",
+       "size": "23 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34448-57519ea70a1649ce80c9d412009b3d23-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議111年第4次會議議程(111.12.16新增，111.12.23更新補充資料).pdf",
+       "size": "300 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34449-d1631ed7ad444715a4371bea16cbdd6e-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議111年第3次會議紀錄(111.09.23新增).pdf",
+       "size": "4 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34450-730b8de315f04d76960dbd771580c77f-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議111年第3次會議議程(111.08.26新增，111.08.31更新).pdf",
+       "size": "10 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34451-1957ea68f589440899a991537f4340df-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議111年第2次會議紀錄(111.06.30新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34452-7fb4549cafff4de68e2ee867a7b0496c-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議111年第2次會議議程(111.06.02新增).pdf",
+       "size": "9 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34453-cd25bd8a2dbd42b9a212b91abb6cb40b-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議111年第2次會議議程(111.06.02新增).pdf",
+       "size": "865 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34454-da0ca2fa6ca74d9884b845639e875f05-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議111年第1次臨時會會議紀錄(111.04.28新增).pdf",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34455-ca2890bdd7fe4448ac348a1a6a63080f-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議111年第1次會議會議紀錄(111.03.30新增).pdf",
+       "size": "5 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34456-07c9ad89a28f46abbffb84db35d9a3b8-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議111年第1次臨時會議議程(111.03.25新增，111.03.28，111.03.30更新).pdf",
+       "size": "6 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34457-db78dee743e2411c9381438ac63cb121-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議111年第1次會議議程(111.03.04新增，111.03.09更新).pdf",
+       "size": "11 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34458-d8c3e4a817c94f75a2d7c98b249de1de-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議111年第1次會議議程(111.03.04新增，111.03.09更新).pdf",
+       "size": "7 MB"
+      }
+     ],
+     "fingerprint": "acae49a999f80046"
+    },
+    {
+     "key": "cp-6523-7ada8-2771-1",
+     "title": "110年",
+     "url": "https://www.nhi.gov.tw/ch/cp-6523-7ada8-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34459-a2f78ae8137b4390a2f6b9a0d6877051-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議110年第4次會議會議紀錄(111.01.04新增).pdf",
+       "size": "5 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34460-1864e9c4b9e74716982370f5817fd9ef-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議110年第4次會議議程(110.12.03新增，110.12.08更新).pdf",
+       "size": "6 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34461-7cc48928df1a4d218b8f445f51f9520f-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議110年第3次會議紀錄(110.10.15新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34462-24e5f4cd5a0f47adb9aa4e37e3394bf7-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議110年第3次會議議程(110.09.06新增，110.09.08更新).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34463-14e817badcc546789daf93e93161c383-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議110年第2次會議紀錄(110.08.24新增，110.09.03修改).pdf",
+       "size": "6 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34464-46a3b97c17064ba5aa7671c1c4e95d12-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議110年第2次會議議程(110.07.22新增，110.07.28更新).pdf",
+       "size": "14 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34465-abdf352fd6e94165a7dd7dd02da84d1d-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第1次臨時會會議會議紀錄(110.05.13新增).pdf",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34466-8e18da23ac184241adef5a708c37f263-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第1次會議會議紀錄(110.04.07新增，110.04.16修正).pdf",
+       "size": "5 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34467-4d3f2aacc9654b2d9075f54b4400372f-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第1次臨時會會議議程(110.04.01新增，110.04.07更新).pdf",
+       "size": "5 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34468-3918676b86c84b1a98dcb9376e6a79ac-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第1次會議議程(110.03.05新增，110.03.10更新).pdf",
+       "size": "14 MB"
+      }
+     ],
+     "fingerprint": "828d10631b2311b6"
+    },
+    {
+     "key": "cp-6524-f7103-2771-1",
+     "title": "109年",
+     "url": "https://www.nhi.gov.tw/ch/cp-6524-f7103-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34469-8f42ac62dbd9401b946f6f42e53ec946-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第4次會議紀錄(109.12.31新增).pdf",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34473-d449f715cee743c9bdd2305839255a6b-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第2次臨時會議紀錄(109.12.23新增).pdf",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34474-bb36b33fc71d4afd9a9de9979df699b5-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第4次會議議程 (109.12.08新增，109.12.14更新).pdf",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34475-aa058fad4ec6419383d9a0163094ed88-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第1次臨時會議會議紀錄(109.12.04新增).pdf",
+       "size": "4 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34476-e9ef695176e64ef89e4d90324e62dadf-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第2次臨時會議議程(109.11.27新增，109.12.02更新).pdf",
+       "size": "4 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34477-7419052c4b8a4407941b3316e5923682-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第1次臨時會議議程(109.11.05新增，109.11.11更新).pdf",
+       "size": "11 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34478-5c0e86c385964dd1bef89c87ca6ab29c-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第3次會議紀錄(109.09.23新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34479-d45c534a85e04c77b1a1142970eeeaa4-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第3次會議議程(109.09.03新增，109.09.10更新).pdf",
+       "size": "5 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34480-ac49e138f35446c58fdb1da92282d1e7-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第2次會議紀錄(109.06.24新增).pdf",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34481-a8c850b8de2f47af9bd6742c97e29f22-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第2次會議議程(109.06.04新增，109.06.09更新).pdf",
+       "size": "5 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34482-ca91ef77fab041069cbc0210a7011f79-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第1次會議紀錄(109.03.27新增).pdf",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34483-f7e2f9c2ae9b4b9db1aad763200c5344-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第1次會議議程(109.03.06新增).pdf",
+       "size": "11 MB"
+      }
+     ],
+     "fingerprint": "8a9913241da73a13"
+    },
+    {
+     "key": "cp-6525-f692e-2771-1",
+     "title": "108年",
+     "url": "https://www.nhi.gov.tw/ch/cp-6525-f692e-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34487-08580b46207e4fcea9a3ee3f76c1ab2d-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第3次臨時會會議紀錄(109.01.08新增).pdf",
+       "size": "4 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34488-4130e57d633f4cf9848c9938b08509e5-1.pdf",
+       "title": "全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第3次臨時會議議程(108.12.20新增).pdf",
+       "size": "4 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34489-75adeab536b64aad9f956f770e4f84b2-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第4次會議紀錄(108.12.05新增).pdf",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34490-ab101674fc04451f8f7b231ab73c079d-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第4次會議議程(108.11.15新增).pdf",
+       "size": "6 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34491-a06a073a989847f3bc3f8f21350bb530-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第2次臨時會議會議紀錄(108.09.26新增).pdf",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34492-de966ef4ff4d4a44bc720460700b6621-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第2次臨時會議議程(108.09.09新增).pdf",
+       "size": "13 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34493-122e02e093274c86b49bc57d220f6d73-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第3次會議會議紀錄(108.08.19新增).pdf",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34494-136d12f89684452790a7c639c11cbfe3-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第3次會議議程(108.07.18新增)(108.07.23更新).pdf",
+       "size": "17 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34495-8c0e9f4bd7174bb8ad1198dc401a9dec-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第2次會議紀錄(108.06.28新增).pdf",
+       "size": "4 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34496-7a79d2c9ab424c45af56142f97696a6b-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第2次會議議程(108.06.10新增).pdf",
+       "size": "6 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34497-aa84b9c35c15496ea27cc7e032f2a9c4-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第1次會議紀錄(108.03.27新增).pdf",
+       "size": "6 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34498-054b09f32a6e44c598099172a662cab5-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第1次會議議程(108.03.12新增).pdf",
+       "size": "5 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34499-af3df1c9c79a43d4917e4f938af94f05-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第1次臨時會議紀錄(108.02.11新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34500-1e3da25bf1504e52a132c86850b78da1-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第1次臨時會議議程(108.01.17新增).pdf",
+       "size": "7 MB"
+      }
+     ],
+     "fingerprint": "06bd3d24fd372315"
+    },
+    {
+     "key": "cp-6527-4c1f0-2771-1",
+     "title": "107年",
+     "url": "https://www.nhi.gov.tw/ch/cp-6527-4c1f0-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34501-931a7846df7f427bbed03682140b7bf4-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第4次會議紀錄(108.01.14更新).pdf",
+       "size": "6 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34502-0a82c40f50d945e3b133107b7d160b1a-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第4次會議議程(107.12.06新增).pdf",
+       "size": "16 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34506-1896dac8562141e9ad3de4a8286007e8-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第3次會議紀錄(107.11.09更新).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34507-07c32e24ef98497f956f169d4156cd4f-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第3次會議議程(107.10.19更新).pdf",
+       "size": "13 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34508-1f1197130d8b42a2a2568804f08b3bfc-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第2次會議紀錄(107.07.02新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34509-f778e606f9a447e88dee161e4b09e8f9-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第2次會議議程(107.06.08更新).pdf",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34510-769afd0a806a4bfa8c53f303da486e0f-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第1次臨時會議紀錄(107.05.22新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34514-3cf302cb63d24e62981fced43bde7888-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第1次臨時會議議程(107.05.04新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34515-7cfcbddf7f8d4a98b8708d03f1646bd0-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第1次會議紀錄(107.03.31新增).pdf",
+       "size": "6 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34516-dc5e43cd807b46f8be9571ad83318bf0-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬定會議」第1次會議議程(107.03.15新增).pdf",
+       "size": "6 MB"
+      }
+     ],
+     "fingerprint": "cac62530bdc66200"
+    },
+    {
+     "key": "cp-6533-a2ef9-2771-1",
+     "title": "106年",
+     "url": "https://www.nhi.gov.tw/ch/cp-6533-a2ef9-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34517-0030cd5079344eeab5e976f6ac6b6299-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第4次臨時會會議紀錄(107.01.09新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34518-ec3f5d6fe04545c2a583407c97805512-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第4次會議紀錄(106.12.25新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34522-1fae91013a694fd4b0555d7ecef3bb65-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第4次臨時會會議議程(106.12.22新增).pdf",
+       "size": "1012 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34523-67d0c0de89d14ac8a692845177804dc6-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第4次會議議程(106.12.20更新).pdf",
+       "size": "6 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34524-c54547d7ea8b4d0ea299f7dd293e872d-1.pdf",
+       "title": "106年第3次臨時會「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(106.09.07新增).pdf",
+       "size": "859 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34525-1749c318783740a88416e3a154234b95-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第3次臨時會議議程(106.08.28新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34526-27956195b84a4d4cb04ef6b92a013e33-1.pdf",
+       "title": "第2次臨時會「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(106.08.23新增).pdf",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34527-a959d457420040fc9ed872ad229b750a-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」第2次臨時會議議程(106.08.04新增).pdf",
+       "size": "9 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34528-a8bb68e99283402fb7365e5327cb9e20-1.pdf",
+       "title": "第2次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(106.06.03新增).pdf",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34529-93838a876c284d4aa3f8e7825ef14415-1.pdf",
+       "title": "第1次臨時會「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(106.04.19新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34530-0d6786b495ec40598116ef02d8dfab57-1.pdf",
+       "title": "第1次臨時會「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(106.03.22新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34531-3e3efcec0a8249ffa0a742461e785720-1.pdf",
+       "title": "第1次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(106.03.22新增).pdf",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34532-9024410f60b44d21af447947ad37901c-1.pdf",
+       "title": "第1次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(106.03.06新增).pdf",
+       "size": "2 MB"
+      }
+     ],
+     "fingerprint": "a5c3573db0812559"
+    },
+    {
+     "key": "cp-6531-c874a-2771-1",
+     "title": "105年",
+     "url": "https://www.nhi.gov.tw/ch/cp-6531-c874a-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34539-8a32331a0d224a2bbbaefea072b1e597-1.odt",
+       "title": "第2次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(105.07.06新增).odt",
+       "size": "188 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34540-87dc9a41fb1a4322bebd4a10783391e9-1.pdf",
+       "title": "第2次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(105.07.06新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34541-272ab64bb09f48968974d472226ac422-1.pdf",
+       "title": "第2次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」_補充資料(105.06.22新增).pdf",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34542-fbbc8d7460964065bbb327e8792e59bd-1.odt",
+       "title": "第2次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(105.06.17新增).odt",
+       "size": "584 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34543-3c06af9fa7b24b8aba96f1b6b3566449-1.pdf",
+       "title": "第2次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(105.06.17新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34544-a49e68e05d0d4f8283ceabe291acb085-1.odt",
+       "title": "第1次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(105.03.23新增).odt",
+       "size": "125 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34545-2157e7f48bff4520874625e523778457-1.pdf",
+       "title": "第1次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(105.03.23新增).pdf",
+       "size": "671 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34546-61d5045ebf38476bbece0e743fca4102-1.pdf",
+       "title": "第1次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(105.03.10新增).pdf",
+       "size": "928 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34547-0aa8229f7e574189b9f456fd805407fb-1.pdf",
+       "title": "第2次臨時會「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(105.02.04新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34548-91ec5f056d364cb2b0f8dafe827da103-1.pdf",
+       "title": "第2次臨時會「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(105.01.22新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34549-20569b5295e74ff2aca78d1607eb1ab0-1.pdf",
+       "title": "第1次臨時會「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(105.01.21新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34550-de934be03fbf4be7abe5a39d210cf7e3-1.pdf",
+       "title": "第1次臨時會「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(105.01.13新增).pdf",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34551-1354043c5e3448c08a97787ec628b104-1.odt",
+       "title": "第3次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(105.10.14新增).odt",
+       "size": "129 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34552-f74a501cf2e7452687f136c35f59e90f-1.pdf",
+       "title": "第3次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(105.10.14新增).pdf",
+       "size": "844 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34553-214119dfc2b64f63880c4a54c9a52a4a-1.odt",
+       "title": "第3次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(105.09.22新增).odt",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34554-81c9d8d314834aff8a021abaa0a1fdc2-1.pdf",
+       "title": "第3次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(105.09.22新增).pdf",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34555-2623025ee6334b949fcd7d03285c4c9a-1.pdf",
+       "title": "第4次臨時會「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(106.01.11新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34559-d290785ec79941d7a4a4623385e8d8d5-1.pdf",
+       "title": "第4次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(105.12.30新增).pdf",
+       "size": "12 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34560-4d5f712de2e64051a7235e6ad8e39bc4-1.pdf",
+       "title": "第4次臨時會「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(105.12.29新增).pdf",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34561-053a9de79cd446abb6df13c68e779319-1.pdf",
+       "title": "第4次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程_補充資料(105.12.20新增).pdf",
+       "size": "15 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34562-1a7b74eaa5d9424ea01e8173504acb9b-1.pdf",
+       "title": "第4次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(105.12.15新增).pdf",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34563-c7c4155dabeb4c51b01ba881b4b9b726-1.pdf",
+       "title": "第3次臨時會「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(105.12.15新增).pdf",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34564-34ade39946b9401287b40def69de628a-1.pdf",
+       "title": "第3次臨時會「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程_補充資料(105.11.28新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34565-483bf0865a0b46e392c4bfb286a6ae82-1.pdf",
+       "title": "第3次臨時會「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(105.11.23新增).pdf",
+       "size": "5 MB"
+      }
+     ],
+     "fingerprint": "eb7ff88663c0dec2"
+    },
+    {
+     "key": "cp-6534-132c6-2771-1",
+     "title": "104年",
+     "url": "https://www.nhi.gov.tw/ch/cp-6534-132c6-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34566-b8c1cce6e109412f8f22a5d05ca07b1f-1.pdf",
+       "title": "第4次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(105.01.08新增).pdf",
+       "size": "4 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34567-5c3206618a1b48658639ae17a9d9568a-1.pdf",
+       "title": "第4次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程_補充資料(104.12.30新增).pdf",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34568-5e3532acb294445b97bcc0c1fb4be8c2-1.pdf",
+       "title": "第4次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(104.12.24新增).pdf",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34569-c8f42785b9af4807930d5dbb6b61fd0b-1.pdf",
+       "title": "第4次臨時會「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(104.12.02新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34570-5e75462f35f74547a990480d92a6455a-1.pdf",
+       "title": "第4次臨時會「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(104.11.11新增).pdf",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34571-f8919257d0074deaae985fe4ee0f46b6-1.pdf",
+       "title": "第4次臨時會「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(104.11.11新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34572-cc53290a518b42e2ac18d069193ee78e-1.pdf",
+       "title": "第3次臨時會「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(104.10.19新增).pdf",
+       "size": "892 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34573-52edccdf82c14efd945605d144c8d811-1.pdf",
+       "title": "第3次臨時會「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(104.09.24新增).pdf",
+       "size": "737 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34574-41687a92731f4491ae651b2466622dec-1.pdf",
+       "title": "第3次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(104.09.24新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34575-bb11fa384abf4cccae5d605d75c1895d-1.odt",
+       "title": "第3次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(104.09.03新增).odt",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34576-5637f5ceff7f418eb96fe892314bddc0-1.pdf",
+       "title": "第3次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(104.09.03新增).pdf",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34577-932a9633030945658242513b050f670b-1.odt",
+       "title": "第2次臨時會「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(104.08.31新增).odt",
+       "size": "105 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34578-b8627e91ef6048e0bbcba58104501e29-1.pdf",
+       "title": "第2次臨時會「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(104.08.31新增).pdf",
+       "size": "718 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34581-e7dcbc108f03488c9ad3efa844575b3d-1.odt",
+       "title": "第2次臨時會「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(104.08.10新增).odt",
+       "size": "594 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34582-01f51e51038440b88c4d6115b7395ce6-1.pdf",
+       "title": "第2次臨時會「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(104.08.10新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34583-8bfc333c09ac49a99b9401d17db504f7-1.odt",
+       "title": "第2次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(104.07.02新增).odt",
+       "size": "292 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34584-0e3881053d8149a083f4dadf0f346e95-1.pdf",
+       "title": "第2次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(104.07.02新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34585-8e1d184cc548432aa4d9daa3339fbd52-1.doc",
+       "title": "第2次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(104.06.04新增).doc",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34587-d0d6a01a406d47a49fcb909cae0f1f8f-1.odt",
+       "title": "第2次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(104.06.04新增).odt",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34586-fc99d86ba32c4f208f2e4950e0509d39-1.pdf",
+       "title": "第2次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(104.06.04新增).pdf",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34588-919a2bedd65840bfad7d10cca047c9e2-1.doc",
+       "title": "第1次臨時會「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(104.05.29新增).doc",
+       "size": "387 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34593-bf94a924023d40d09c24b7a85756bfb9-1.odt",
+       "title": "第1次臨時會「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(104.05.29新增).odt",
+       "size": "150 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34589-e8c73fe17e424a8c91e47509e613483e-1.pdf",
+       "title": "第1次臨時會「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(104.05.29新增).pdf",
+       "size": "681 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34597-f9c8cb1ae0f543808c76705eed98d223-1.doc",
+       "title": "第1次臨時會「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(104.05.01新增).doc",
+       "size": "7 MB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34598-8bd0da4b636943f6a9f50ac00df114fe-1.odt",
+       "title": "第1次臨時會「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(104.05.01新增).odt",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34594-2fd648c9a7174d3981aa2531a856bb5f-1.pdf",
+       "title": "第1次臨時會「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(104.05.01新增).pdf",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34599-8464fae231a84e26b4d11b2921f53710-1.doc",
+       "title": "第1次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(104.04.17新增).doc",
+       "size": "943 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34600-64169902aab24474b9d4cd607bc64c2a-1.odt",
+       "title": "第1次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(104.04.17新增).odt",
+       "size": "353 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34595-ac728ae03f2e40b5acad5770d8e7d479-1.pdf",
+       "title": "第1次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(104.04.17新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34601-7ae74a82e11e4529a985c9ab1e9f9d96-1.doc",
+       "title": "第1次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(104.03.19新增).doc",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34602-7be67310ee48425b837ba817ee985294-1.odt",
+       "title": "第1次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(104.03.19新增).odt",
+       "size": "846 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34596-28f3c7b8b3774b65a02a76648c83abb8-1.pdf",
+       "title": "第1次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(104.03.19新增).pdf",
+       "size": "1 MB"
+      }
+     ],
+     "fingerprint": "7b3759b3201e6b4b"
+    },
+    {
+     "key": "cp-6535-73377-2771-1",
+     "title": "103年",
+     "url": "https://www.nhi.gov.tw/ch/cp-6535-73377-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34609-4776f60c896948e88e24657e432a5a9c-1.doc",
+       "title": "第3次臨時會「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(104.01.16新增).doc",
+       "size": "911 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34612-b1a31e91c7104c6c9d4f2cb284b28df0-1.odt",
+       "title": "第3次臨時會「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(104.01.16新增).odt",
+       "size": "339 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34610-7c5627840a98497abf0e1dadd9c392ea-1.pdf",
+       "title": "第3次臨時會「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(104.01.16新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34642-c9db01c62617445095251dbfe0987f09-1.doc",
+       "title": "第4次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(103.12.19新增).doc",
+       "size": "5 MB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34643-2ae90f59c3c34654a505b535d24bc19c-1.odt",
+       "title": "第4次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(103.12.19新增).odt",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34616-082571974c5e40a48a1978538af77790-1.pdf",
+       "title": "第4次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(103.12.19新增).pdf",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34644-ed534907fd7b4a0fbb16b674dff1a6f1-1.doc",
+       "title": "第3次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議臨時會議程(103.12.17新增).doc",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34645-77ca453f48664870b47f7960b0542c8f-1.odt",
+       "title": "第3次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議臨時會議程(103.12.17新增).odt",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34618-792151debf3845b8be35cce4d63cbe3b-1.pdf",
+       "title": "第3次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議臨時會議程(103.12.17新增).pdf",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34646-f4b07fd9b7a5444580bdfa5f8905dfdc-1.doc",
+       "title": "第4次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(103.11.20新增).doc",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34647-a628358a870848359db2dcdc285af2cb-1.odt",
+       "title": "第4次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(103.11.20新增).odt",
+       "size": "422 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34620-2f91ef5c664645f0a3a0797db929273f-1.pdf",
+       "title": "第4次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(103.11.20新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34648-d96738e6598142dd90066d365e86fcb1-1.doc",
+       "title": "第2次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議臨時會」會議紀錄(103.11.10新增).doc",
+       "size": "711 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34649-790df270603a44f8b23e0b419ae99992-1.odt",
+       "title": "第2次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議臨時會」會議紀錄(103.11.10新增).odt",
+       "size": "268 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34622-7cb664fe10cb4f7a9e3d4ebade44d38b-1.pdf",
+       "title": "第2次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議臨時會」會議紀錄(103.11.10新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34665-1466fe684359468ca495a0a47cf241f6-1.doc",
+       "title": "第2次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議臨時會議程(103.10.14新增).doc",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34666-286a756a68474c078895d52c4778638e-1.odt",
+       "title": "第2次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議臨時會議程(103.10.14新增).odt",
+       "size": "583 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34624-e07e1e8791e647c5a94e54c11770b5b3-1.pdf",
+       "title": "第2次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議臨時會議程(103.10.14新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34667-1757c474cc014ea096f0c7cfff74d72a-1.doc",
+       "title": "第3次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議記錄(103.09.26新增).doc",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34668-130d751958144033bfa706f08c8c0375-1.odt",
+       "title": "第3次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議記錄(103.09.26新增).odt",
+       "size": "452 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34626-1c4e41b187f342cc86dea355266f5dc8-1.pdf",
+       "title": "第3次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議記錄(103.09.26新增).pdf",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34669-e105e1ef7b784578ae6165a12cf36c2e-1.doc",
+       "title": "第3次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(103.09.04新增).doc",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34670-9cfbcdc8cd3d4f41a7acfa5f766b986e-1.odt",
+       "title": "第3次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(103.09.04新增).odt",
+       "size": "778 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34628-2eb786ac561945d4b16b834a611363fd-1.pdf",
+       "title": "第3次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(103.09.04新增).pdf",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34671-a26a438da2ee4386925edce822ae50cb-1.doc",
+       "title": "第2次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議記錄(103.07.01新增).doc",
+       "size": "433 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34672-1f3ccaea8cb74d9a82c91c66d79812fa-1.odt",
+       "title": "第2次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議記錄(103.07.01新增).odt",
+       "size": "173 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34629-eaa729bc679d4965b240d874393152dc-1.pdf",
+       "title": "第2次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議記錄(103.07.01新增).pdf",
+       "size": "724 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34676-914a0c34c8f747d38e64d82f22e8f9d5-1.doc",
+       "title": "第2次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(103.06.05新增).doc",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34677-8521c717346f4954b8c7a7b9059db1e6-1.odt",
+       "title": "第2次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(103.06.05新增).odt",
+       "size": "729 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34630-9e2ffe3ace704ccfabab11e6b7b7d37d-1.pdf",
+       "title": "第2次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(103.06.05新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34678-5c53773dc2a84613acab08c2cc015242-1.doc",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議臨時會」會議紀錄(103.05.22新增).doc",
+       "size": "397 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34679-16bd766e896f4351b8cb45db8c504cb7-1.odt",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議臨時會」會議紀錄(103.05.22新增).odt",
+       "size": "179 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34632-31e0e8b1aa30477fa6e3c583cae5ec01-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議臨時會」會議紀錄(103.05.22新增).pdf",
+       "size": "647 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34680-e4a6a733568940908d13c70226bfabcf-1.doc",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議臨時會議程(103.04.29新增).doc",
+       "size": "920 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34681-9539c1edab06432888bf885a93ba4048-1.odt",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議臨時會議程(103.04.29新增).odt",
+       "size": "528 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34633-602c9f1adfb6446183a840c75022ef35-1.pdf",
+       "title": "「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議臨時會議程(103.04.29新增).pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34682-f4a3dd254a8c4d2494fb8599c550227a-1.doc",
+       "title": "第1次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議記錄(103.03.31新增).doc",
+       "size": "498 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34683-4832df1e0d4a48239f751bf79dcd7e09-1.odt",
+       "title": "第1次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議記錄(103.03.31新增).odt",
+       "size": "209 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34634-8ffb3787dc114cdcb3e38f9d0b94b910-1.pdf",
+       "title": "第1次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議記錄(103.03.31新增).pdf",
+       "size": "830 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34684-8a665515f2ca418391764460ef2ccecd-1.doc",
+       "title": "第1次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(103.03.06新增).doc",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34685-21c7b9f851c642d895f9f26bc2860363-1.odt",
+       "title": "第1次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(103.03.06新增).odt",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34635-45390f8d0ced4769a96b4435041d2dd8-1.pdf",
+       "title": "第1次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(103.03.06新增).pdf",
+       "size": "1 MB"
+      }
+     ],
+     "fingerprint": "c57a508029ade596"
+    },
+    {
+     "key": "cp-6536-c50a7-2771-1",
+     "title": "102年",
+     "url": "https://www.nhi.gov.tw/ch/cp-6536-c50a7-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-56204-a6385195e6e24899b2760e58835687bd-1.doc",
+       "title": "第6次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(103.01.13新增).doc",
+       "size": "286 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-56203-a05699a5c56b434cba97de2ad7f81c5e-1.odt",
+       "title": "第6次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(103.01.13新增).odt",
+       "size": "100 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34689-4da784c446d54544b3dca3ec56dfc1f7-1.pdf",
+       "title": "第6次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(103.01.13新增).pdf",
+       "size": "602 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-56206-4d82a22419484be59f00e16ffadcdb46-1.doc",
+       "title": "第6次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(102.12.12新增).doc",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-56205-9ff8f25819a64a4baa9f0d455b9f1d05-1.odt",
+       "title": "第6次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(102.12.12新增).odt",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34690-1945f10e34f847ab9ffd54b6448b915e-1.pdf",
+       "title": "第6次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(102.12.12新增).pdf",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-56213-fe5481e14f5b4268aab24e54d7644bf7-1.doc",
+       "title": "第5次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(102.12.13新增).doc",
+       "size": "410 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-56212-b59fb08d38264955ad2f763e685f34a3-1.odt",
+       "title": "第5次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(102.12.13新增).odt",
+       "size": "161 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34691-ecbf467a488344bfad05bda641047ac8-1.pdf",
+       "title": "第5次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(102.12.13新增).pdf",
+       "size": "761 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-56215-30578c0920b1412baf9c34c30a8bf018-1.doc",
+       "title": "第5次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(102.11.20新增).doc",
+       "size": "5 MB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-56214-aab72eaae18242df917eefdbcf186c05-1.odt",
+       "title": "第5次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(102.11.20新增).odt",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34692-59b71dfbe72d46fcb6e9a803ed3af363-1.pdf",
+       "title": "第5次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(102.11.20新增).pdf",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-56217-3c596f94b106466ca1dd529558f8fd8a-1.doc",
+       "title": "第4次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(102.11.20新增).doc",
+       "size": "397 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-56216-cb207c3e8fcd4ba6b0afb2b0c356b33c-1.odt",
+       "title": "第4次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(102.11.20新增).odt",
+       "size": "147 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34696-704e90c8108947e5a5f64dc774649808-1.pdf",
+       "title": "第4次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(102.11.20新增).pdf",
+       "size": "660 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-56219-60bbbed0281147c7870d97a1a1305c6b-1.doc",
+       "title": "第4次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(102.10.24新增).doc",
+       "size": "7 MB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-56218-6f707369a5534ef88eb5bfdebec74d11-1.odt",
+       "title": "第4次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(102.10.24新增).odt",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34697-7c81470722b84e56804b0f86753a8ade-1.pdf",
+       "title": "第4次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(102.10.24新增).pdf",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-56221-710df72ac6b14e8fab3078e18e53fc26-1.doc",
+       "title": "第3次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(102.09.24新增).doc",
+       "size": "251 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-56220-68041e3bca6b40da827d1db458474b19-1.odt",
+       "title": "第3次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(102.09.24新增).odt",
+       "size": "98 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34698-ea10f5b6d47f428091689819c056a9a8-1.pdf",
+       "title": "第3次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(102.09.24新增).pdf",
+       "size": "402 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-56223-2877224985e948bcb90ef58eeddadf60-1.doc",
+       "title": "第3次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(102.08.22新增).doc",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-56222-2a7cdcb6725a4d0186e34d5a4deee2f7-1.odt",
+       "title": "第3次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(102.08.22新增).odt",
+       "size": "973 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34699-1585c6cf4ac3442db71083eb2d07f531-1.pdf",
+       "title": "第3次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(102.08.22新增).pdf",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-56225-ca61eba447c14d858f06db5948c707a5-1.doc",
+       "title": "第2次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(102.08.20新增).doc",
+       "size": "304 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-56224-30976f9e495a4c6f82850d9db0a36f9a-1.odt",
+       "title": "第2次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(102.08.20新增).odt",
+       "size": "145 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34700-4f1eee3271bd498b9547e24ad33c7790-1.pdf",
+       "title": "第2次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議紀錄(102.08.20新增).pdf",
+       "size": "502 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-56227-59413d12932d495b879b2cb5a3ef6023-1.doc",
+       "title": "第2次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(102.07.26新增).doc",
+       "size": "2 MB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-56226-682d48a71e934b76aa3ffbffe4e43423-1.odt",
+       "title": "第2次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(102.07.26新增).odt",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34704-e2a4f42b9ec248808bf6dd45087d235f-1.pdf",
+       "title": "第2次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(102.07.26新增).pdf",
+       "size": "3 MB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-56229-a8b0d825b57f4fa1b0c3ba6e489b5c97-1.doc",
+       "title": "第1次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議記錄(102.04.22新增).doc",
+       "size": "250 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-56228-8e3cc93a664a4f2394e7948f61a51b6e-1.odt",
+       "title": "第1次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議記錄(102.04.22新增).odt",
+       "size": "97 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34705-705461a0aedb452db61264015c4128ba-1.pdf",
+       "title": "第1次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議記錄(102.04.22新增).pdf",
+       "size": "486 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-56231-74f2e00ec2154a0cb772d747a3b9609d-1.docx",
+       "title": "第1次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(102.03.18新增).docx",
+       "size": "323 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-56230-d360eb4082394979896fc8896d50ccfd-1.odt",
+       "title": "第1次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(102.03.18新增).odt",
+       "size": "328 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34706-660c7320d5ff43348db14ec03c9e9566-1.pdf",
+       "title": "第1次「全民健康保險醫療服務給付項目及支付標準共同擬訂會議」會議議程(102.03.18新增).pdf",
+       "size": "1 MB"
+      }
+     ],
+     "fingerprint": "74e424e1d199a8bd"
+    },
+    {
+     "key": "cp-6537-e8b94-2771-1",
+     "title": "101年",
+     "url": "https://www.nhi.gov.tw/ch/cp-6537-e8b94-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34712-b83653e6ac014e69bf294fa0bf729376-1.doc",
+       "title": "第5次「全民健康保險醫療給付協議會議」會議紀錄(102.01.21新增).doc",
+       "size": "214 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34713-104bf5d055b24e12bc988b040e62c208-1.odt",
+       "title": "第5次「全民健康保險醫療給付協議會議」會議紀錄(102.01.21新增).odt",
+       "size": "87 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34707-a0398d4000ad466aac15dac79c5dfa01-1.pdf",
+       "title": "第5次「全民健康保險醫療給付協議會議」會議紀錄(102.01.21新增).pdf",
+       "size": "414 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34714-8e238cbe9e804099b1fba2e67333f339-1.doc",
+       "title": "第4次「全民健康保險醫療給付協議會議」會議紀錄(102.01.11新增).doc",
+       "size": "292 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34715-0cf7d3b54b0a447a9f0b749768c2b4f6-1.odt",
+       "title": "第4次「全民健康保險醫療給付協議會議」會議紀錄(102.01.11新增).odt",
+       "size": "122 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34708-4da69e8291e042a3b1e48da415b0ac0e-1.pdf",
+       "title": "第4次「全民健康保險醫療給付協議會議」會議紀錄(102.01.11新增).pdf",
+       "size": "474 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34716-463c2a0ec9004c7b8cf06cfdd5d9bf36-1.doc",
+       "title": "第3次「全民健康保險醫療給付協議會議」會議紀錄(101.11.13新增).doc",
+       "size": "250 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34717-31788a71b9d1415aa19cfdd26030d2ea-1.odt",
+       "title": "第3次「全民健康保險醫療給付協議會議」會議紀錄(101.11.13新增).odt",
+       "size": "98 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34709-d4ac9c178c674d48bccb811220209b21-1.pdf",
+       "title": "第3次「全民健康保險醫療給付協議會議」會議紀錄(101.11.13新增).pdf",
+       "size": "511 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34718-c7f90604dec04315b1afb375456d4803-1.doc",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄(101.07.12新增).doc",
+       "size": "240 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34719-b6643d64523d4632a6d87ef066aa254f-1.odt",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄(101.07.12新增).odt",
+       "size": "78 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34710-55e55112507d43b2ba24f91f1322273f-1.pdf",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄(101.07.12新增).pdf",
+       "size": "358 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34720-bb2e09c7ff2249789df19e23638001f9-1.doc",
+       "title": "第1次「全民健康保險醫療給付協議會議」會議紀錄(101.03.29新增).doc",
+       "size": "214 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34721-6f04528385a64a84abc39dc56698d730-1.odt",
+       "title": "第1次「全民健康保險醫療給付協議會議」會議紀錄(101.03.29新增).odt",
+       "size": "87 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34711-93d4ea767ddf4341bbe1da91f08b9ec2-1.pdf",
+       "title": "第1次「全民健康保險醫療給付協議會議」會議紀錄(101.03.29新增).pdf",
+       "size": "414 KB"
+      }
+     ],
+     "fingerprint": "ed252f06352f5883"
+    },
+    {
+     "key": "cp-6538-3f3af-2771-1",
+     "title": "100年",
+     "url": "https://www.nhi.gov.tw/ch/cp-6538-3f3af-2771-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34722-ac8fc5ea34eb49688c6f32dd60878516-1.pdf",
+       "title": "第4次「全民健康保險醫療給付協議會議」會議紀錄(101.01.11新增).pdf",
+       "size": "430 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34723-a4ace6f73bb142e6b4220ff627df330d-1.doc",
+       "title": "第3次「全民健康保險醫療給付協議會議」會議紀錄(100.12.12新增).doc",
+       "size": "203 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34725-20114648cfda4019a5bdb8ef0484e232-1.odt",
+       "title": "第3次「全民健康保險醫療給付協議會議」會議紀錄(100.12.12新增).odt",
+       "size": "80 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34724-759df4377a5d4244900d02e7158db1b3-1.pdf",
+       "title": "第3次「全民健康保險醫療給付協議會議」會議紀錄(100.12.12新增).pdf",
+       "size": "434 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34728-c95b437565fe4ace8dd393221dc5f490-1.doc",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄(100.11.23新增).doc",
+       "size": "135 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34729-11269eda1719481bad1f0a3394974481-1.odt",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄(100.11.23新增).odt",
+       "size": "54 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34726-37b3655d33d044619d5b6ab2b68b8d73-1.pdf",
+       "title": "第2次「全民健康保險醫療給付協議會議」會議紀錄(100.11.23新增).pdf",
+       "size": "289 KB"
+      },
+      {
+       "file_type": "doc",
+       "url": "https://www.nhi.gov.tw/ch/dl-34730-1327dd4f49554c13b2f25766cb5844c8-1.doc",
+       "title": "第1次「全民健康保險醫療給付協議會議」會議紀錄(100.03.02新增).doc",
+       "size": "147 KB"
+      },
+      {
+       "file_type": "odt",
+       "url": "https://www.nhi.gov.tw/ch/dl-34731-8bf47a01e67e42d49a33d345166c7670-1.odt",
+       "title": "第1次「全民健康保險醫療給付協議會議」會議紀錄(100.03.02新增).odt",
+       "size": "64 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-34727-1aa241a0ff7f43ce9f4f8e8e0a42ddc5-1.pdf",
+       "title": "第1次「全民健康保險醫療給付協議會議」會議紀錄(100.03.02新增).pdf",
+       "size": "318 KB"
+      }
+     ],
+     "fingerprint": "25eb63592c5fa44e"
+    }
+   ],
+   "stale": false
   },
   {
    "key": "programs",
    "name": "醫療給付改善方案",
    "url": "https://www.nhi.gov.tw/ch/np-2823-1.html",
-   "items": [],
-   "stale": true
+   "items": [
+    {
+     "key": "cp-7595-38b11-2834-1",
+     "title": "全民健康保險末期腎臟病前期（Pre-ESRD）之病人照護與衛教計畫",
+     "url": "https://www.nhi.gov.tw/ch/cp-7595-38b11-2834-1.html",
+     "date": null,
+     "files": [
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-99935-09d747cf53ad45829dbaa07e9b076c91-1.pdf",
+       "title": "全民健康保險末期腎臟病前期（Pre-ESRD）之病人照護與衛教計畫1150701.pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-85512-21b0afe08a334ba4bd5fab18c3c0a249-1.pdf",
+       "title": "全民健康保險末期腎臟病前期（Pre-ESRD）之病人照護與衛教計畫1140604.pdf",
+       "size": "731 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-94070-59f43c5e64014267b400d27abd85031a-1.pdf",
+       "title": "全民健康保險末期腎臟病前期（Pre-ESRD）之病人照護與衛教計畫1131001.pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-94071-7cbe16b535c0477db7fced1a0e335705-1.pdf",
+       "title": "全民健康保險末期腎臟病前期（Pre-ESRD）之病人照護與衛教計畫1101022.pdf",
+       "size": "1 MB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-94072-8f7bf96b99f64231b4afd59feacb608e-1.pdf",
+       "title": "全民健康保險末期腎臟病前期（Pre-ESRD）之病人照護與衛教計畫1090721.pdf",
+       "size": "763 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-94074-890ec7ce2df241a4acb8a6cc48c30364-1.pdf",
+       "title": "全民健康保險末期腎臟病前期（Pre-ESRD）之病人照護與衛教計畫1080102.pdf",
+       "size": "689 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-94075-4b4b3e49c5d44e568a5423939ce0c931-1.pdf",
+       "title": "全民健康保險末期腎臟病前期（Pre-ESRD）之病人照護與衛教計畫1070501.pdf",
+       "size": "200 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-94076-ed416bbed85042d5a10759469038cf64-1.pdf",
+       "title": "全民健康保險末期腎臟病前期（Pre-ESRD）之病人照護與衛教計畫1060116.pdf",
+       "size": "688 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-94077-46950ac4dfb742fe893175c01bf26ebd-1.pdf",
+       "title": "全民健康保險末期腎臟病前期（Pre-ESRD）之病人照護與衛教計畫1041225.pdf",
+       "size": "564 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-94078-1b51e0520b454efdb91d2c8fc80bdf98-1.pdf",
+       "title": "全民健康保險末期腎臟病前期（Pre-ESRD）之病人照護與衛教計畫1031231.pdf",
+       "size": "181 KB"
+      },
+      {
+       "file_type": "pdf",
+       "url": "https://www.nhi.gov.tw/ch/dl-94079-e1820a0eddf7474394241d6696b2d47f-1.pdf",
+       "title": "全民健康保險末期腎臟病前期（Pre-ESRD）之病人照護與衛教計畫1020124.pdf",
+       "size": "192 KB"
+      }
+     ],
+     "fingerprint": "559c2ea847f44e7c"
+    }
+   ],
+   "stale": false
   }
  ]
 }
