@@ -30,6 +30,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).parent))
 
 from bs4 import BeautifulSoup  # noqa: E402
 
+from parse_nhi import content_scopes  # noqa: E402
 from topics_config import TOPICS  # noqa: E402
 
 PAGE_RE = re.compile(r"((?:lp|np|cp)-[\w-]+?)(?:\.html?)?$")
@@ -58,12 +59,12 @@ def page_id(path: pathlib.Path, html: str) -> str | None:
 def child_links(html: str) -> list[str]:
     """取出頁面內文區塊裡指向其他 lp-／np-／cp- 頁的連結。
 
-    刻意不掃全頁：頁首頁尾的全站導覽也是 np-／cp- 連結，掃進來會讓歸屬
-    一路擴散到整個官網。
+    刻意不掃全頁，並先移除麵包屑與導覽：健保署每頁的 div.breadcrumb 都列著
+    祖先節點且位在 main 之內，掃進來會讓走訪沿著麵包屑往上爬，再往下把其他
+    專區的頁面也歸進來（兩個專區共用「健保服務」這個祖先）。
     """
-    soup = BeautifulSoup(html, "html.parser")
-    scopes = soup.select("main, .contentbox, article, table") or [soup]
     out, seen = [], set()
+    scopes = content_scopes(BeautifulSoup(html, "html.parser"))
     for scope in scopes:
         for a in scope.select("a[href]"):
             m = URL_PAGE_RE.search(a["href"])
