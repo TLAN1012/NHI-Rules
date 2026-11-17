@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-17T05:58:25+00:00",
- "announcement_count": 1112,
- "drug_rule_count": 516,
+ "generated_at": "2026-11-17T08:16:44+00:00",
+ "announcement_count": 1115,
+ "drug_rule_count": 519,
  "date_range": [
   "2020-03-04",
   "2026-11-13"
@@ -13,8 +13,8 @@
  "fulldoc_title": "最新版藥品給付規定內容(整份帶走)-115.10.22更新",
  "fulldoc_source": "live",
  "stats": {
-  "files": 64,
-  "list_pages": 59
+  "files": 85,
+  "list_pages": 74
  },
  "source_site": "https://www.nhi.gov.tw/ch/np-2505-1.html"
 }
