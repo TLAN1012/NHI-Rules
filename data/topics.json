@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T14:41:44+00:00",
+ "generated_at": "2026-11-21T15:48:14+00:00",
  "topics": [
   {
    "key": "meetings",
@@ -105,7 +105,7 @@
       {
        "file_type": "txt",
        "url": "https://www.nhi.gov.tw/ch/dl-75678-67a9552bb8d44f7c90c015acd8b30bb4-1.txt",
-       "title": "帶走所有壓縮檔.txt檔(115.10.21更新)(下載欄位格式請用109.04更新格式檔案).txt",
+       "title": "帶走所有壓縮檔.txt檔(115.11.19更新)(下載欄位格式請用109.04更新格式檔案).txt",
        "size": "162 MB"
       },
       {
@@ -147,23 +147,23 @@
       {
        "file_type": "csv",
        "url": "https://www.nhi.gov.tw/ch/dl-91109-eb357306490340f6a2c8b8b019144e86-1.csv",
-       "title": "特材收載品項表(115.11.05更新).csv",
+       "title": "特材收載品項表(115.11.20更新).csv",
        "size": "4 MB"
       },
       {
        "file_type": "csv",
        "url": "https://www.nhi.gov.tw/ch/dl-62006-a4362a658b964545b49c86bda3611006-1.csv",
-       "title": "整組組件特材關聯代碼表(115.10.21更新).csv",
+       "title": "整組組件特材關聯代碼表(115.11.19更新).csv",
        "size": "414 KB"
       },
       {
        "file_type": "pdf",
        "url": "https://www.nhi.gov.tw/ch/dl-62005-b607d62f1fb34173a3fe18d28a28284b-1.pdf",
-       "title": "整組組件特材關聯代碼表(115.10.21更新).pdf",
-       "size": "6 MB"
+       "title": "整組組件特材關聯代碼表(115.11.19更新).pdf",
+       "size": "7 MB"
       }
      ],
-     "fingerprint": "d85d9b679e986887"
+     "fingerprint": "951defaf4e8b41f4"
     },
     {
      "key": "cp-2739-71852-2539-1",
@@ -294,13 +294,13 @@
       {
        "file_type": "ods",
        "url": "https://www.nhi.gov.tw/ch/dl-61990-5ac883c197b34302be3b800488892939-1.ods",
-       "title": "廠牌名稱對照表(115.10.21更新).ods",
+       "title": "廠牌名稱對照表(115.11.19更新).ods",
        "size": "30 KB"
       },
       {
        "file_type": "pdf",
        "url": "https://www.nhi.gov.tw/ch/dl-61989-c573252830cc476497f2a751e2112394-1.pdf",
-       "title": "廠牌名稱對照表(115.10.21更新).pdf",
+       "title": "廠牌名稱對照表(115.11.19更新).pdf",
        "size": "301 KB"
       }
      ],

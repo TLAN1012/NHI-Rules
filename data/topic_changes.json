@@ -1,6 +1,19 @@
 {
  "changes": [
   {
+   "detected_at": "2026-11-21T15:48:14+00:00",
+   "topic": "meetings",
+   "type": "files_changed",
+   "item_key": "cp-2629-3c936-2528-1",
+   "title": "特材收載品項表下載",
+   "url": "https://www.nhi.gov.tw/ch/cp-2629-3c936-2528-1.html",
+   "date": null,
+   "detail": {
+    "added": [],
+    "removed": []
+   }
+  },
+  {
    "detected_at": "2026-10-31T14:03:42+00:00",
    "topic": "meetings",
    "type": "added",
